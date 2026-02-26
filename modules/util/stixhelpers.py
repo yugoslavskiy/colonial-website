@@ -102,6 +102,15 @@ def get_datacomponents(srcs):
     return results
 
 
+def _append_tactic_if_present(src, tactics, tactic_id, matrix_ref):
+    """Append tactic to list when present, otherwise log and skip missing refs."""
+    tactic_matches = src.query([stix2.Filter("id", "=", tactic_id)])
+    if tactic_matches:
+        tactics.append(tactic_matches[0])
+    else:
+        logger.warning(f"Skipping missing tactic ref '{tactic_id}' from matrix '{matrix_ref}'")
+
+
 def get_tactic_list(src, domain, matrix_id=None):
     """Read the STIX and return a list of all tactics in the STIX."""
     tactics = []
@@ -117,11 +126,13 @@ def get_tactic_list(src, domain, matrix_id=None):
         for curr_matrix in matrices:
             if curr_matrix["id"] == matrix_id:
                 for tactic_id in curr_matrix["tactic_refs"]:
-                    tactics.append(src.query([stix2.Filter("id", "=", tactic_id)])[0])
+                    _append_tactic_if_present(
+                        src=src, tactics=tactics, tactic_id=tactic_id, matrix_ref=curr_matrix["id"]
+                    )
     else:
         for matrix in matrices:
             for tactic_id in matrix["tactic_refs"]:
-                tactics.append(src.query([stix2.Filter("id", "=", tactic_id)])[0])
+                _append_tactic_if_present(src=src, tactics=tactics, tactic_id=tactic_id, matrix_ref=matrix["id"])
 
     # Filter out by domain
     tactics = [x for x in tactics if not hasattr(x, "x_mitre_domains") or domain in x.get("x_mitre_domains")]

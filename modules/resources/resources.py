@@ -289,15 +289,21 @@ def generate_working_with_attack():
             continue
 
         domain_name = domain["name"]
-        attackToExcel.export(
-            domain=domain_name,
-            version=site_config.full_attack_version,
-            output_dir=docs_dir,
-            mem_store=ms[domain_name],
-        )
         src_dir = os.path.join(docs_dir, f"{domain_name}-{site_config.full_attack_version}")
+        try:
+            attackToExcel.export(
+                domain=domain_name,
+                version=site_config.full_attack_version,
+                output_dir=docs_dir,
+                mem_store=ms[domain_name],
+            )
+        except Exception:
+            logger.exception(f"Failed generating ATT&CK Excel files for domain: {domain_name}")
+            continue
+
         if not os.path.isdir(src_dir):
-            logger.error(f"Excel files not generated/found in: {src_dir}")
+            logger.error(f"Excel files not generated/found for domain {domain_name} in: {src_dir}")
+            continue
 
         # TODO: delete this block if we end up with greater control of how to generate output in mitreattack-python
         dst_dir = os.path.join(docs_dir, "attack-excel-files", site_config.full_attack_version, domain_name)
