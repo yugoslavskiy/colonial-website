@@ -143,6 +143,12 @@ def generate_datacomponent_md(datacomponent, notes, mappings):
         technique_detected = util.relationshipgetters.get_techniques_detected_by_detectionstrategy().get(
             detection_strategy["id"], [None]
         )
+        if not technique_detected[0]:
+            logger.error(
+                f"Detection strategy {detection_strategy['id']} has no detected technique relationship "
+                f"while processing data component {datacomponent['id']}"
+            )
+            continue
         technique = technique_detected[0]["object"]
         attack_id_technique = util.buildhelpers.get_attack_id(technique)
         if attack_id_technique is None:
