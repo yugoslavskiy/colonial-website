@@ -257,7 +257,20 @@ def pelican_content():
 
     logger.debug(f"{pelican_cmd=}")
 
-    subprocess.check_output(pelican_cmd, shell=True)
+    try:
+        result = subprocess.run(pelican_cmd, shell=True, check=True, capture_output=True, text=True)
+    except subprocess.CalledProcessError as err:
+        stdout = err.stdout if err.stdout is not None else err.output
+        if stdout:
+            logger.error("Pelican stdout:\n{}", stdout.rstrip())
+        if err.stderr:
+            logger.error("Pelican stderr:\n{}", err.stderr.rstrip())
+        raise
+
+    if result.stdout:
+        logger.debug("Pelican stdout:\n{}", result.stdout.rstrip())
+    if result.stderr:
+        logger.debug("Pelican stderr:\n{}", result.stderr.rstrip())
 
 
 def remove_pelican_settings():
