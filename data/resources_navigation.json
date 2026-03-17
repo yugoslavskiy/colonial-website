@@ -77,6 +77,25 @@
       ]
     },
     {
+      "name": "ATT&CK Advisory Council",
+      "id": "attack-advisory-council",
+      "path": "/resources/attack-advisory-council/",
+      "children": [
+        {
+          "name": "Members & Bios",
+          "id": "attack-advisory-council-members",
+          "path": "/resources/attack-advisory-council/members/",
+          "children": []
+        },
+        {
+          "name": "Meeting Summaries",
+          "id": "attack-advisory-council-meeting-summaries",
+          "path": "/resources/attack-advisory-council/meeting-summaries/",
+          "children": []
+        }
+      ]
+    },
+    {
           "name": "ATT&CKcon",
           "id": "attackcon",
           "path": "/resources/attackcon/",
