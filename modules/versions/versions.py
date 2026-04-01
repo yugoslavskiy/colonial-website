@@ -364,6 +364,7 @@ def remove_unwanted_files(extract_dir):
         "techniques.html",
         "full-coverage.html",
         "macro-technique-refinement.html",
+        "emoji-technique.html",
     ]
     for rel_path in targets:
         target_path = os.path.join(extract_dir, rel_path)
