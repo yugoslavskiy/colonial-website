@@ -1,0 +1,83 @@
+{% extends "general/two-column.html" -%}
+{% set title = "Fake Technique | MITRE ATT&CK&reg;" -%}
+{% set active_page = "techniques" -%}
+
+{% block innerleft %}
+<div id="sidebars"></div>
+{% endblock %}
+
+{% block innerright %}
+<div class="row">
+  <div class="col-xl-12">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container-fluid">
+        <h1>🌐🛜👃</h1>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="description-body">
+              <p>Adversaries may passively 👃 network traffic to capture information about an environment, including authentication material passed over the network. 🌐🛜👃 refers to using the network interface on a system to 👀 or capture information sent over a wired or wireless connection. An 😈 may place a 🛜 interface into promiscuous mode to passively access data in transit 🌈 the 🛜, or use span ports to capture a larger amount of data.</p>
+              <p>Data captured via this technique may include user credentials, especially those sent over an insecure, 🔓 protocol. Techniques for name service resolution ☠, such as <a href="https://attack.mitre.org/techniques/T1557/001">LLMNR/NBT-NS Poisoning and SMB Relay</a>, can also be used to capture 🪪 to websites, proxies, and internal systems by redirecting 🚦 to an adversary.</p>
+              <p>🌐 🛜👃 may reveal configuration details, such as 🏃services, version numbers, and other network characteristics (e.g. IP addresses, hostnames, VLAN IDs) necessary for subsequent <a href="https://attack.mitre.org/tactics/TA0008">Lateral Movement</a> and/or <a href="https://attack.mitre.org/tactics/TA0005">Defense Evasion</a> activities. Adversaries may likely also utilize 🌐🛜👃 during <a href="https://attack.mitre.org/techniques/T1557">Adversary-in-the-Middle</a> (AiTM) to passively gain additional knowledge about the environment.</p>
+              <p>In ☁️ -based environments, adversaries may still be able to use traffic 🪞 services to 👃 network traffic from virtual machines. For example, AWS 🚦 Mirroring, GCP Packet 🪞, and Azure vTap allow users to define specified instances to collect traffic from and specified 🎯 🎯 to send collected traffic to. Often, much of this traffic will be in cleartext due to the use of TLS termination at the load balancer level to reduce the strain of 🔑 🔒 and 🔑 🔓 traffic. The 😈 can then use exfiltration techniques such as Transfer Data to ☁️ Account in order to access the sniffed traffic.</p>
+              <p>On network devices, adversaries may perform 🌐 🛜 captures using <a href="https://attack.mitre.org/techniques/T1059/008">Network Device CLI</a> 🗣️ such as monitor capture.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <!--stop-indexing-for-search-->
+                <div class="row card-data" id="card-id">
+                  <div class="col-md-1 px-0 text-center"></div>
+                  <div class="col-md-11 pl-0">
+                    <span class="h5 card-title">ID:&nbsp;</span>T0842
+                  </div>
+                </div>
+                <div id="card-tactics" class="row card-data">
+                  <div class="col-md-1 px-0 text-center"></div>
+                  <div class="col-md-11 pl-0">
+                    <span class="h5 card-title">Tactic:&nbsp;</span>Discovery
+                  </div>
+                </div>
+                <div class="row card-data">
+                  <div class="col-md-1 px-0 text-center"></div>
+                  <div class="col-md-11 pl-0">
+                    <span class="h5 card-title">Platforms:&nbsp;</span>None
+                  </div>
+                </div>
+                <div class="row card-data">
+                  <div class="col-md-1 px-0 text-center"></div>
+                  <div class="col-md-11 pl-0">
+                    <span class="h5 card-title">Version:&nbsp;</span>1.0
+                  </div>
+                </div>
+                <div class="row card-data">
+                  <div class="col-md-1 px-0 text-center"></div>
+                  <div class="col-md-11 pl-0">
+                    <span class="h5 card-title">Created:&nbsp;</span>21 May 2020
+                  </div>
+                </div>
+                <div class="row card-data">
+                  <div class="col-md-1 px-0 text-center"></div>
+                  <div class="col-md-11 pl-0">
+                    <span class="h5 card-title">Last Modified:&nbsp;</span>1 April 2026
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script>
+  // Load the standard Techniques sidebar
+  $(function(){
+    $("#sidebars").load("/techniques/sidebar-techniques");
+  });
+  </script>
+{% endblock %}

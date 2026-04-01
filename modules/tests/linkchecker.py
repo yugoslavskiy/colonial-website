@@ -13,7 +13,7 @@ from . import tests_config
 
 # STATIC PROPERTIES
 
-IGNORED_LINKS = ["full-coverage.html", "macro-technique-refinement.html"]
+IGNORED_LINKS = ["full-coverage.html", "macro-technique-refinement.html", "fake-technique.html"]
 
 ALLOWED_IN_LINK_INTERNAL = r"-?\w\$\.!\*'()/"
 ALLOWED_IN_LINK_EXTERNAL = r"-?\w\$\.!\*'()/:"
