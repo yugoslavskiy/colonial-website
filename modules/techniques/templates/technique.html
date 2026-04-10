@@ -89,6 +89,7 @@
         <div class="row">
           <div class="col-md-8">
             {% if parsed.subtechniques and not (parsed.is_subtechnique and (parsed.subtechniques | length == 1)) %}
+            <!--stop-indexing-for-search-->
             <div class="card-block pb-2">
               <div class="card">
                 <div class="card-header collapsed" id="subtechniques-card-header" data-toggle="collapse"
@@ -136,6 +137,7 @@
                 </div>
               </div>
             </div>
+            <!--start-indexing-for-search-->
             {% endif %}
 
             {% if parsed.descr %}
@@ -157,6 +159,7 @@
                     <span class="h5 card-title">ID:&nbsp;</span>{{parsed.attack_id}}
                   </div>
                 </div>
+                <!--stop-indexing-for-search-->
                 {% endif %}
                 <div class="row card-data">
                   <div class="col-md-1 px-0 text-center"></div>
@@ -177,6 +180,7 @@
                     {% endif %}
                   </div>
                 </div>
+                <!--start-indexing-for-search-->
                 {% if parsed.tactic_type %}
                 <div class="row card-data">
                   <div class="col-md-1 px-0 text-center"></div>
