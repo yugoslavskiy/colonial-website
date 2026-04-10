@@ -17,14 +17,11 @@
 {% import 'macros/versioning.html' as versioning %}
 
 {% if parsed.domain == "mobile" %}
-{% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " - Mobile | MITRE ATT&CK&reg;"
--%}
+{% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " - Mobile | MITRE ATT&CK&reg;" -%}
 {% elif parsed.domain == "enterprise" %}
-{% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " - Enterprise | MITRE
-ATT&CK&reg;" -%}
+{% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " - Enterprise | MITRE ATT&CK&reg;" -%}
 {% elif parsed.domain == "ics" %}
-{% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " - ICS | MITRE ATT&CK&reg;"
--%}
+{% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " - ICS | MITRE ATT&CK&reg;" -%}
 {% else %}
 {% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " | MITRE ATT&CK&reg;" -%}
 {% endif %}
@@ -92,7 +89,6 @@ ATT&CK&reg;" -%}
         <div class="row">
           <div class="col-md-8">
             {% if parsed.subtechniques and not (parsed.is_subtechnique and (parsed.subtechniques | length == 1)) %}
-            <!--stop-indexing-for-search-->
             <div class="card-block pb-2">
               <div class="card">
                 <div class="card-header collapsed" id="subtechniques-card-header" data-toggle="collapse"
@@ -140,7 +136,6 @@ ATT&CK&reg;" -%}
                 </div>
               </div>
             </div>
-            <!--start-indexing-for-search-->
             {% endif %}
 
             {% if parsed.descr %}
@@ -163,7 +158,6 @@ ATT&CK&reg;" -%}
                   </div>
                 </div>
                 {% endif %}
-                <!--stop-indexing-for-search-->
                 <div class="row card-data">
                   <div class="col-md-1 px-0 text-center"></div>
                   <div class="col-md-11 pl-0">
@@ -183,7 +177,6 @@ ATT&CK&reg;" -%}
                     {% endif %}
                   </div>
                 </div>
-                <!--start-indexing-for-search-->
                 {% if parsed.tactic_type %}
                 <div class="row card-data">
                   <div class="col-md-1 px-0 text-center"></div>
