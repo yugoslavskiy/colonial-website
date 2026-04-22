@@ -1,0 +1,749 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1,shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='/theme/favicon.ico' type='image/x-icon'>
+        <title>Contribute | MITRE ATT&CK&reg;</title>
+        <!-- USWDS CSS -->
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='/theme/style/vendors/bootstrap.min.css' />
+        <link rel='stylesheet' href='/theme/style/vendors/bootstrap-tourist.css' />
+        <link rel='stylesheet' href='/theme/style/vendors/bootstrap-select.min.css' />
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="/theme/style/vendors/fontawesome-6.5.1/css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="/theme/style/vendors/fontawesome-6.5.1/css/brands.min.css"/>
+        <link rel="stylesheet" href="/theme/style/vendors/fontawesome-6.5.1/css/solid.min.css"/>
+            <link rel="stylesheet" href="/theme/style-user.css"/>
+
+</head>
+
+<body>
+
+    <div class="container-fluid attack-website-wrapper d-flex flex-column h-100">
+        <div class="row sticky-top flex-grow-0 flex-shrink-1">
+            <!-- header elements -->
+            <header class="col px-0">
+                    <nav class='navbar navbar-expand-lg navbar-dark position-static'>
+        <a class='navbar-brand' href='/'><img src="/theme/images/mitre_attack_logo.png" class="attack-logo"></a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarCollapse'>
+            <ul class='nav nav-tabs ml-auto'>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/matrices/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Матрицы</b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/matrices/russia/">Россия</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/tactics/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Тактики</b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/tactics/russia/">Россия</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/techniques/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Техники</b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/techniques/russia/">Россия</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/groups" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>CTI </b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/groups">Groups</a>
+                <a class="dropdown-item" href="/software">Software</a>
+                <a class="dropdown-item" href="/campaigns">Campaigns</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/resources/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Resources </b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/resources/">Get Started</a>
+                <a class="dropdown-item" href="/resources/learn-more-about-attack/">Learn More about ATT&CK</a>
+                <a class="dropdown-item" href="/resources/attackcon/">ATT&CKcon</a>
+                <a class="dropdown-item" href="/resources/attack-data-and-tools/">ATT&CK Data & Tools</a>
+                <a class="dropdown-item" href="/resources/faq/">FAQ</a>
+                <a class="dropdown-item" href="/resources/engage-with-attack/contact/">Engage with ATT&CK</a>
+                <a class="dropdown-item" href="/resources/updates/">Updates</a>
+                <a class="dropdown-item" href="/resources/legal-and-branding/">Legal & Branding</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="/resources/engage-with-attack/contribute/"  class="nav-link active" ><b>Contribute </b></a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="search-button" class="btn search-button">Search <div id="search-icon" class="icon-button search-icon"></div></button>
+                        </li>
+            </ul>
+        </div>
+    </nav>
+
+            </header>
+        </div>
+        <div class="row flex-grow-0 flex-shrink-1">
+            <!-- banner elements -->
+            <div class="col px-0">
+                <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the versioning feature -->
+                <!-- !versions banner! -->
+            </div>
+        </div>
+        <div class="row flex-grow-1 flex-shrink-0">
+            <!-- main content elements -->
+            <!--start-indexing-for-search-->
+
+ 
+     
+    <div class="sidebar nav sticky-top flex-column pr-0 pt-4 pb-3 pl-3" id="v-tab" role="tablist" aria-orientation="vertical">
+        <div class="resizer" id="resizer"></div>
+<div id="sidebars"></div>
+    </div>
+
+    
+     
+    <div class="tab-content col-xl-9 pt-4" id="v-tabContent">
+        <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/">Home</a></li>
+  <li class="breadcrumb-item"><a href="/resources">Resources</a></li>
+  <li class="breadcrumb-item"><a href="/resources/engage-with-attack/contact">Engage with ATT&amp;CK</a></li>
+  <li class="breadcrumb-item">Contribute</li>
+</ol>
+<div class="container-fluid pb-3">
+  <div class="clearfix pb-3">
+    <div class="clearfix pb-3">
+      <h1>Contribute</h1>
+      <p>
+        ATT&amp;CK is in a constant state of development and is based on behavior that has been observed in real-world
+        malicious intrusions/attacks ("in the wild"). We do not add hypothetical techniques, lab-only proofs of
+        concept, or behaviors that have only been used in red team exercises without evidence of use by real adversaries.
+        If you have information about adversary behavior that is not yet represented in ATT&amp;CK, we would like to hear from you!
+      </p>
+      <p>
+        We're especially looking for contributions in the areas below. Please note that we are not able to add every suggested
+        technique, sub-technique, Group, Campaign, or piece of Software to ATT&amp;CK. We prioritize contributions that improve
+        coverage of commonly used adversary behaviors and that are supported by clear, public references. If you have other
+        information you think may be useful, please ask us a question below.
+      </p>
+      <p>
+        <b>Due to the high volume of contributions, we may not be able to respond to every submission individually</b>,
+        and we cannot guarantee that a contribution will be added to ATT&amp;CK. We recommend you read our
+        <a href="/docs/ATTACK_Design_and_Philosophy_March_2020.pdf">philosophy paper</a>
+        to understand our approach to maintaining ATT&amp;CK so that we get the right details up front.
+        Content updates happen roughly every 6 months.
+      </p>
+      <p>
+        Before sending a contribution, please search ATT&amp;CK for existing techniques, sub-techniques, Groups, or Software that
+        may already describe your example. In your message, let us know which ATT&amp;CK entries you checked and why you think your
+        information is new or different. Many contributions are used to strengthen existing entries rather than create new ones.
+        If your example is already covered by an existing technique or does not meet the criteria above,
+        we will not create a new technique or sub-technique for it.
+      </p>
+      <p>
+      <div class="d-inline-flex align-items-center flex-wrap">
+        <div class="dropdown d-inline-block mr-2">
+          <button type="button"
+                  class="slide-button dropdown-toggle"
+                  id="submitContributionDropdown"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+            <span class="slide-button-text">
+              <span>Submit a contribution</span>
+            </span>
+          </button>
+
+          <div class="dropdown-menu" aria-labelledby="submitContributionDropdown">
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BEnterprise%5D%20Technique%20Suggestion&body=REQUIRED%0D%0A%0D%0AATT%26CK%20Domain%3A%20Enterprise%0D%0A%0D%0ATactic%3A%0D%0A%0D%0A%28Sub-%29Technique%20name%3A%0D%0A%0D%0AClosest%20existing%20technique%28s%29%20and%20why%20this%20is%20new%20or%20different%3A%0D%0A%0D%0AShort%20description%3A%0D%0A%0D%0APublic%20reporting%20on%20real-world%20adversary%20use%3A%0D%0A%0D%0AOPTIONAL%0D%0A%0D%0APlatform%3A%20%3CWindows%2C%20macOS%2C%20Linux%2C%20PRE%2C%20Office%20Suite%2C%20Identity%20Provider%2C%20SaaS%2C%20IaaS%2C%20Network%20Devices%2C%20Containers%2C%20ESXi%3E%0D%0A%0D%0AAdditional%20technical%20details%3A%0D%0A%0D%0ADetection%20and%20mitigation%20ideas%3A%0D%0A%0D%0A">
+              Enterprise Technique
+            </a>
+
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BMobile%5D%20Technique%20Suggestion&body=REQUIRED%0D%0A%0D%0AATT%26CK%20Domain%3A%20Mobile%0D%0A%0D%0ATactic%3A%0D%0A%0D%0A%28Sub-%29Technique%20name%3A%0D%0A%0D%0AClosest%20existing%20technique%28s%29%20and%20why%20this%20is%20new%20or%20different%3A%0D%0A%0D%0AShort%20description%3A%0D%0A%0D%0APublic%20reporting%20on%20real-world%20adversary%20use%3A%0D%0A%0D%0AOPTIONAL%0D%0A%0D%0APlatform%3A%20%3CAndroid%2C%20iOS%3E%0D%0A%0D%0AAdditional%20technical%20details%3A%0D%0A%0D%0ADetection%20and%20mitigation%20ideas%3A%0D%0A%0D%0A">
+              Mobile Technique
+            </a>
+
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BICS%5D%20Technique%20Suggestion&body=REQUIRED%0D%0A%0D%0AATT%26CK%20Domain%3A%20ICS%0D%0A%0D%0ATactic%3A%0D%0A%0D%0A%28Sub-%29Technique%20name%3A%0D%0A%0D%0AClosest%20existing%20technique%28s%29%20and%20why%20this%20is%20new%20or%20different%3A%0D%0A%0D%0AShort%20description%3A%0D%0A%0D%0APublic%20reporting%20on%20real-world%20adversary%20use%3A%0D%0A%0D%0AOPTIONAL%0D%0A%0D%0AAdditional%20technical%20details%3A%0D%0A%0D%0ADetection%20and%20mitigation%20ideas%3A%0D%0A%0D%0A">
+              ICS Technique
+            </a>
+
+            <div class="dropdown-divider"></div>
+
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BThreat%20Intelligence%5D%20Group%20Suggestion&body=Group%20name%3A%0D%0A%0D%0AATT%26CK%20Group%20entries%20I%20checked%20and%20why%20this%20is%20new%20or%20different%3A%0D%0A%0D%0AAt%20least%20one%20publicly%20available%20reference%20(URL)%3A%0D%0A%0D%0AAssociated%20Group(s)%20(optional)%3A%20%3Cinclude%20references%20showing%20the%20relationship%3E%0D%0A%0D%0AShort%20description%3A%0D%0A%0D%0AATT%26CK%20Technique%20mappings%20used%20by%20this%20Group%3A%20%3Cinclude%20references%20showing%20the%20techniques%20used%3E%0D%0A%0D%0AAdditional%20notes%20(optional)%3A%0D%0A">
+              Group
+            </a>
+
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BThreat%20Intelligence%5D%20Software%20Suggestion&body=Software%20name%3A%0D%0A%0D%0AATT%26CK%20Software%20entries%20I%20checked%20and%20why%20this%20is%20new%20or%20different%3A%0D%0A%0D%0AAt%20least%20one%20publicly%20available%20reference%20(URL)%3A%0D%0A%0D%0AAssociated%20Group(s)%20(optional)%3A%20%3Cinclude%20references%20showing%20the%20relationship%3E%0D%0A%0D%0AShort%20description%3A%0D%0A%0D%0APlatform%20(optional)%3A%0D%0A%0D%0AATT%26CK%20Technique%20mappings%20used%20by%20this%20Software%3A%0D%0A%0D%0AAdditional%20notes%20(optional)%3A%0D%0A">
+              Software
+            </a>
+
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BThreat%20Intelligence%5D%20Campaign%20Suggestion&body=Campaign%20name%3A%0D%0A%0D%0AATT%26CK%20Campaign%20entries%20I%20checked%20and%20why%20this%20is%20new%20or%20different%3A%0D%0A%0D%0AAt%20least%20one%20publicly%20available%20reference%20(URL)%3A%0D%0A%0D%0AAssociated%20Group(s)%20(optional)%3A%20%3Cinclude%20references%20showing%20the%20relationship%3E%0D%0A%0D%0AShort%20description%3A%0D%0A%0D%0AATT%26CK%20Technique%20mappings%20used%20in%20this%20Campaign%3A%20%3Cinclude%20references%20showing%20the%20techniques%20used%3E%0D%0A%0D%0AAdditional%20notes%20(optional)%3A%0D%0A">
+              Campaign
+            </a>
+
+            <div class="dropdown-divider"></div>
+
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BDefenses%5D%20Mitigation&body=Suggested%20Mitigation%3A%0D%0A%0D%0AClosest%20existing%20mitigation%20and%20why%20this%20is%20new%20or%20different%3A%0D%0A%0D%0AShort%20description%3A%0D%0A%0D%0APublic%20reference%3A%0D%0A%0D%0AAdditional%20comments%20(optional)%3A%0D%0A">
+              Mitigation
+            </a>
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BDefenses%5D%20Asset&body=Suggested%20Asset%3A%0D%0A%0D%0AClosest%20existing%20asset%20and%20why%20this%20is%20new%20or%20different%3A%0D%0A%0D%0AShort%20description%3A%0D%0A%0D%0APublic%20reference%3A%0D%0A%0D%0AAdditional%20comments%20(optional)%3A%0D%0A">
+              Asset
+            </a>
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BDefenses%5D%20Detection&body=Suggested%20Detection%3A%0D%0A%0D%0AClosest%20existing%20detection%20and%20why%20this%20is%20new%20or%20different%3A%0D%0A%0D%0AShort%20description%3A%0D%0A%0D%0APublic%20reference%3A%0D%0A%0D%0AAdditional%20comments%20(optional)%3A%0D%0A">
+              Detection
+            </a>
+          </div>
+        </div>
+
+        <div class="dropdown d-inline-block">
+          <button type="button"
+                  class="slide-button dropdown-toggle"
+                  id="askQuestionDropdown"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+            <span class="slide-button-text">
+              <span>Ask us a question</span>
+            </span>
+          </button>
+
+          <div class="dropdown-menu" aria-labelledby="askQuestionDropdown">
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BGeneral%20Inquiry%5D&body=Relevant%20ATT%26CK%20URL(s)%20(optional)%3A%0D%0A%0D%0ASummary%3A%0D%0A%0D%0AQuestion(s)%3A%0D%0A%0D%0AAdditional%20context%20(optional)%3A%0D%0A">
+              General Inquiry
+            </a>
+
+            <div class="dropdown-divider"></div>
+
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BWebsite%20Content%20Error%5D&body=URL%20of%20error%3A%0D%0A%0D%0ADescription%20of%20error%3A%0D%0A%0D%0ASuggested%20fix%20(optional)%3A%0D%0A">
+              Website Content Error
+            </a>
+
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BDev%20Tool%20Feedback%5D&body=Tool%20or%20page%20URL%3A%0D%0A%0D%0AWhat%20were%20you%20trying%20to%20do%3F%0D%0A%0D%0ASteps%20to%20reproduce%3A%0D%0A%0D%0AExpected%20result%3A%0D%0A%0D%0AActual%20result%3A%0D%0A%0D%0ABrowser%2FOS%20(optional)%3A%0D%0A%0D%0AAdditional%20context%20(optional)%3A%0D%0A">
+              Dev Tool feedback
+            </a>
+
+            <a class="dropdown-item"
+              href="mailto:attack@mitre.org?subject=%5BSTIX%2FTAXII%20Issue%5D&body=ATT%26CK%20data%20version%20(or%20date)%3A%0D%0A%0D%0ATAXII%20endpoint%20URL%20(if%20applicable)%3A%0D%0A%0D%0ASTIX%20Object%20ID(s)%20(or%20ATT%26CK%20ID)%3A%0D%0A%0D%0ADescription%20of%20the%20issue%3A%0D%0A%0D%0ASteps%20to%20reproduce%3A%0D%0A%0D%0AExpected%20result%3A%0D%0A%0D%0AActual%20result%3A%0D%0A%0D%0AAdditional%20context%20(optional)%3A%0D%0A">
+              STIX/TAXII Issue
+            </a>
+          </div>
+        </div>
+      </div>
+      </p>
+      <div class="my-5">
+        <h2>What we're looking for</h2>
+        <!-- START USA CARD CONTENT-->
+        <div class="card-deck mt-4">
+          <div class="contact-card card">
+        <div class="card-header background">
+            <span class="contact-card-title">
+                <h6 class="mb-0"><strong>Techniques and Sub-Techniques</strong></h6>
+            </span>
+        </div>
+    <div class="card-body">
+        <p>
+            Let us know what new variations of behaviors real adversaries are using in the wild.
+          ATT&amp;CK only adds techniques and sub-techniques that have been observed in real operations.
+          <br><br>
+          Please include:
+          <ul>
+            <li>a brief description of the behavior</li>
+            <li>references or other evidence showing where real adversaries used it</li>
+            <li>which existing ATT&amp;CK technique(s) or sub-technique(s) it is closest to</li>
+            <li>a short explanation of how this behavior is different from what ATT&amp;CK already describes</li>
+          </ul>
+          If a suggested behavior is hypothetical, only seen in a lab, or already covered by an existing technique,
+          we will not add it to ATT&amp;CK.
+          <br>
+          To understand the process of how the MITRE team develops techniques, refer to the video below.
+        </p>
+    </div>
+    <div class="card-footer no-background button-group">
+            <a href="#techniques-modal"  aria-controls="techniques-modal" >
+                <button type="button" class="slide-button"  data-toggle="modal" data-target="#techniques-modal" >
+                    <span class="slide-button-text text-nowrap">
+                        See an example
+                    </span>
+                    <span class="slide-button-icon">
+                        <i class="fa-solid fa-up-right-from-square fa-sm"></i>
+                    </span>
+                </button>
+            </a>
+            <a href="https://youtu.be/v24a5IOwObc?si=TuG_-WrknY4r7pkC" >
+                <button type="button" class="slide-button" >
+                    <span class="slide-button-text text-nowrap">
+                        Video
+                    </span>
+                    <span class="slide-button-icon">
+                        <i class="fa-solid fa-up-right-from-square fa-sm"></i>
+                    </span>
+                </button>
+            </a>
+    </div>
+</div>
+
+
+          <div class="contact-card card">
+        <div class="card-header background">
+            <span class="contact-card-title">
+                <h6 class="mb-0"><strong>Threat Intelligence</strong></h6>
+            </span>
+        </div>
+    <div class="card-body">
+        <p>
+            We map selected Group and Software examples on our site and appreciate referenced information about how
+          Groups and Software use ATT&amp;CK techniques. Please be aware that we cannot add every Group, campaign, or
+          piece of Software that is reported publicly. We prioritize items that have clear, publicly available reporting
+          and broad relevance to the community.
+          <br><br>
+          Please share:
+          <ul>
+            <li>the technique or sub-technique ID and name</li>
+            <li>the Group or Software name</li>
+            <li>a brief description of how the technique is implemented</li>
+            <li>at least one publicly available reference</li>
+          </ul>
+          We may use your contribution to improve existing entries or, when appropriate, to help justify adding a
+          new Group or Software entry.
+        </p>
+    </div>
+    <div class="card-footer no-background button-group">
+            <a href="#threat-intel-modal"  aria-controls="threat-intel-modal" >
+                <button type="button" class="slide-button"  data-toggle="modal" data-target="#threat-intel-modal" >
+                    <span class="slide-button-text text-nowrap">
+                        See an example
+                    </span>
+                    <span class="slide-button-icon">
+                        <i class="fa-solid fa-up-right-from-square fa-sm"></i>
+                    </span>
+                </button>
+            </a>
+    </div>
+</div>
+
+
+          <div class="contact-card card">
+        <div class="card-header background">
+            <span class="contact-card-title">
+                <h6 class="mb-0"><strong>Website Content Errors</strong></h6>
+            </span>
+        </div>
+    <div class="card-body">
+        <p>
+            If you find errors or typos on the site related to content, please let us know by submitting the URL where
+          you found the error and a short description. Examples include typos and syntax errors, improperly formatted
+          web pages, and 404 errors when links are clicked.
+        </p>
+    </div>
+    <div class="card-footer no-background button-group">
+            <a href="#errors-modal"  aria-controls="errors-modal" >
+                <button type="button" class="slide-button"  data-toggle="modal" data-target="#errors-modal" >
+                    <span class="slide-button-text text-nowrap">
+                        See an example
+                    </span>
+                    <span class="slide-button-icon">
+                        <i class="fa-solid fa-up-right-from-square fa-sm"></i>
+                    </span>
+                </button>
+            </a>
+    </div>
+</div>
+
+        </div>
+      </div>
+      <!-- Begin Modals -->
+      <!-- Start Techniques Modal -->
+      <div class="modal fade" id="techniques-modal" tabindex="-1" role="dialog" aria-labelledby="techniques-modal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="techniques-modal-label">New Technique or Sub-Technique Example</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="new-examples">
+                <div class="example-container">
+                  <p class="examples-p mr-0 ml-0">
+                    <span class="example-fields">ATT&amp;CK Domain:</span> Enterprise
+                  </p>
+                  <p class="examples-p mr-0 ml-0">
+                    <span class="example-fields">Platform:</span> Windows
+                  </p>
+                  <p class="examples-p mr-0 ml-0">
+                    <span class="example-fields">Closest existing technique(s):</span>
+                    T1XXX – Example Technique Name
+                  </p>
+                  <p class="examples-p mr-0 ml-0">
+                    <span class="example-fields">Proposed behavior summary:</span>
+                    Component Object Model (COM) servers associated with Graphics Interchange Format (JIF)
+                    image viewers can be abused to corrupt arbitrary memory banks when a specially crafted
+                    image is opened. Adversaries may use this to modify read-only memory (ROM) that is
+                    regularly accessed during normal system operations.
+                  </p>
+                  <p class="examples-p mr-0 ml-0">
+                    <span class="example-fields">Where this was observed (real-world use):</span>
+                    FUZZYSNUGGLYDUCK used this behavior during operations against aviation-sector targets.
+                    The behavior is described in a publicly available report:
+                    (www[.]awesomeThreatReports[.]org/FUZZYSNUGGLYDUCK_NOMS_ON_ROM_VIA_COM).
+                  </p>
+                  <p class="examples-p mr-0 ml-0">
+                    <span class="example-fields">How this differs from existing ATT&amp;CK content:</span>
+                    Existing ATT&amp;CK techniques for persistence and privilege escalation via COM focus
+                    on abusing COM registration and hijacking existing COM objects. In this case, the
+                    adversary abuses a specific JIF viewer COM server to modify underlying ROM accessed by
+                    the operating system, which is not covered by the current sub-techniques under T1XXX.
+                  </p>
+                  <p class="examples-p mr-0 ml-0">
+                    <span class="example-fields">Additional technical details (optional):</span>
+                    The adversary loads a malformed JIF image that triggers a buffer overflow in the JIF
+                    viewer COM server, enabling arbitrary writes to ROM. This behavior has been reproduced
+                    using the proof-of-concept code published at:
+                    (www[.]crazySmartResearcher[.]net/POC_DETECTIONS_&_MITIGATIONS_4_WHEN_COM_RAMS_ROM).
+                  </p>
+                  <p class="examples-p mr-0 ml-0">
+                    <span class="example-fields">Detection and mitigation ideas (optional):</span>
+                    Monitor processes hosting the JIF viewer COM server for abnormal memory access patterns
+                    and crashes when opening image files. Consider restricting or updating vulnerable JIF
+                    viewers if they are not required in the environment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="slide-button" data-dismiss="modal" aria-label="Close">
+                <span class="slide-button-text">
+                  <span>Close</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Techniques Modal -->
+      <!-- Start threat-intel modal -->
+      <div class="modal fade" id="threat-intel-modal" tabindex="-1" role="dialog" aria-labelledby="threat-intel-modal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="threat-intel-modal-label">Group &amp; Software Examples</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="new-examples second-example">
+                <div class="example-container">
+                  <p class="examples-p mr-0 ml-0">
+                    <span class="example-fields">Group name:</span> FUZZYSNUGGLYDUCK
+                  </p>
+                  <div class="nested-examples-div">
+                      <p class="examples-p mr-0 ml-0">
+                          <span class="example-fields">Associated Groups:</span>
+                          APT1337: (www[.]sourceY[.]com)
+                      </p>
+                  </div>
+                  <div class="nested-examples-div">
+                      <p class="examples-p mr-0 ml-0">
+                          <span class="example-fields">Public references:</span>
+                          (www[.]sourceX[.]com/report1),
+                          (www[.]sourceY[.]com/report2)
+                      </p>
+                  </div>
+                  <div class="nested-examples-div">
+                      <p class="examples-p mr-0 ml-0">
+                          <span class="example-fields">Short description:</span>
+                          FUZZYSNUGGLYDUCK is a Great Lakes-based threat group active since at least May 2018,
+                          focusing on the aviation sector. The reports above describe several intrusions and
+                          map activity to specific ATT&amp;CK techniques.
+                      </p>
+                  </div>
+                  <h6 class="nested-examples-div example-fields">Example technique mappings for FUZZYSNUGGLYDUCK:</h6>
+                  <ul>
+                    <li>
+                      T1566.001 – Phishing: Spearphishing Attachment – FUZZYSNUGGLYDUCK has used
+                      spearphishing email attachments containing images of stale bread to deliver
+                      malware. (www[.]sourceX[.]com/report1)
+                    </li>
+                    <li>
+                      T1083 – File and Directory Discovery – FUZZYSNUGGLYDUCK has searched files and
+                      directories for the string *quack*. (www[.]sourceY[.]com/report2)
+                    </li>
+                  </ul>
+                  <p class="examples-p mr-0 ml-0">
+                    <span class="example-fields">Software name:</span> FLYINGV
+                  </p>
+                  <div class="nested-examples-div">
+                      <p class="examples-p mr-0 ml-0">
+                          <span class="example-fields">Public references:</span>
+                          (www[.]sourceX[.]com/report1),
+                          (www[.]sourceY[.]com/report3)
+                      </p>
+                  </div>
+                  <div class="nested-examples-div">
+                      <p class="examples-p mr-0 ml-0">
+                          <span class="example-fields">Group association:</span>
+                          FLYINGV has been used by FUZZYSNUGGLYDUCK in multiple campaigns. (www[.]sourceZ[.]com/report3)
+                      </p>
+                  </div>
+                  <div class="nested-examples-div">
+                      <p class="examples-p mr-0 ml-0">
+                          <span class="example-fields">Short description:</span>
+                          FLYINGV is custom malware used by FUZZYSNUGGLYDUCK as a second-stage RAT.
+                          (www[.]sourceZ[.]com/report3)
+                      </p>
+                  </div>
+                  <div class="nested-examples-div">
+                      <p class="examples-p mr-0 ml-0">
+                          <span class="example-fields">Platform:</span>
+                          Windows
+                      </p>
+                  </div>
+                  <h6 class="nested-examples-div example-fields">Example technique mappings for FLYINGV:</h6>
+                  <ul>
+                    <li>
+                      T1547.001 – Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder –
+                      FLYINGV has added the Registry Run key “HueyDeweyLouie” to establish persistence.
+                      (www[.]sourceX[.]com/report1)
+                    </li>
+                    <li>
+                      T1083 – File and Directory Discovery – FLYINGV has used <code>rundll32.exe</code>
+                      to load its malicious DLL file, <code>estevez.dll</code>, and then enumerate files.
+                      (www[.]sourceX[.]com/report1)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="slide-button" data-dismiss="modal" aria-label="Close">
+                <span class="slide-button-text">
+                  <span>Close</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end threat intel modal -->
+      <!-- start errors modal -->
+      <div class="modal fade" id="errors-modal" tabindex="-1" role="dialog" aria-labelledby="errors-modal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="errors-modal-label">Website Content Error</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="new-examples second-example">
+                <div class="example-container">
+                  <span class="example-fields">URL of error:</span> attack.mitre.org/resources/contribute
+                  <span class="example-fields">Description of error:</span> link to the philosophy paper is broken
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="slide-button" data-dismiss="modal" aria-label="Close">
+                <span class="slide-button-text">
+                  <span>Close</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end errors modal -->
+      <!-- End Modals -->
+      <!-- END USA CARD CONTENT -->
+
+      <!-- Begin Contributor List -->
+      <div class="my-5">
+        <h2>Contributors</h2>
+        <p>
+          The following individuals or organizations have contributed information
+          regarding the existence of a technique, details on how to detect and/or mitigate
+          use of a technique, or threat intelligence on adversary use:
+        </p>
+        <div>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li>
+                  Craig Aitchison
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li>
+                  Elly Searle, CrowdStrike — contributed to tactic definitions
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>
+          Thanks to those who have contributed to ATT&amp;CK!
+        </p>
+      </div>
+      <!-- End Contributor List -->
+    </div>
+  </div>
+</div>
+        </div>
+    </div>
+
+            <!--stop-indexing-for-search-->
+            <!-- search overlay for entire page -- not displayed inline -->
+            <div class="overlay search" id="search-overlay" style="display: none;">
+    <div class="overlay-inner">
+        <!-- text input for searching -->
+        <div class="search-header">
+            <div class="search-input">
+                <input type="text" id="search-input" placeholder="search">
+            </div>
+            <div class="search-icons">
+                <div class="search-parsing-icon spinner-border" style="display: none" id="search-parsing-icon"></div>
+                <div class="close-search-icon" id="close-search-icon">&times;</div>
+            </div>
+        </div>
+        <!-- results and controls for loading more results -->
+        <div id="search-body" class="search-body">
+            <div class="results" id="search-results">
+                <!-- content will be appended here on search -->
+            </div>
+            <div id="load-more-results" class="load-more-results">
+                <button class="btn btn-default" id="load-more-results-button">load more results</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="row flex-grow-0 flex-shrink-1">
+            <!-- footer elements -->
+            <footer class="col footer">
+                <div class="container-fluid">
+                    <div class="row row-footer">
+                        <div class="col-2 col-sm-2 col-md-2">
+                            <div class="footer-center-responsive my-auto">
+                                <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                                    <img src="/theme/images/mitrelogowhiteontrans.gif" class="mitre-logo-wtrans">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-2 col-sm-2 footer-responsive-break"></div>
+                        <div class="footer-link-group">
+                            <div class="row row-footer">
+                                <div class="px-3 col-footer">
+                                    <u class="footer-link"><a href="/resources/engage-with-attack/contact" class="footer-link">Contact Us</a></u>
+                                </div>
+                                <div class="px-3 col-footer">
+                                    <u class="footer-link"><a href="/resources/legal-and-branding/terms-of-use" class="footer-link">Terms of Use</a></u>
+                                </div>
+                                    <div class="px-3 col-footer">
+                                        <u class="footer-link"><a href="/resources/legal-and-branding/privacy" class="footer-link">Privacy Policy</a></u>
+                                    </div>
+                                <div class="px-3 col-footer">
+                                    <u class="footer-link"><a href="/resources/changelog.html" class="footer-link" data-toggle="tooltip" data-placement="top" data-html="true" title="ATT&amp;CK content v18.1&#013;Website  v4.4.1">Website Changelog</a></u>
+                                </div>
+                                <div class="px-3">
+                                    <u class="footer-link"><a href="/resources/legal-and-branding/privacy/#" class="footer-link" onclick="Osano.cm.showDrawer('osano-cm-dom-info-dialog-open')">Cookie Preferences</a></u>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <small class="px-3">
+                                    &copy;&nbsp;2015&nbsp;-&nbsp;2025, The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="w-100 p-2 footer-responsive-break"></div>
+                                <div class="col footer-float-right-responsive-centered">
+                                    <div>
+                                        <div>
+                                            <a href="https://attack.mitre.org" class="btn btn-primary w-100">
+                                                attack.mitre.org
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+<!--stopindex-->
+
+</div>
+     <!--SCRIPTS-->
+    <script src="/theme/scripts/jquery-3.5.1.min.js"></script>
+    <script src="/theme/scripts/popper.min.js"></script>
+    <script src="/theme/scripts/bootstrap-select.min.js"></script>
+    <script src="/theme/scripts/bootstrap.bundle.min.js"></script>
+    <script src="/theme/scripts/site.js"></script>
+    <script src="/theme/scripts/settings.js"></script>
+    <script src="/theme/scripts/search_bundle.js"></script>
+
+<!--SCRIPTS-->
+<script src="/theme/scripts/resizer.js"></script>
+
+<script src="/theme/scripts/tables.js"></script>
+<script src="/theme/scripts/sidebar-load-all.js"></script>
+</body>
+</html>

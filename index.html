@@ -1,0 +1,1856 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1,shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='/theme/favicon.ico' type='image/x-icon'>
+        <title>MITRE ATT&CK&reg;</title>
+        <!-- USWDS CSS -->
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='/theme/style/vendors/bootstrap.min.css' />
+        <link rel='stylesheet' href='/theme/style/vendors/bootstrap-tourist.css' />
+        <link rel='stylesheet' href='/theme/style/vendors/bootstrap-select.min.css' />
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="/theme/style/vendors/fontawesome-6.5.1/css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="/theme/style/vendors/fontawesome-6.5.1/css/brands.min.css"/>
+        <link rel="stylesheet" href="/theme/style/vendors/fontawesome-6.5.1/css/solid.min.css"/>
+            <link rel="stylesheet" href="/theme/style-user.css"/>
+
+</head>
+
+<body>
+
+    <div class="container-fluid attack-website-wrapper d-flex flex-column h-100">
+        <div class="row sticky-top flex-grow-0 flex-shrink-1">
+            <!-- header elements -->
+            <header class="col px-0">
+                    <nav class='navbar navbar-expand-lg navbar-dark position-static'>
+        <a class='navbar-brand' href='/'><img src="/theme/images/mitre_attack_logo.png" class="attack-logo"></a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarCollapse'>
+            <ul class='nav nav-tabs ml-auto'>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/matrices/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Матрицы</b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/matrices/russia/">Россия</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/tactics/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Тактики</b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/tactics/russia/">Россия</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/techniques/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Техники</b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/techniques/russia/">Россия</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/groups" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>CTI </b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/groups">Groups</a>
+                <a class="dropdown-item" href="/software">Software</a>
+                <a class="dropdown-item" href="/campaigns">Campaigns</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/resources/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Resources </b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/resources/">Get Started</a>
+                <a class="dropdown-item" href="/resources/learn-more-about-attack/">Learn More about ATT&CK</a>
+                <a class="dropdown-item" href="/resources/attackcon/">ATT&CKcon</a>
+                <a class="dropdown-item" href="/resources/attack-data-and-tools/">ATT&CK Data & Tools</a>
+                <a class="dropdown-item" href="/resources/faq/">FAQ</a>
+                <a class="dropdown-item" href="/resources/engage-with-attack/contact/">Engage with ATT&CK</a>
+                <a class="dropdown-item" href="/resources/updates/">Updates</a>
+                <a class="dropdown-item" href="/resources/legal-and-branding/">Legal & Branding</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="/resources/engage-with-attack/contribute/"  class="nav-link" ><b>Contribute </b></a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="search-button" class="btn search-button">Search <div id="search-icon" class="icon-button search-icon"></div></button>
+                        </li>
+            </ul>
+        </div>
+    </nav>
+
+            </header>
+        </div>
+        <div class="row flex-grow-0 flex-shrink-1">
+            <!-- banner elements -->
+            <div class="col px-0">
+                <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the versioning feature -->
+                <!-- !versions banner! -->
+            </div>
+        </div>
+        <div class="row flex-grow-1 flex-shrink-0">
+            <!-- main content elements -->
+            <!--start-indexing-for-search-->
+         
+    <div id="attack-jumbotron" class="col jumbotron-fluid">
+        <div class="container home-banner">
+            <div class="row-main-page pt-5">
+                    <div class="col mb-5 home-left-col">
+                        <div class="py-1">
+                            <img src="/theme/images/ATT&CK_red.png" class="rounded mx-auto d-block pb-4 attack-logo-bold">
+                        </div>
+                        <table id="tour-start-container" class="quick-links">
+                            <tr>
+                                <td>
+                                    <a href="/resources/" role="button">Get Started</a>
+                                </td>
+                                <td>
+                                    <a href="#" id="tour-start" onclick="start_tour()" role="button">Take a Tour</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/resources/engage-with-attack/contribute" role="button">Contribute</a>
+                                </td>
+                                <td>
+                                    <a href="https://medium.com/mitre-attack" role="button" target="_blank" >Blog <img src="/theme/images/external-site-dark.jpeg" alt="External site" class="external-icon" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/resources/faq" role="button">FAQ</a>
+                                </td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" onclick="navigate_random('');">
+                                        Random Page
+                                        </a>
+                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split" style="color: #4f7cac; background-color: white; padding: 0; padding-left: .375rem; padding-right: .375rem; border-left: 1px solid lightgray; margin-left: .375rem;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#" onclick="navigate_random('Matrix');">Matrix</a>
+                                                <a class="dropdown-item" href="#" onclick="navigate_random('Tactic');">Tactic</a>
+                                                <a class="dropdown-item" href="#" onclick="navigate_random('Technique');">Technique</a>
+                                                <a class="dropdown-item" href="#" onclick="navigate_random('Data Source');">Data Source</a>
+                                                <a class="dropdown-item" href="#" onclick="navigate_random('Mitigation');">Mitigation</a>
+                                                <a class="dropdown-item" href="#" onclick="navigate_random('Group');">Group</a>
+                                                <a class="dropdown-item" href="#" onclick="navigate_random('Software');">Software</a>
+                                                <a class="dropdown-item" href="#" onclick="navigate_random('Campaign');">Campaign</a>
+                                                <a class="dropdown-item" href="#" onclick="navigate_random('Asset');">Asset</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- The Twitter feed no longer works with Twitter's 2023 API changes -->
+                        <!-- <div class="twitter-card">
+                            <a class="twitter-timeline" href="https://twitter.com/MITREattack?ref_src=twsrc%5Etfw" data-theme="light" data-height="388">Tweets by MITREattack</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div> -->
+
+                    </div> <!-- Comment this line for attack box -->
+                    <div class="col"> <!-- Comment this line for attack box -->
+                        <p class="text-justify">COLONIAL FRAMEWORK — это глобально доступная база знаний о тактиках, техниках и процедурах колонизации, основанная на реальном историческом опыте обществ, пострадавших от российского колониализма. Фреймворк выступает методологическим фундаментом для критического анализа истории, а также выявления механизмов колониальной парадигмы, используемых в современности.</p>
+                        <p class="text-justify">COLONIAL FRAMEWORK курируется просветительским проектом <a href="https://decolonisation-ru.com/">РОССИЯ И ДЕКОЛОНИЗАЦИЯ</a>. Выпуская этот фреймворк, мы реализуем нашу миссию по деколонизации знания. Мы стремимся вернуть независимый голос жертвам колонизации и дать возможность взглянуть на империю их глазами. COLONIAL FRAMEWORK является открытым и доступен для бесплатного использования любому человеку или организации.</p>
+                         <p class="text-justify">COLONIAL FRAMEWORK опирается на структуру и экосистему <a href="https://attack.mitre.org">MITRE ATT&CK</a> — де-факто стандарта моделирования угроз и классификации вредоносных поведений в сфере кибербезопасности.<!--  COLONIAL FRAMEWORK систематизирует действия колонизаторов, разделяя их на тактики, техники и процедуры. Тактики раскрывают мотивацию агрессора, отвечая на вопрос «зачем?». Техники отвечают на вопрос «как?» — описывают конкретные методы и инструменты, с помощью которых колонизатор реализует свои намерения. Процедуры документируют реальные исторические прецеденты применения этих техник на практике.--> </p> 
+                    </div>
+<!--                     <div class="p-line">
+                        <p class="py-3">
+                            This is a custom instance of the ATT&CK Website built from <a href="https://github.com/mitre-attack/attack-website">source code published by ATT&CK on GitHub</a>. It is not affiliated with ATT&CK in any official capacity. The official instance of the ATT&CK website can be found at <a href="https://attack.mitre.org">attack.mitre.org</a>. 
+                        </p>
+                    </div> -->
+                    <!-- Uncomment below lines for attack box -->
+                    <!-- <div class="col">
+                        <div class="attack-box">
+                            <img width="100%" height="100%" src="/theme/images/homepage/macro-technique-refinement.png" alt="Macro Technique Refinement">
+                                <center>
+                                    <p class="attack-box-heading">
+                                        Today we're launching a new system where the public can help us develop the next ATT&CK release through Macrotechnique Refinement.
+                                        <br>
+                                        To start refining FUZZYSNUGGLYDUCK, <a href="/macro-technique-refinement.html">click here</a>.
+                                        Fabulous prizes await success.
+                                    </p>
+                                </center>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    <div id="matrix-section" class="container-fluid bg-alternate pt-5 pb-3">
+        <div id="matrix-header" class="container text-center">
+            <h2>МАТРИЦА КОЛОНИАЛИЗМА РОССИИ</h2>
+        </div>
+        <div id="matrix-enterprise">
+            <div id="tour-matrix-container">
+    <div class="matrix-controls">
+        <div class="btn-toolbar" role="toolbar" aria-label="matrix controls">
+            <div class="btn-group mr-2" role="group">
+                <div class="btn-group" role="group">
+                    <button class="btn btn-default dropdown-toggle" id="layout-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-selected_layout="side">layout: side</button>
+                    <div class="dropdown-menu" aria-labelledby="layout-options">
+                        <a class="dropdown-item layout-button side active" href="#" onclick="showSideMatrix()">
+                            side
+                        </a>
+                        <a class="dropdown-item layout-button flat" href="#" onclick="showFlatMatrix();  ">
+                            flat
+                        </a>
+                </div>
+                </div>
+            </div>
+            <div class="btn-group mr-2" role="group">
+                <button type="button" class="btn btn-default" onclick="toggleAllMatrixSubTechniques(true)">show sub-techniques</button>
+                <button type="button" class="btn btn-default" onclick="toggleAllMatrixSubTechniques(false)">hide sub-techniques</button>
+            </div>
+            <!-- no help button on index page -->
+        </div>
+    </div>
+    <div id="layouts-content">
+        <div class="matrix-type side">
+                <div class="matrix-container p-3">
+    <div class="scroll-indicator-group">
+        <div class="scroll-indicator left">
+            <div class="cover"></div>
+        </div>
+        <div class="overflow-x-auto matrix-scroll-box pb-3">
+                <table class="matrix side">
+    <thead>
+        <tr>
+                <td class="tactic name"><a href="/tactics/TA0001" data-toggle="tooltip" data-placement="top" title="TA0001">Легитимизация доминирования</a></td>
+                <td class="tactic name"><a href="/tactics/TA0002" data-toggle="tooltip" data-placement="top" title="TA0002">Подготовка к захвату</a></td>
+                <td class="tactic name"><a href="/tactics/TA0003" data-toggle="tooltip" data-placement="top" title="TA0003">Захват управления</a></td>
+                <td class="tactic name"><a href="/tactics/TA0004" data-toggle="tooltip" data-placement="top" title="TA0004">Нейтрализация защиты</a></td>
+                <td class="tactic name"><a href="/tactics/TA0005" data-toggle="tooltip" data-placement="top" title="TA0005">Закрепление</a></td>
+                <td class="tactic name"><a href="/tactics/TA0006" data-toggle="tooltip" data-placement="top" title="TA0006">Извлечение выгоды</a></td>
+        </tr>
+        <tr>
+                <td class="tactic count">
+                    6&nbsp;techniques
+                </td>
+                <td class="tactic count">
+                    5&nbsp;techniques
+                </td>
+                <td class="tactic count">
+                    9&nbsp;techniques
+                </td>
+                <td class="tactic count">
+                    16&nbsp;techniques
+                </td>
+                <td class="tactic count">
+                    18&nbsp;techniques
+                </td>
+                <td class="tactic count">
+                    6&nbsp;techniques
+                </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+                <td class="tactic">
+                    <table class="techniques-table">
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--cd7935a5-ab4b-4110-a1a3-7b07db9cecf0">
+    <a href="/techniques/T0008" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--cd7935a5-ab4b-4110-a1a3-7b07db9cecf0" title="T0008">Лишение субъектности</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--cd7935a5-ab4b-4110-a1a3-7b07db9cecf0">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--0ae37aa4-65e1-4e85-a3d7-9d1948a6fedc">
+    <a href="/techniques/T0007" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--0ae37aa4-65e1-4e85-a3d7-9d1948a6fedc" title="T0007">Навязывание своей картины реальности</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--0ae37aa4-65e1-4e85-a3d7-9d1948a6fedc">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--7f6a791f-9e53-4190-a832-a1749792af68">
+    <a href="/techniques/T0002" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--7f6a791f-9e53-4190-a832-a1749792af68" title="T0002">Оправдание «цивилизаторской миссией»</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--7f6a791f-9e53-4190-a832-a1749792af68">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--3040ec18-723f-4edb-8edd-c223939c5073">
+    <a href="/techniques/T0024" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--3040ec18-723f-4edb-8edd-c223939c5073" title="T0024">Оправдание через религию</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--3040ec18-723f-4edb-8edd-c223939c5073">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--3e0269ec-f516-4dc8-b992-f159b97eea72">
+    <a href="/techniques/T0010" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--3e0269ec-f516-4dc8-b992-f159b97eea72" title="T0010">Отрицание самостоятельной идентичности</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--3e0269ec-f516-4dc8-b992-f159b97eea72">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--0a930ed2-75f3-4db5-9565-7bf4dae34d16">
+    <a href="/techniques/T0004" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--0a930ed2-75f3-4db5-9565-7bf4dae34d16" title="T0004">Переписывание истории</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--0a930ed2-75f3-4db5-9565-7bf4dae34d16">
+                                    </div>
+                                </td>
+                            </tr>
+                    </table>
+                </td>
+                <td class="tactic">
+                    <table class="techniques-table">
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1">
+    <a href="/techniques/T0015" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1" title="T0015">Подкуп элит</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--28042f49-3cdc-434e-81aa-c5462c8f8209">
+    <a href="/techniques/T0039" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--28042f49-3cdc-434e-81aa-c5462c8f8209" title="T0039">Сговор с третьей стороной</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--28042f49-3cdc-434e-81aa-c5462c8f8209">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--aea71517-bc14-4b51-816f-170e9ecc4378">
+    <a href="/techniques/T0107" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--aea71517-bc14-4b51-816f-170e9ecc4378" title="T0107">Транспортная блокада</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--aea71517-bc14-4b51-816f-170e9ecc4378">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--bed9171a-a872-419c-8702-5211a91e9292">
+    <a href="/techniques/T0088" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--bed9171a-a872-419c-8702-5211a91e9292" title="T0088">Фиктивный договор</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--bed9171a-a872-419c-8702-5211a91e9292">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--5a6cf36f-65bd-48ef-a1de-2ed2578dd2be">
+    <a href="/techniques/T0108" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--5a6cf36f-65bd-48ef-a1de-2ed2578dd2be" title="T0108">Экономическая блокада</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--5a6cf36f-65bd-48ef-a1de-2ed2578dd2be">
+                                    </div>
+                                </td>
+                            </tr>
+                    </table>
+                </td>
+                <td class="tactic">
+                    <table class="techniques-table">
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--486f6ea8-f999-4867-b459-f543b07403c1">
+    <a href="/techniques/T0019" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--486f6ea8-f999-4867-b459-f543b07403c1" title="T0019">Военная интервенция</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--486f6ea8-f999-4867-b459-f543b07403c1">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row"  id="tour-side-technique" >
+                                <td>
+                                    <table class="supertechnique">
+                                        <tr>
+                                            <td class="technique">
+                                                
+<div class="technique-cell  supertechniquecell"  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a">
+    <a href="/techniques/T0048" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a" title="T0048">Геноцид&nbsp;<sub>(1)</sub></a>
+</div>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="sidebar sidebar--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a sidebar--tour" onclick="toggleMatrixSubTechniques('x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236', 'attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a'); tour_technique_clicked();">
+                                    <div class="angle top">
+                                        <svg width="12px" height="12px">
+                                            <path d="M0 12H12V0Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="handle"> = </div>
+                                    <div class="angle bottom">
+                                        <svg width="12px" height="12px">
+                                            <path d="M0 0H12V12Z"/>
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td class="subtechniques-td" id="tour-side-subtechniques" >
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a subtechniques--tour">
+                                        <div class="subtechnique">
+                                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--592dd465-6032-411c-806c-913888ee043a">
+    <a href="/techniques/T0048/002" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--592dd465-6032-411c-806c-913888ee043a" title="T0048.002">Истребление по территориальному признаку</a>
+</div>
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c">
+    <a href="/techniques/T0100" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c" title="T0100">Захват религиозных институтов</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--448c7af7-5f64-4fd2-98f0-470148006d63">
+    <a href="/techniques/T0037" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--448c7af7-5f64-4fd2-98f0-470148006d63" title="T0037">Марионеточное правительство</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--448c7af7-5f64-4fd2-98f0-470148006d63">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1">
+    <a href="/techniques/T0015" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1" title="T0015">Подкуп элит</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--2ae039b6-6dc3-443e-a94f-883ecff6f6e7">
+    <a href="/techniques/T0018" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--2ae039b6-6dc3-443e-a94f-883ecff6f6e7" title="T0018">Прокси-война</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--2ae039b6-6dc3-443e-a94f-883ecff6f6e7">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--28042f49-3cdc-434e-81aa-c5462c8f8209">
+    <a href="/techniques/T0039" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--28042f49-3cdc-434e-81aa-c5462c8f8209" title="T0039">Сговор с третьей стороной</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--28042f49-3cdc-434e-81aa-c5462c8f8209">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--4c75fad7-f9e3-4810-8a0b-d17f11b79a04">
+    <a href="/techniques/T0105" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--4c75fad7-f9e3-4810-8a0b-d17f11b79a04" title="T0105">Тотальное уничтожение инфраструктуры</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--4c75fad7-f9e3-4810-8a0b-d17f11b79a04">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--bed9171a-a872-419c-8702-5211a91e9292">
+    <a href="/techniques/T0088" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--bed9171a-a872-419c-8702-5211a91e9292" title="T0088">Фиктивный договор</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--bed9171a-a872-419c-8702-5211a91e9292">
+                                    </div>
+                                </td>
+                            </tr>
+                    </table>
+                </td>
+                <td class="tactic">
+                    <table class="techniques-table">
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--e45c8b4a-c11b-49de-9a44-af397942b015">
+    <a href="/techniques/T0030" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--e45c8b4a-c11b-49de-9a44-af397942b015" title="T0030">Административное дробление территории</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--e45c8b4a-c11b-49de-9a44-af397942b015">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                    <table class="supertechnique">
+                                        <tr>
+                                            <td class="technique">
+                                                
+<div class="technique-cell  supertechniquecell"  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a">
+    <a href="/techniques/T0048" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a" title="T0048">Геноцид&nbsp;<sub>(1)</sub></a>
+</div>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="sidebar sidebar--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a" onclick="toggleMatrixSubTechniques('x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f', 'attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a');">
+                                    <div class="angle top">
+                                        <svg width="12px" height="12px">
+                                            <path d="M0 12H12V0Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="handle"> = </div>
+                                    <div class="angle bottom">
+                                        <svg width="12px" height="12px">
+                                            <path d="M0 0H12V12Z"/>
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a">
+                                        <div class="subtechnique">
+                                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--592dd465-6032-411c-806c-913888ee043a">
+    <a href="/techniques/T0048/002" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--592dd465-6032-411c-806c-913888ee043a" title="T0048.002">Истребление по территориальному признаку</a>
+</div>
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--78b36fbe-55ed-4946-9416-3f6e15b927ce">
+    <a href="/techniques/T0099" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--78b36fbe-55ed-4946-9416-3f6e15b927ce" title="T0099">Захват заложников</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--78b36fbe-55ed-4946-9416-3f6e15b927ce">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c">
+    <a href="/techniques/T0100" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c" title="T0100">Захват религиозных институтов</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--e4102f30-0c0f-465c-8196-493cdd5c12e0">
+    <a href="/techniques/T0025" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--e4102f30-0c0f-465c-8196-493cdd5c12e0" title="T0025">Информационная изоляция</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--e4102f30-0c0f-465c-8196-493cdd5c12e0">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--4c955b19-23c8-44e1-b6ba-03076f59dd7d">
+    <a href="/techniques/T0111" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--4c955b19-23c8-44e1-b6ba-03076f59dd7d" title="T0111">Использование людей как «живого щита»</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--4c955b19-23c8-44e1-b6ba-03076f59dd7d">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--c44a505c-76e8-4906-b790-9193067ebf05">
+    <a href="/techniques/T0077" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--c44a505c-76e8-4906-b790-9193067ebf05" title="T0077">Карательные экспедиции</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--c44a505c-76e8-4906-b790-9193067ebf05">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--a7431e3a-9a04-43f1-8e75-ca3d3a8daa07">
+    <a href="/techniques/T0021" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--a7431e3a-9a04-43f1-8e75-ca3d3a8daa07" title="T0021">Нейтрализация оппозиции</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--a7431e3a-9a04-43f1-8e75-ca3d3a8daa07">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--28dcedaf-d989-4a7e-ba7e-76b695ada5ad">
+    <a href="/techniques/T0049" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--28dcedaf-d989-4a7e-ba7e-76b695ada5ad" title="T0049">Принудительная мобилизация</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--28dcedaf-d989-4a7e-ba7e-76b695ada5ad">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--7da0a799-a921-4e7d-be3b-e8bf0a58446c">
+    <a href="/techniques/T0110" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--7da0a799-a921-4e7d-be3b-e8bf0a58446c" title="T0110">Пытки и истязания</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--7da0a799-a921-4e7d-be3b-e8bf0a58446c">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6cb2a423-78ea-4b2d-b373-750d720cafd7">
+    <a href="/techniques/T0023" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6cb2a423-78ea-4b2d-b373-750d720cafd7" title="T0023">Система фильтрационных лагерей</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6cb2a423-78ea-4b2d-b373-750d720cafd7">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--83a80188-c26e-4cba-9315-536f9de9b2f7">
+    <a href="/techniques/T0022" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--83a80188-c26e-4cba-9315-536f9de9b2f7" title="T0022">Террор</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--83a80188-c26e-4cba-9315-536f9de9b2f7">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--4c75fad7-f9e3-4810-8a0b-d17f11b79a04">
+    <a href="/techniques/T0105" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--4c75fad7-f9e3-4810-8a0b-d17f11b79a04" title="T0105">Тотальное уничтожение инфраструктуры</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--4c75fad7-f9e3-4810-8a0b-d17f11b79a04">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--aea71517-bc14-4b51-816f-170e9ecc4378">
+    <a href="/techniques/T0107" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--aea71517-bc14-4b51-816f-170e9ecc4378" title="T0107">Транспортная блокада</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--aea71517-bc14-4b51-816f-170e9ecc4378">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--5a6cf36f-65bd-48ef-a1de-2ed2578dd2be">
+    <a href="/techniques/T0108" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--5a6cf36f-65bd-48ef-a1de-2ed2578dd2be" title="T0108">Экономическая блокада</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--5a6cf36f-65bd-48ef-a1de-2ed2578dd2be">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--16aef697-c3fd-4421-adf8-0a20ff46246d">
+    <a href="/techniques/T0057" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--16aef697-c3fd-4421-adf8-0a20ff46246d" title="T0057">Эксплуатация труда</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--16aef697-c3fd-4421-adf8-0a20ff46246d">
+                                    </div>
+                                </td>
+                            </tr>
+                    </table>
+                </td>
+                <td class="tactic">
+                    <table class="techniques-table">
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--e45c8b4a-c11b-49de-9a44-af397942b015">
+    <a href="/techniques/T0030" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--e45c8b4a-c11b-49de-9a44-af397942b015" title="T0030">Административное дробление территории</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--e45c8b4a-c11b-49de-9a44-af397942b015">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                    <table class="supertechnique">
+                                        <tr>
+                                            <td class="technique">
+                                                
+<div class="technique-cell  supertechniquecell"  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a">
+    <a href="/techniques/T0048" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a" title="T0048">Геноцид&nbsp;<sub>(1)</sub></a>
+</div>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="sidebar sidebar--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a" onclick="toggleMatrixSubTechniques('x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a', 'attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a');">
+                                    <div class="angle top">
+                                        <svg width="12px" height="12px">
+                                            <path d="M0 12H12V0Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="handle"> = </div>
+                                    <div class="angle bottom">
+                                        <svg width="12px" height="12px">
+                                            <path d="M0 0H12V12Z"/>
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a">
+                                        <div class="subtechnique">
+                                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--592dd465-6032-411c-806c-913888ee043a">
+    <a href="/techniques/T0048/002" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--592dd465-6032-411c-806c-913888ee043a" title="T0048.002">Истребление по территориальному признаку</a>
+</div>
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--c573c41f-f027-45fe-8655-2a4d57737c54">
+    <a href="/techniques/T0033" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--c573c41f-f027-45fe-8655-2a4d57737c54" title="T0033">Запрет языка</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--c573c41f-f027-45fe-8655-2a4d57737c54">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--78b36fbe-55ed-4946-9416-3f6e15b927ce">
+    <a href="/techniques/T0099" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--78b36fbe-55ed-4946-9416-3f6e15b927ce" title="T0099">Захват заложников</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--78b36fbe-55ed-4946-9416-3f6e15b927ce">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c">
+    <a href="/techniques/T0100" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c" title="T0100">Захват религиозных институтов</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--fb98fc82-8b44-4592-9d51-e8a7a3aff398">
+    <a href="/techniques/T0109" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--fb98fc82-8b44-4592-9d51-e8a7a3aff398" title="T0109">Имитация народного волеизъявления</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--fb98fc82-8b44-4592-9d51-e8a7a3aff398">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--5e78bb66-f600-436c-8cfd-8e39551f73ff">
+    <a href="/techniques/T0103" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--5e78bb66-f600-436c-8cfd-8e39551f73ff" title="T0103">Институциональное замещение</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--5e78bb66-f600-436c-8cfd-8e39551f73ff">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--c44a505c-76e8-4906-b790-9193067ebf05">
+    <a href="/techniques/T0077" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--c44a505c-76e8-4906-b790-9193067ebf05" title="T0077">Карательные экспедиции</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--c44a505c-76e8-4906-b790-9193067ebf05">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--daeeaba8-7f55-405b-a636-c6bcfa0a9b6f">
+    <a href="/techniques/T0058" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--daeeaba8-7f55-405b-a636-c6bcfa0a9b6f" title="T0058">Культурно-лингвистическая унификация</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--daeeaba8-7f55-405b-a636-c6bcfa0a9b6f">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--448c7af7-5f64-4fd2-98f0-470148006d63">
+    <a href="/techniques/T0037" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--448c7af7-5f64-4fd2-98f0-470148006d63" title="T0037">Марионеточное правительство</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--448c7af7-5f64-4fd2-98f0-470148006d63">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--e5e2f16a-f101-4218-919b-0c5f8d0cc728">
+    <a href="/techniques/T0031" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--e5e2f16a-f101-4218-919b-0c5f8d0cc728" title="T0031">Ограничение суверенитета</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--e5e2f16a-f101-4218-919b-0c5f8d0cc728">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1">
+    <a href="/techniques/T0015" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1" title="T0015">Подкуп элит</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--2cafbd2d-ef12-4555-82a9-17edeaf23168">
+    <a href="/techniques/T0041" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--2cafbd2d-ef12-4555-82a9-17edeaf23168" title="T0041">Подселение чиновников и военных</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--2cafbd2d-ef12-4555-82a9-17edeaf23168">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--83a80188-c26e-4cba-9315-536f9de9b2f7">
+    <a href="/techniques/T0022" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--83a80188-c26e-4cba-9315-536f9de9b2f7" title="T0022">Террор</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--83a80188-c26e-4cba-9315-536f9de9b2f7">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--08b0ed99-0970-4e64-9b7d-2318367da559">
+    <a href="/techniques/T0045" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--08b0ed99-0970-4e64-9b7d-2318367da559" title="T0045">Уничтожение исторической памяти</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--08b0ed99-0970-4e64-9b7d-2318367da559">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--9e366920-9c4c-4997-a5f2-46b3c4ec4b56">
+    <a href="/techniques/T0044" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--9e366920-9c4c-4997-a5f2-46b3c4ec4b56" title="T0044">Уничтожение локальных систем знаний</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--9e366920-9c4c-4997-a5f2-46b3c4ec4b56">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--66938615-78e9-4072-bfca-701940856cfb">
+    <a href="/techniques/T0101" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--66938615-78e9-4072-bfca-701940856cfb" title="T0101">Цензура</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--66938615-78e9-4072-bfca-701940856cfb">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--bb13ee82-cb16-4f36-81b5-266587f81c4c">
+    <a href="/techniques/T0038" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--bb13ee82-cb16-4f36-81b5-266587f81c4c" title="T0038">Экономический контроль</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--bb13ee82-cb16-4f36-81b5-266587f81c4c">
+                                    </div>
+                                </td>
+                            </tr>
+                    </table>
+                </td>
+                <td class="tactic">
+                    <table class="techniques-table">
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--2fc1d989-453e-4f29-ab81-f7868a8ec787">
+    <a href="/techniques/T0052" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--2fc1d989-453e-4f29-ab81-f7868a8ec787" title="T0052">Изъятие ресурсов</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--2fc1d989-453e-4f29-ab81-f7868a8ec787">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--07b1cdc1-ce89-49e7-9260-a29f8c8d8657">
+    <a href="/techniques/T0056" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--07b1cdc1-ce89-49e7-9260-a29f8c8d8657" title="T0056">Налогообложение</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--07b1cdc1-ce89-49e7-9260-a29f8c8d8657">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--28dcedaf-d989-4a7e-ba7e-76b695ada5ad">
+    <a href="/techniques/T0049" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--28dcedaf-d989-4a7e-ba7e-76b695ada5ad" title="T0049">Принудительная мобилизация</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--28dcedaf-d989-4a7e-ba7e-76b695ada5ad">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--31c0fbe1-2b1e-4a0b-ad06-cecab7ee6ab4">
+    <a href="/techniques/T0102" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--31c0fbe1-2b1e-4a0b-ad06-cecab7ee6ab4" title="T0102">Ресурсная эксплуатация</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--31c0fbe1-2b1e-4a0b-ad06-cecab7ee6ab4">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--bb13ee82-cb16-4f36-81b5-266587f81c4c">
+    <a href="/techniques/T0038" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--bb13ee82-cb16-4f36-81b5-266587f81c4c" title="T0038">Экономический контроль</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--bb13ee82-cb16-4f36-81b5-266587f81c4c">
+                                    </div>
+                                </td>
+                            </tr>
+                        <!-- tour technique is scheduled task under privilege escalation -->
+
+                            <tr class="technique-row" >
+                                <td>
+                                        
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--16aef697-c3fd-4421-adf8-0a20ff46246d">
+    <a href="/techniques/T0057" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--16aef697-c3fd-4421-adf8-0a20ff46246d" title="T0057">Эксплуатация труда</a>
+</div>
+
+                                </td>
+                                <td class="subtechniques-td">
+                                    <div class="subtechniques hidden subtechniques-container subtechniques--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--16aef697-c3fd-4421-adf8-0a20ff46246d">
+                                    </div>
+                                </td>
+                            </tr>
+                    </table>
+                </td>
+        </tr>
+    </tbody>
+</table>
+
+        </div>
+        <div class="scroll-indicator right">
+            <div class="cover"></div>
+        </div>
+    </div>
+    <!-- TODO: Re-enable this once we figure out how to show the last modified timestamp of the
+               latest domain release, not the Matrix object itself
+    -->
+</div>
+
+        </div>
+        <div class="matrix-type flat d-none">
+                <div class="matrix-container p-3">
+    <div class="scroll-indicator-group">
+        <div class="scroll-indicator left">
+            <div class="cover"></div>
+        </div>
+        <div class="overflow-x-auto matrix-scroll-box pb-3">
+                <table class="matrix flat">
+    <thead>
+        <tr>
+                <td class="tactic name"><a href="/tactics/TA0001" data-toggle="tooltip" data-placement="top" title="TA0001">Легитимизация доминирования</a></td>
+                <td class="tactic name"><a href="/tactics/TA0002" data-toggle="tooltip" data-placement="top" title="TA0002">Подготовка к захвату</a></td>
+                <td class="tactic name"><a href="/tactics/TA0003" data-toggle="tooltip" data-placement="top" title="TA0003">Захват управления</a></td>
+                <td class="tactic name"><a href="/tactics/TA0004" data-toggle="tooltip" data-placement="top" title="TA0004">Нейтрализация защиты</a></td>
+                <td class="tactic name"><a href="/tactics/TA0005" data-toggle="tooltip" data-placement="top" title="TA0005">Закрепление</a></td>
+                <td class="tactic name"><a href="/tactics/TA0006" data-toggle="tooltip" data-placement="top" title="TA0006">Извлечение выгоды</a></td>
+        </tr>
+        <tr>
+                <td class="tactic count">
+                    6&nbsp;techniques
+                </td>
+                <td class="tactic count">
+                    5&nbsp;techniques
+                </td>
+                <td class="tactic count">
+                    9&nbsp;techniques
+                </td>
+                <td class="tactic count">
+                    16&nbsp;techniques
+                </td>
+                <td class="tactic count">
+                    18&nbsp;techniques
+                </td>
+                <td class="tactic count">
+                    6&nbsp;techniques
+                </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+                <td class="tactic">
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--cd7935a5-ab4b-4110-a1a3-7b07db9cecf0">
+    <a href="/techniques/T0008" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--cd7935a5-ab4b-4110-a1a3-7b07db9cecf0" title="T0008">Лишение субъектности</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--0ae37aa4-65e1-4e85-a3d7-9d1948a6fedc">
+    <a href="/techniques/T0007" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--0ae37aa4-65e1-4e85-a3d7-9d1948a6fedc" title="T0007">Навязывание своей картины реальности</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--7f6a791f-9e53-4190-a832-a1749792af68">
+    <a href="/techniques/T0002" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--7f6a791f-9e53-4190-a832-a1749792af68" title="T0002">Оправдание «цивилизаторской миссией»</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--3040ec18-723f-4edb-8edd-c223939c5073">
+    <a href="/techniques/T0024" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--3040ec18-723f-4edb-8edd-c223939c5073" title="T0024">Оправдание через религию</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--3e0269ec-f516-4dc8-b992-f159b97eea72">
+    <a href="/techniques/T0010" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--3e0269ec-f516-4dc8-b992-f159b97eea72" title="T0010">Отрицание самостоятельной идентичности</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--0a930ed2-75f3-4db5-9565-7bf4dae34d16">
+    <a href="/techniques/T0004" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--c295b42a-8884-4726-a3a6-52ab45ef6277--attack-pattern--0a930ed2-75f3-4db5-9565-7bf4dae34d16" title="T0004">Переписывание истории</a>
+</div>
+
+                </td>
+                <td class="tactic">
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1">
+    <a href="/techniques/T0015" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1" title="T0015">Подкуп элит</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--28042f49-3cdc-434e-81aa-c5462c8f8209">
+    <a href="/techniques/T0039" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--28042f49-3cdc-434e-81aa-c5462c8f8209" title="T0039">Сговор с третьей стороной</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--aea71517-bc14-4b51-816f-170e9ecc4378">
+    <a href="/techniques/T0107" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--aea71517-bc14-4b51-816f-170e9ecc4378" title="T0107">Транспортная блокада</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--bed9171a-a872-419c-8702-5211a91e9292">
+    <a href="/techniques/T0088" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--bed9171a-a872-419c-8702-5211a91e9292" title="T0088">Фиктивный договор</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--5a6cf36f-65bd-48ef-a1de-2ed2578dd2be">
+    <a href="/techniques/T0108" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--2abcd332-7b63-41b1-8e8f-1de018537a13--attack-pattern--5a6cf36f-65bd-48ef-a1de-2ed2578dd2be" title="T0108">Экономическая блокада</a>
+</div>
+
+                </td>
+                <td class="tactic">
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--486f6ea8-f999-4867-b459-f543b07403c1">
+    <a href="/techniques/T0019" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--486f6ea8-f999-4867-b459-f543b07403c1" title="T0019">Военная интервенция</a>
+</div>
+
+                            <!-- tour technique is scheduled task under privilege escalation -->
+                            <table class="supertechnique" id="tour-flat-technique" >
+                                <tr>
+                                    <td class="sidebar technique sidebar--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a sidebar--tour" onclick="toggleMatrixSubTechniques('x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236', 'attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a'); tour_technique_clicked();">
+                                        <div class="handle"> = </div>
+                                    </td>
+                                    <td class="technique">
+                                        
+<div class="technique-cell  supertechniquecell"  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a">
+    <a href="/techniques/T0048" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a" title="T0048">Геноцид&nbsp;<sub>(1)</sub></a>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr class="subtechniques-row hidden subtechniques-container subtechniques--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a subtechniques--tour">
+                                    <td class="sidebar subtechniques">
+                                        <svg width="12px" height="12px">
+                                            <path d="M0 0H12V12Z"/>
+                                        </svg>
+                                    </td>
+                                    <td class="subtechniques" id="tour-flat-subtechniques" >
+                                        <div class="subtechniques">
+                                                
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--592dd465-6032-411c-806c-913888ee043a">
+    <a href="/techniques/T0048/002" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--592dd465-6032-411c-806c-913888ee043a" title="T0048.002">Истребление по территориальному признаку</a>
+</div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c">
+    <a href="/techniques/T0100" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c" title="T0100">Захват религиозных институтов</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--448c7af7-5f64-4fd2-98f0-470148006d63">
+    <a href="/techniques/T0037" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--448c7af7-5f64-4fd2-98f0-470148006d63" title="T0037">Марионеточное правительство</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1">
+    <a href="/techniques/T0015" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1" title="T0015">Подкуп элит</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--2ae039b6-6dc3-443e-a94f-883ecff6f6e7">
+    <a href="/techniques/T0018" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--2ae039b6-6dc3-443e-a94f-883ecff6f6e7" title="T0018">Прокси-война</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--28042f49-3cdc-434e-81aa-c5462c8f8209">
+    <a href="/techniques/T0039" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--28042f49-3cdc-434e-81aa-c5462c8f8209" title="T0039">Сговор с третьей стороной</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--4c75fad7-f9e3-4810-8a0b-d17f11b79a04">
+    <a href="/techniques/T0105" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--4c75fad7-f9e3-4810-8a0b-d17f11b79a04" title="T0105">Тотальное уничтожение инфраструктуры</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--bed9171a-a872-419c-8702-5211a91e9292">
+    <a href="/techniques/T0088" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--e3fd724d-60dc-44ae-8368-430fd864c236--attack-pattern--bed9171a-a872-419c-8702-5211a91e9292" title="T0088">Фиктивный договор</a>
+</div>
+
+                </td>
+                <td class="tactic">
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--e45c8b4a-c11b-49de-9a44-af397942b015">
+    <a href="/techniques/T0030" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--e45c8b4a-c11b-49de-9a44-af397942b015" title="T0030">Административное дробление территории</a>
+</div>
+
+                            <!-- tour technique is scheduled task under privilege escalation -->
+                            <table class="supertechnique">
+                                <tr>
+                                    <td class="sidebar technique sidebar--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a" onclick="toggleMatrixSubTechniques('x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f', 'attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a');">
+                                        <div class="handle"> = </div>
+                                    </td>
+                                    <td class="technique">
+                                        
+<div class="technique-cell  supertechniquecell"  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a">
+    <a href="/techniques/T0048" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a" title="T0048">Геноцид&nbsp;<sub>(1)</sub></a>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr class="subtechniques-row hidden subtechniques-container subtechniques--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a">
+                                    <td class="sidebar subtechniques">
+                                        <svg width="12px" height="12px">
+                                            <path d="M0 0H12V12Z"/>
+                                        </svg>
+                                    </td>
+                                    <td class="subtechniques">
+                                        <div class="subtechniques">
+                                                
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--592dd465-6032-411c-806c-913888ee043a">
+    <a href="/techniques/T0048/002" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--592dd465-6032-411c-806c-913888ee043a" title="T0048.002">Истребление по территориальному признаку</a>
+</div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--78b36fbe-55ed-4946-9416-3f6e15b927ce">
+    <a href="/techniques/T0099" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--78b36fbe-55ed-4946-9416-3f6e15b927ce" title="T0099">Захват заложников</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c">
+    <a href="/techniques/T0100" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c" title="T0100">Захват религиозных институтов</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--e4102f30-0c0f-465c-8196-493cdd5c12e0">
+    <a href="/techniques/T0025" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--e4102f30-0c0f-465c-8196-493cdd5c12e0" title="T0025">Информационная изоляция</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--4c955b19-23c8-44e1-b6ba-03076f59dd7d">
+    <a href="/techniques/T0111" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--4c955b19-23c8-44e1-b6ba-03076f59dd7d" title="T0111">Использование людей как «живого щита»</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--c44a505c-76e8-4906-b790-9193067ebf05">
+    <a href="/techniques/T0077" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--c44a505c-76e8-4906-b790-9193067ebf05" title="T0077">Карательные экспедиции</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--a7431e3a-9a04-43f1-8e75-ca3d3a8daa07">
+    <a href="/techniques/T0021" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--a7431e3a-9a04-43f1-8e75-ca3d3a8daa07" title="T0021">Нейтрализация оппозиции</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--28dcedaf-d989-4a7e-ba7e-76b695ada5ad">
+    <a href="/techniques/T0049" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--28dcedaf-d989-4a7e-ba7e-76b695ada5ad" title="T0049">Принудительная мобилизация</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--7da0a799-a921-4e7d-be3b-e8bf0a58446c">
+    <a href="/techniques/T0110" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--7da0a799-a921-4e7d-be3b-e8bf0a58446c" title="T0110">Пытки и истязания</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6cb2a423-78ea-4b2d-b373-750d720cafd7">
+    <a href="/techniques/T0023" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--6cb2a423-78ea-4b2d-b373-750d720cafd7" title="T0023">Система фильтрационных лагерей</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--83a80188-c26e-4cba-9315-536f9de9b2f7">
+    <a href="/techniques/T0022" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--83a80188-c26e-4cba-9315-536f9de9b2f7" title="T0022">Террор</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--4c75fad7-f9e3-4810-8a0b-d17f11b79a04">
+    <a href="/techniques/T0105" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--4c75fad7-f9e3-4810-8a0b-d17f11b79a04" title="T0105">Тотальное уничтожение инфраструктуры</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--aea71517-bc14-4b51-816f-170e9ecc4378">
+    <a href="/techniques/T0107" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--aea71517-bc14-4b51-816f-170e9ecc4378" title="T0107">Транспортная блокада</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--5a6cf36f-65bd-48ef-a1de-2ed2578dd2be">
+    <a href="/techniques/T0108" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--5a6cf36f-65bd-48ef-a1de-2ed2578dd2be" title="T0108">Экономическая блокада</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--16aef697-c3fd-4421-adf8-0a20ff46246d">
+    <a href="/techniques/T0057" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d0cb5cde-f780-4e95-905c-f5ad5056589f--attack-pattern--16aef697-c3fd-4421-adf8-0a20ff46246d" title="T0057">Эксплуатация труда</a>
+</div>
+
+                </td>
+                <td class="tactic">
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--e45c8b4a-c11b-49de-9a44-af397942b015">
+    <a href="/techniques/T0030" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--e45c8b4a-c11b-49de-9a44-af397942b015" title="T0030">Административное дробление территории</a>
+</div>
+
+                            <!-- tour technique is scheduled task under privilege escalation -->
+                            <table class="supertechnique">
+                                <tr>
+                                    <td class="sidebar technique sidebar--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a" onclick="toggleMatrixSubTechniques('x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a', 'attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a');">
+                                        <div class="handle"> = </div>
+                                    </td>
+                                    <td class="technique">
+                                        
+<div class="technique-cell  supertechniquecell"  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a">
+    <a href="/techniques/T0048" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a" title="T0048">Геноцид&nbsp;<sub>(1)</sub></a>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr class="subtechniques-row hidden subtechniques-container subtechniques--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--6b093aa0-dd4e-410c-8628-70857d6c970a">
+                                    <td class="sidebar subtechniques">
+                                        <svg width="12px" height="12px">
+                                            <path d="M0 0H12V12Z"/>
+                                        </svg>
+                                    </td>
+                                    <td class="subtechniques">
+                                        <div class="subtechniques">
+                                                
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--592dd465-6032-411c-806c-913888ee043a">
+    <a href="/techniques/T0048/002" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--592dd465-6032-411c-806c-913888ee043a" title="T0048.002">Истребление по территориальному признаку</a>
+</div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--c573c41f-f027-45fe-8655-2a4d57737c54">
+    <a href="/techniques/T0033" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--c573c41f-f027-45fe-8655-2a4d57737c54" title="T0033">Запрет языка</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--78b36fbe-55ed-4946-9416-3f6e15b927ce">
+    <a href="/techniques/T0099" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--78b36fbe-55ed-4946-9416-3f6e15b927ce" title="T0099">Захват заложников</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c">
+    <a href="/techniques/T0100" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--eb3ffd62-361b-4fe6-8392-370d4763d27c" title="T0100">Захват религиозных институтов</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--fb98fc82-8b44-4592-9d51-e8a7a3aff398">
+    <a href="/techniques/T0109" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--fb98fc82-8b44-4592-9d51-e8a7a3aff398" title="T0109">Имитация народного волеизъявления</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--5e78bb66-f600-436c-8cfd-8e39551f73ff">
+    <a href="/techniques/T0103" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--5e78bb66-f600-436c-8cfd-8e39551f73ff" title="T0103">Институциональное замещение</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--c44a505c-76e8-4906-b790-9193067ebf05">
+    <a href="/techniques/T0077" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--c44a505c-76e8-4906-b790-9193067ebf05" title="T0077">Карательные экспедиции</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--daeeaba8-7f55-405b-a636-c6bcfa0a9b6f">
+    <a href="/techniques/T0058" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--daeeaba8-7f55-405b-a636-c6bcfa0a9b6f" title="T0058">Культурно-лингвистическая унификация</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--448c7af7-5f64-4fd2-98f0-470148006d63">
+    <a href="/techniques/T0037" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--448c7af7-5f64-4fd2-98f0-470148006d63" title="T0037">Марионеточное правительство</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--e5e2f16a-f101-4218-919b-0c5f8d0cc728">
+    <a href="/techniques/T0031" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--e5e2f16a-f101-4218-919b-0c5f8d0cc728" title="T0031">Ограничение суверенитета</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1">
+    <a href="/techniques/T0015" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--7a4f2b2c-d9c7-4ba0-881d-12622f6c98b1" title="T0015">Подкуп элит</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--2cafbd2d-ef12-4555-82a9-17edeaf23168">
+    <a href="/techniques/T0041" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--2cafbd2d-ef12-4555-82a9-17edeaf23168" title="T0041">Подселение чиновников и военных</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--83a80188-c26e-4cba-9315-536f9de9b2f7">
+    <a href="/techniques/T0022" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--83a80188-c26e-4cba-9315-536f9de9b2f7" title="T0022">Террор</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--08b0ed99-0970-4e64-9b7d-2318367da559">
+    <a href="/techniques/T0045" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--08b0ed99-0970-4e64-9b7d-2318367da559" title="T0045">Уничтожение исторической памяти</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--9e366920-9c4c-4997-a5f2-46b3c4ec4b56">
+    <a href="/techniques/T0044" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--9e366920-9c4c-4997-a5f2-46b3c4ec4b56" title="T0044">Уничтожение локальных систем знаний</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--66938615-78e9-4072-bfca-701940856cfb">
+    <a href="/techniques/T0101" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--66938615-78e9-4072-bfca-701940856cfb" title="T0101">Цензура</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--bb13ee82-cb16-4f36-81b5-266587f81c4c">
+    <a href="/techniques/T0038" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--d84208a6-b526-4a2f-8cb0-ed96486ee78a--attack-pattern--bb13ee82-cb16-4f36-81b5-266587f81c4c" title="T0038">Экономический контроль</a>
+</div>
+
+                </td>
+                <td class="tactic">
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--2fc1d989-453e-4f29-ab81-f7868a8ec787">
+    <a href="/techniques/T0052" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--2fc1d989-453e-4f29-ab81-f7868a8ec787" title="T0052">Изъятие ресурсов</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--07b1cdc1-ce89-49e7-9260-a29f8c8d8657">
+    <a href="/techniques/T0056" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--07b1cdc1-ce89-49e7-9260-a29f8c8d8657" title="T0056">Налогообложение</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--28dcedaf-d989-4a7e-ba7e-76b695ada5ad">
+    <a href="/techniques/T0049" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--28dcedaf-d989-4a7e-ba7e-76b695ada5ad" title="T0049">Принудительная мобилизация</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--31c0fbe1-2b1e-4a0b-ad06-cecab7ee6ab4">
+    <a href="/techniques/T0102" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--31c0fbe1-2b1e-4a0b-ad06-cecab7ee6ab4" title="T0102">Ресурсная эксплуатация</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--bb13ee82-cb16-4f36-81b5-266587f81c4c">
+    <a href="/techniques/T0038" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--bb13ee82-cb16-4f36-81b5-266587f81c4c" title="T0038">Экономический контроль</a>
+</div>
+
+                            
+<div class="technique-cell "  id="technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--16aef697-c3fd-4421-adf8-0a20ff46246d">
+    <a href="/techniques/T0057" data-toggle="tooltip" data-placement="top" data-animation="false" data-container="#technique-cell--x-mitre-tactic--6c96eff6-b80b-4b42-97c0-45f406dc3788--attack-pattern--16aef697-c3fd-4421-adf8-0a20ff46246d" title="T0057">Эксплуатация труда</a>
+</div>
+
+                </td>
+        </tr>
+    </tbody>
+</table>
+
+        </div>
+        <div class="scroll-indicator right">
+            <div class="cover"></div>
+        </div>
+    </div>
+    <!-- TODO: Re-enable this once we figure out how to show the last modified timestamp of the
+               latest domain release, not the Matrix object itself
+    -->
+</div>
+
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    <!--start-indexing-for-search-->
+            <!--stop-indexing-for-search-->
+            <!-- search overlay for entire page -- not displayed inline -->
+            <div class="overlay search" id="search-overlay" style="display: none;">
+    <div class="overlay-inner">
+        <!-- text input for searching -->
+        <div class="search-header">
+            <div class="search-input">
+                <input type="text" id="search-input" placeholder="search">
+            </div>
+            <div class="search-icons">
+                <div class="search-parsing-icon spinner-border" style="display: none" id="search-parsing-icon"></div>
+                <div class="close-search-icon" id="close-search-icon">&times;</div>
+            </div>
+        </div>
+        <!-- results and controls for loading more results -->
+        <div id="search-body" class="search-body">
+            <div class="results" id="search-results">
+                <!-- content will be appended here on search -->
+            </div>
+            <div id="load-more-results" class="load-more-results">
+                <button class="btn btn-default" id="load-more-results-button">load more results</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="row flex-grow-0 flex-shrink-1">
+            <!-- footer elements -->
+            <footer class="col footer">
+                <div class="container-fluid">
+                    <div class="row row-footer">
+                        <div class="col-2 col-sm-2 col-md-2">
+                            <div class="footer-center-responsive my-auto">
+                                <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                                    <img src="/theme/images/mitrelogowhiteontrans.gif" class="mitre-logo-wtrans">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-2 col-sm-2 footer-responsive-break"></div>
+                        <div class="footer-link-group">
+                            <div class="row row-footer">
+                                <div class="px-3 col-footer">
+                                    <u class="footer-link"><a href="/resources/engage-with-attack/contact" class="footer-link">Contact Us</a></u>
+                                </div>
+                                <div class="px-3 col-footer">
+                                    <u class="footer-link"><a href="/resources/legal-and-branding/terms-of-use" class="footer-link">Terms of Use</a></u>
+                                </div>
+                                    <div class="px-3 col-footer">
+                                        <u class="footer-link"><a href="/resources/legal-and-branding/privacy" class="footer-link">Privacy Policy</a></u>
+                                    </div>
+                                <div class="px-3 col-footer">
+                                    <u class="footer-link"><a href="/resources/changelog.html" class="footer-link" data-toggle="tooltip" data-placement="top" data-html="true" title="ATT&amp;CK content v18.1&#013;Website  v4.4.1">Website Changelog</a></u>
+                                </div>
+                                <div class="px-3">
+                                    <u class="footer-link"><a href="/resources/legal-and-branding/privacy/#" class="footer-link" onclick="Osano.cm.showDrawer('osano-cm-dom-info-dialog-open')">Cookie Preferences</a></u>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <small class="px-3">
+                                    &copy;&nbsp;2015&nbsp;-&nbsp;2025, The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="w-100 p-2 footer-responsive-break"></div>
+                                <div class="col footer-float-right-responsive-centered">
+                                    <div>
+                                        <div>
+                                            <a href="https://attack.mitre.org" class="btn btn-primary w-100">
+                                                attack.mitre.org
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+<!--stopindex-->
+
+</div>
+    <!--SCRIPTS-->
+        <!--SCRIPTS-->
+    <script src="/theme/scripts/jquery-3.5.1.min.js"></script>
+    <script src="/theme/scripts/popper.min.js"></script>
+    <script src="/theme/scripts/bootstrap-select.min.js"></script>
+    <script src="/theme/scripts/bootstrap.bundle.min.js"></script>
+    <script src="/theme/scripts/site.js"></script>
+    <script src="/theme/scripts/settings.js"></script>
+    <script src="/theme/scripts/search_bundle.js"></script>
+
+    <script src="/theme/scripts/matrix.js"></script>
+    <script src="/theme/scripts/bootstrap-tourist.js"></script>
+    <script src="/theme/scripts/settings.js"></script>
+    <script src="/theme/scripts/tour/tour-introduction.js"></script>
+    <script src="/theme/scripts/random_page.js"></script>
+</body>
+</html>
