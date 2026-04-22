@@ -22,31 +22,34 @@ if attack_version.startswith("v"):
 # Domains for stix objects
 STIX_LOCATION_ENTERPRISE = os.getenv(
     "STIX_LOCATION_ENTERPRISE",
-    "https://raw.githubusercontent.com/mitre/cti/master/enterprise-attack/enterprise-attack.json",
+    "http://localhost:3000/api/stix-bundles?domain=russia-colonialism",
 )
-STIX_LOCATION_MOBILE = os.getenv(
-    "STIX_LOCATION_MOBILE", "https://raw.githubusercontent.com/mitre/cti/master/mobile-attack/mobile-attack.json"
-)
-STIX_LOCATION_ICS = os.getenv(
-    "STIX_LOCATION_ICS", "https://raw.githubusercontent.com/mitre/cti/master/ics-attack/ics-attack.json"
-)
-STIX_LOCATION_PRE = os.getenv(
-    "STIX_LOCATION_PRE", "https://raw.githubusercontent.com/mitre/cti/master/pre-attack/pre-attack.json"
-)
+#STIX_LOCATION_MOBILE = os.getenv(
+#    "STIX_LOCATION_MOBILE", "https://raw.githubusercontent.com/mitre/cti/master/mobile-attack/mobile-attack.json"
+#)
+#STIX_LOCATION_ICS = os.getenv(
+#    "STIX_LOCATION_ICS", "https://raw.githubusercontent.com/mitre/cti/master/ics-attack/ics-attack.json"
+#)
+# STIX_LOCATION_PRE = os.getenv(
+#     "STIX_LOCATION_PRE", "https://raw.githubusercontent.com/mitre/cti/master/pre-attack/pre-attack.json"
+# )
 domains = [
-    {"name": "enterprise-attack", "location": STIX_LOCATION_ENTERPRISE, "alias": "Enterprise", "deprecated": False},
-    {"name": "mobile-attack", "location": STIX_LOCATION_MOBILE, "alias": "Mobile", "deprecated": False},
-    {"name": "ics-attack", "location": STIX_LOCATION_ICS, "alias": "ICS", "deprecated": False},
-    {"name": "pre-attack", "location": STIX_LOCATION_PRE, "alias": "PRE-ATT&CK", "deprecated": True},
+    {"name": "russia-colonialism", "location": STIX_LOCATION_ENTERPRISE, "alias": "Россия", "deprecated": False}
+    #{"name": "enterprise-attack", "location": STIX_LOCATION_ENTERPRISE, "alias": "Enterprise", "deprecated": False},
+    #{"name": "mobile-attack", "location": STIX_LOCATION_MOBILE, "alias": "Mobile", "deprecated": False},
+    #{"name": "ics-attack", "location": STIX_LOCATION_ICS, "alias": "ICS", "deprecated": False},
+    #{"name": "pre-attack", "location": STIX_LOCATION_PRE, "alias": "PRE-ATT&CK", "deprecated": True}
 ]
 
 # Directory for attack version archives
 default_archive_dir = "attack-version-archives"
+default_archive_dir = ""
 ATTACK_VERSION_ARCHIVES = os.getenv("ATTACK_VERSION_ARCHIVES", default_archive_dir)
 
 # banner for the website
 default_banner_message = "This is a custom instance of the MITRE ATT&CK Website. The official website can be found at <a href='https://attack.mitre.org'>attack.mitre.org</a>."
-BANNER_ENABLED = os.getenv("BANNER_ENABLED", True)
+# BANNER_ENABLED = os.getenv("BANNER_ENABLED", True)
+BANNER_ENABLED = os.getenv("BANNER_ENABLED", False)
 BANNER_MESSAGE = os.getenv("BANNER_MESSAGE", default_banner_message)
 
 # Args for modules to use if needed
@@ -76,7 +79,8 @@ def check_resources_module():
 
 
 # Source names for ATT&CK
-source_names = ["mitre-attack", "mitre-mobile-attack", "mitre-ics-attack", "mitre-pre-attack"]
+source_names = ["mitre-attack", "mitre-pre-attack"]
+#source_names = ["mitre-attack", "mitre-mobile-attack", "mitre-ics-attack", "mitre-pre-attack"]
 
 # Declare file location of web pages
 web_directory = "output"
@@ -179,8 +183,10 @@ navigator_version = "5.2.0"
 test_report_directory = "reports"
 
 # Workbench credentials to use if pulling STIX from ATT&CK Workbench version 1.2.0 or later
-WORKBENCH_USER = os.getenv("WORKBENCH_USER")
-WORKBENCH_API_KEY = os.getenv("WORKBENCH_API_KEY")
+#WORKBENCH_USER = os.getenv("WORKBENCH_USER")
+#WORKBENCH_API_KEY = os.getenv("WORKBENCH_API_KEY")
+WORKBENCH_USER = "taxii-server"
+WORKBENCH_API_KEY = "secret-squirrel"
 
 GOOGLE_ANALYTICS = os.getenv("GOOGLE_ANALYTICS")
 GOOGLE_SITE_VERIFICATION = os.getenv("GOOGLE_SITE_VERIFICATION")

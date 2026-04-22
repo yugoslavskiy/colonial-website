@@ -20,7 +20,7 @@
 {% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " - Mobile | MITRE ATT&CK&reg;"
 -%}
 {% elif parsed.domain == "enterprise" %}
-{% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " - Enterprise | MITRE
+{% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " - Россия | MITRE
 ATT&CK&reg;" -%}
 {% elif parsed.domain == "ics" %}
 {% set title = title_prefix + parsed.name + ", " + title_type + " " + parsed.attack_id + " - ICS | MITRE ATT&CK&reg;"
@@ -49,16 +49,16 @@ ATT&CK&reg;" -%}
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="/">Home</a></li>
   {% if parsed.domain == 'enterprise' %}
-  <li class="breadcrumb-item"><a href="/techniques/enterprise">Techniques</a></li>
+  <li class="breadcrumb-item"><a href="/techniques/russia">Техники</a></li>
   {% elif parsed.domain == 'mobile' %}
-  <li class="breadcrumb-item"><a href="/techniques/mobile">Techniques</a></li>
+  <li class="breadcrumb-item"><a href="/techniques/mobile">Техники</a></li>
   {% elif parsed.domain == 'ics' %}
-  <li class="breadcrumb-item"><a href="/techniques/ics">Techniques</a></li>
+  <li class="breadcrumb-item"><a href="/techniques/ics">Техники</a></li>
   {% else %}
-  <li class="breadcrumb-item"><a href="/techniques/">Techniques</a></li>
+  <li class="breadcrumb-item"><a href="/techniques/">Техники</a></li>
   {% endif %}
   {% if parsed.domain == 'enterprise' %}
-  <li class="breadcrumb-item"><a href="/techniques/enterprise">Enterprise</a></li>
+  <li class="breadcrumb-item"><a href="/techniques/russia">Россия</a></li>
   {% elif parsed.domain == 'ics' %}
   <li class="breadcrumb-item"><a href="/techniques/ics">ICS</a></li>
   {% elif parsed.domain == 'mobile'%}

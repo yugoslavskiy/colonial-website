@@ -38,21 +38,21 @@ sidebar_page_data = {
 
 # config for the matrix shown on the index page
 index_matrix = {
-    "name": "ATT&CK Matrix for Enterprise",
+    "name": "МАТРИЦА КОЛОНИАЛИЗМА РОССИИ",
     "descr": "",  # if specified, adds a subtitle to the index page matrix
-    "matrix": "enterprise-attack",
+    "matrix": "russia-colonialism",
     "platforms": [
-        "Windows",
-        "macOS",
-        "Linux",
-        "PRE",
-        "Office Suite",
-        "Identity Providers",
-        "SaaS",
-        "IaaS",
-        "Network Devices",
-        "Containers",
-        "ESXi",
+        "Украина",
+        "Ичкерия"
+        #"Linux",
+        #"PRE",
+        #"Office Suite",
+        #"Identity Providers",
+        #"SaaS",
+        #"IaaS",
+        #"Network Devices",
+        #"Containers",
+        #"ESXi",
     ],
 }
 

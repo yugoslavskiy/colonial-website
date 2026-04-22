@@ -3,8 +3,10 @@ from . import versions_config
 
 
 def get_priority():
-    return versions_config.priority
+    #return versions_config.priority
+    return True
 
 
 def run_module():
-    return (versions.generate_versions(), versions_config.module_name)
+    #return (versions.generate_versions(), versions_config.module_name)
+    return True

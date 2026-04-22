@@ -6,8 +6,8 @@
 {% set parsed = page.data | from_json %}
 {% if parsed.domain == "mobile" %}
 {% set title = "Tactics - Mobile | MITRE ATT&CK&reg;" -%}
-{% elif parsed.domain == "enterprise" %}
-{% set title = "Tactics - Enterprise | MITRE ATT&CK&reg;" -%}
+{% elif parsed.domain == "russia" %}
+{% set title = "Тактики - Россия | MITRE ATT&CK&reg;" -%}
 {% elif parsed.domain == "ics" %}
 {% set title = "Tactics - ICS | MITRE ATT&CK&reg;" -%}
 {% else %}
@@ -30,11 +30,12 @@
 {% block innerright %}
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="/">Home</a></li>
-  <li class="breadcrumb-item"><a href="/tactics/{{parsed.domain}}/">Tactics</a></li>
+  <li class="breadcrumb-item"><a href="/tactics/{{parsed.domain}}/">Тактики</a></li>
+  <!-- <li class="breadcrumb-item"><a href="/tactics/russia/">Tactics</a></li> -->
   {% if parsed.domain == "mobile" %}
   <li class="breadcrumb-item">Mobile</li>
-  {% elif parsed.domain == "enterprise" %}
-  <li class="breadcrumb-item">Enterprise</li>
+  {% elif parsed.domain == "russia" %}
+  <li class="breadcrumb-item">Россия</li>
   {% elif parsed.domain == "ics" %}
   <li class="breadcrumb-item">ICS</li>
   {% endif %}
@@ -54,27 +55,25 @@
               <h1>
                 {% if parsed.domain == "mobile" %}
                 Mobile Tactics
-                {% elif parsed.domain == "enterprise" %}
-                Enterprise tactics
+                {% elif parsed.domain == "russia" %}
+                Тактики России
                 {% elif parsed.domain == "ics" %}
                 ICS tactics
                 {% endif %}
               </h1>
               <p>
-                Tactics represent the &quot;why&quot; of an ATT&CK technique or sub-technique. It is the adversary's
-                tactical goal: the reason for performing an action. For example, an adversary may want to achieve
-                credential access.
+                Тактики раскрывают мотивацию колонизатора, отвечая на вопрос &quot;зачем?&quot; применяется техника или суб-техника. Это тактическая цель, причина выполнения действия.
               </p>
             </div>
             <div class="col-md-2 div-count">
               {% if parsed.domain == "mobile" %}
               <h6 class="table-object-count">Mobile Tactics: {{ parsed.tactics_list_len }}</h6>
-              {% elif parsed.domain == "enterprise" %}
-              <h6 class="table-object-count">Enterprise Tactics: {{ parsed.tactics_list_len }}</h6>
+              {% elif parsed.domain == "russia" %}
+              <h6 class="table-object-count">Тактики России: {{ parsed.tactics_list_len }}</h6>
               {% elif parsed.domain == "ics" %}
               <h6 class="table-object-count">ICS Tactics: {{ parsed.tactics_list_len }}</h6>
               {% else %}
-              <h6 class="table-object-count">Tactics: {{ parsed.tactics_list_len }}</h6>
+              <h6 class="table-object-count">Тактики: {{ parsed.tactics_list_len }}</h6>
               {% endif %}
             </div>
           </div>

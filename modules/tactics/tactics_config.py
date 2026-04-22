@@ -11,19 +11,21 @@ tactics_templates_path = "modules/tactics/templates/"
 
 # String template for domains
 tactic_domain_md = Template(
-    "Title: Tactics\nTemplate: tactics/tactics-domain-index\nsave_as: tactics/${domain}/index.html\ndata: "
+    # "Title: Tactics\nTemplate: tactics/tactics-domain-index\nsave_as: tactics/${domain}/index.html\ndata: "
+    "Title: Tactics\nTemplate: tactics/tactics-domain-index\nsave_as: tactics/russia/index.html\ndata: "
 )
 
 # String template for tactics
 tactic_md = Template(
-    "Title: ${name}-${domain}\nTemplate: tactics/tactic\nsave_as: tactics/${attack_id}/index.html\ndata: "
+    # "Title: ${name}-${domain}\nTemplate: tactics/tactic\nsave_as: tactics/${attack_id}/index.html\ndata: "
+    "Title: ${name}-russia\nTemplate: tactics/tactic\nsave_as: tactics/${attack_id}/index.html\ndata: "
 )
 
 # Tactics overview md template
 tactic_overview_md = (
     "Title: Tactics overview \n"
     "Template: general/redirect-index \n"
-    "RedirectLink: /tactics/enterprise/ \n"
+    "RedirectLink: /tactics/russia/ \n"
     "save_as: tactics/index.html \n"
 )
 

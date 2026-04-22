@@ -69,7 +69,8 @@ def generate_domain_markdown(domain, techniques, tactics, side_nav_data, notes, 
         subs = subs + json.dumps(data)
 
         with open(
-            os.path.join(tactics_config.tactics_markdown_path, data["domain"] + "-tactics.md"), "w", encoding="utf8"
+            # os.path.join(tactics_config.tactics_markdown_path, data["domain"] + "-tactics.md"), "w", encoding="utf8"
+            os.path.join(tactics_config.tactics_markdown_path, "russia" + "-tactics.md"), "w", encoding="utf8"
         ) as md_file:
             md_file.write(subs)
 

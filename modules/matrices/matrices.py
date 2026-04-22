@@ -36,8 +36,10 @@ def generate_matrices():
             continue
         matrix_generated = generate_platform_matrices(matrix, notes, side_menu_data)
 
-    for deprecated_matrix in matrices_config.deprecated_matrices:
-        generate_deprecated_matrix(deprecated_matrix, side_menu_data)
+    #if matrices_config.deprecated_matrices:
+    #    for deprecated_matrix in matrices_config.deprecated_matrices:
+    #        if deprecated_matrix:
+    #            generate_deprecated_matrix(deprecated_matrix, side_menu_data)
 
     if not matrix_generated:
         util.buildhelpers.remove_module_from_menu(matrices_config.module_name)

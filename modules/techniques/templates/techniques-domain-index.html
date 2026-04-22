@@ -7,7 +7,7 @@
 {% if parsed.domain == "mobile" %}
 {% set title = "Techniques - Mobile | MITRE ATT&CK&reg;" -%}
 {% elif parsed.domain == "enterprise" %}
-{% set title = "Techniques - Enterprise | MITRE ATT&CK&reg;" -%}
+{% set title = "Техники - Россия | MITRE ATT&CK&reg;" -%}
 {% elif parsed.domain == "ics" %}
 {% set title = "Techniques - ICS | MITRE ATT&CK&reg;" -%}
 {% else %}
@@ -30,11 +30,12 @@
 {% block innerright %}
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="/">Home</a></li>
-  <li class="breadcrumb-item"><a href="/techniques/{{parsed.domain}}/">Techniques</a></li>
+  <li class="breadcrumb-item"><a href="/techniques/russia/">Техники</a></li>
+  <!-- <li class="breadcrumb-item"><a href="/techniques/{{parsed.domain}}/">Techniques</a></li> -->
   {% if parsed.domain == "mobile" %}
   <li class="breadcrumb-item">Mobile</li>
   {% elif parsed.domain == "enterprise" %}
-  <li class="breadcrumb-item">Enterprise</li>
+  <li class="breadcrumb-item">Россия</li>
   {% elif parsed.domain == "ics" %}
   <li class="breadcrumb-item">ICS</li>
   {% endif %}
@@ -55,22 +56,21 @@
                 {% if parsed.domain == "mobile" %}
                 Mobile Techniques
                 {% elif parsed.domain == "enterprise" %}
-                Enterprise Techniques
+                Техники России
                 {% elif parsed.domain == "ics" %}
                 ICS Techniques
                 {% endif %}
               </h1>
               <p>
-                Techniques represent 'how' an adversary achieves a tactical goal by performing an action. For example,
-                an adversary may dump credentials to achieve credential access.
+                Техники отвечают на вопрос «как?» — описывают конкретные методы и инструменты, с помощью которых колонизатор достигает своих тактических целей.
               </p>
             </div>
             <div class="col-md-2 div-count">
               <div class="row table-object-count pr-3">
-                <h6>Techniques: {{ parsed.technique_list_len }}</h6>
+                <h6>Техники: {{ parsed.technique_list_len }}</h6>
               </div>
               <div class="row table-object-count pr-3">
-                <h6>Sub-techniques: {{ parsed.subtechniques_len }}</h6>
+                <h6>Суб-техники: {{ parsed.subtechniques_len }}</h6>
               </div>
             </div>
           </div>

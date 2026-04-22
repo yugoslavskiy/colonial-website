@@ -16,14 +16,14 @@ technique_md = Template(
 
 # String template for domains
 technique_domain_md = Template(
-    "Title: Techniques\nTemplate: techniques/techniques-domain-index\nsave_as: techniques/${domain}/index.html\ndata: "
+    "Title: Техники\nTemplate: techniques/techniques-domain-index\nsave_as: techniques/${domain}/index.html\ndata: "
 )
 
 # Overview md template
 technique_overview_md = (
     "Title: Overview \n"
     "Template: general/redirect-index \n"
-    "RedirectLink: /techniques/enterprise/ \n"
+    "RedirectLink: /techniques/russia/ \n"
     "save_as: techniques/index.html \n"
 )
 

@@ -11,7 +11,8 @@ import modules
 from modules import site_config, versions
 
 types = ["software", "groups", "tactics", "techniques"]
-sub_types = ["mobile", "enterprise", "ics"]
+sub_types = ["russia"]
+# sub_types = ["mobile", "enterprise", "ics"]
 types_hash = set(types)
 sub_types_hash = set(sub_types)
 dist_words = 0
@@ -36,28 +37,43 @@ def generate_index():
 
             path = absolute_path[6:]
 
-            if path.startswith("/mitigations/"):
-                file_type = "mitigations"
-            elif path.startswith("/assets/"):
-                file_type = "assets"
-            elif path.startswith("/matrices/"):
+            # if path.startswith("/mitigations/"):
+            #     file_type = "mitigations"
+            # elif path.startswith("/assets/"):
+            #     file_type = "assets"
+            # elif path.startswith("/matrices/"):
+            #     file_type = "matrices"
+            # elif path.startswith("/groups/"):
+            #     file_type = "groups"
+            # elif path.startswith("/campaigns/"):
+            #     file_type = "campaigns"
+            # elif path.startswith("/datacomponents/"):
+            #     file_type = "datacomponents"
+            # elif path.startswith("/software/"):
+            #     file_type = "software"
+            # elif path.startswith("/tactics/"):
+            #     file_type = "tactics"
+            # elif path.startswith("/techniques/"):
+            #     file_type = "techniques"
+            # elif path.startswith("/detectionstrategies/"):
+            #     file_type = "detectionstrategies"
+            # elif path.startswith("/analytics/"):
+            #     file_type = "analytics"
+            # else:
+            #     file_type = "misc"
+
+            if path.startswith("/matrices/"):
                 file_type = "matrices"
             elif path.startswith("/groups/"):
                 file_type = "groups"
             elif path.startswith("/campaigns/"):
                 file_type = "campaigns"
-            elif path.startswith("/datacomponents/"):
-                file_type = "datacomponents"
             elif path.startswith("/software/"):
                 file_type = "software"
             elif path.startswith("/tactics/"):
                 file_type = "tactics"
             elif path.startswith("/techniques/"):
                 file_type = "techniques"
-            elif path.startswith("/detectionstrategies/"):
-                file_type = "detectionstrategies"
-            elif path.startswith("/analytics/"):
-                file_type = "analytics"
             else:
                 file_type = "misc"
 

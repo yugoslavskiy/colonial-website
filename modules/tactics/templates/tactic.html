@@ -9,8 +9,8 @@
 {% set parsed = page.data | from_json %}
 {% if parsed.domain == "mobile" %}
 {% set title = parsed.name + ", Tactic " + parsed.attack_id + " - Mobile | MITRE ATT&CK&reg;" -%}
-{% elif parsed.domain == "enterprise" %}
-{% set title = parsed.name + ", Tactic " + parsed.attack_id + " - Enterprise | MITRE ATT&CK&reg;" -%}
+{% elif parsed.domain == "russia" %}
+{% set title = parsed.name + ", Tactic " + parsed.attack_id + " - Россия | MITRE ATT&CK&reg;" -%}
 {% elif parsed.domain == "ics" %}
 {% set title = parsed.name + ", Tactic " + parsed.attack_id + " - ICS | MITRE ATT&CK&reg;" -%}
 {% endif %}
@@ -33,8 +33,8 @@
 {{ super () }}
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="/">Home</a></li>
-  {% if parsed.domain == 'enterprise' %}
-  <li class="breadcrumb-item"><a href="/tactics/enterprise">Tactics</a></li>
+  {% if parsed.domain == 'russia' %}
+  <li class="breadcrumb-item"><a href="/tactics/russia">Tactics</a></li>
   {% elif parsed.domain == 'mobile' %}
   <li class="breadcrumb-item"><a href="/tactics/mobile">Tactics</a></li>
   {% elif parsed.domain == 'ics' %}
@@ -42,8 +42,8 @@
   {% else %}
   <li class="breadcrumb-item"><a href="/tactics/">Tactics</a></li>
   {% endif %}
-  {% if parsed.domain == 'enterprise' %}
-  <li class="breadcrumb-item"><a href="/tactics/enterprise">Enterprise</a></li>
+  {% if parsed.domain == 'russia' %}
+  <li class="breadcrumb-item"><a href="/tactics/russia">Россия</a></li>
   {% elif parsed.domain == 'mobile'%}
   <li class="breadcrumb-item"><a href="/tactics/mobile">Mobile</a></li>
   {% elif parsed.domain == 'ics' %}
