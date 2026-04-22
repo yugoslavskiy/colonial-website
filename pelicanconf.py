@@ -13,7 +13,7 @@ import custom_jinja_filters
 
 AUTHOR = os.environ.get("PELICAN_AUTHOR", "MITRE")
 SITENAME = os.environ.get("PELICAN_SITENAME", "ATT&CK")
-SITEURL = os.environ.get("PELICAN_SITEURL", "")
+SITEURL = os.environ.get("PELICAN_SITEURL", "https://yugoslavskiy.github.io/colonial-website/")
 
 PATH = "content"
 
@@ -66,3 +66,4 @@ MARKDOWN = {
     },
     "output_format": "html5",
 }
+
