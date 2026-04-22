@@ -1,0 +1,1003 @@
+{
+    "name": "Colonial Framework base Layer",
+    "versions": {
+        "attack": "14",
+        "navigator": "4.9.1",
+        "layer": "4.5"
+    },
+    "domain": "russia-colonialism",
+    "customDataURL": "http://localhost/something",
+    "description": "Слой со всеми техниками, субтехниками и фильтрацией",
+    "filters": {
+        "platforms": [
+            "Украина",
+            "Ичкерия"
+        ]
+    },
+    "techniques": [
+        {
+            "techniqueID": "T0001",
+            "color": "#ff6666",
+            "comment": "Навязывание образа отсталости (Ориентализм)",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0002",
+            "color": "#ff6666",
+            "comment": "Оправдание «цивилизаторской миссией»",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0003",
+            "color": "#ff6666",
+            "comment": "Воспитание логики превосходства",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0004",
+            "color": "#ff6666",
+            "comment": "Переписывание истории",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0005",
+            "color": "#ff6666",
+            "comment": "Присвоение статуса жертвы агрессором (Инверсия виктимности)",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0006",
+            "color": "#ff6666",
+            "comment": "Дегуманизация",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0007",
+            "color": "#ff6666",
+            "comment": "Навязывание своей картины реальности",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0008",
+            "color": "#ff6666",
+            "comment": "Лишение субъектности",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0009",
+            "color": "#ff6666",
+            "comment": "Навязывание своей культуры как единственной нормы",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0010",
+            "color": "#ff6666",
+            "comment": "Отрицание самостоятельной идентичности",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0024",
+            "color": "#ff6666",
+            "comment": "Оправдание через религию",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0011",
+            "color": "#ff6666",
+            "comment": "Скупка медиа и активов",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0012",
+            "color": "#ff6666",
+            "comment": "Поддержка сепаратизма",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0013",
+            "color": "#ff6666",
+            "comment": "Создание агентуры влияния",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0014",
+            "color": "#ff6666",
+            "comment": "Спонсирование внутреннего экстремизма и радикалов",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0015",
+            "color": "#ff6666",
+            "comment": "Подкуп элит",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина, Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0016",
+            "color": "#ff6666",
+            "comment": "Создание фиктивных угнетенных групп (прокси-субалтернов)",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0088",
+            "color": "#ff6666",
+            "comment": "Фиктивный договор",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0039",
+            "color": "#ff6666",
+            "comment": "Сговор с третьей стороной",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0107",
+            "color": "#ff6666",
+            "comment": "Транспортная блокада",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0108",
+            "color": "#ff6666",
+            "comment": "Экономическая блокада",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0018",
+            "color": "#ff6666",
+            "comment": "Прокси-война",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0019",
+            "color": "#ff6666",
+            "comment": "Военная интервенция",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0020",
+            "color": "#ff6666",
+            "comment": "Организация переворота",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0037",
+            "color": "#ff6666",
+            "comment": "Марионеточное правительство",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина, Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0100",
+            "color": "#ff6666",
+            "comment": "Захват религиозных институтов",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0104",
+            "color": "#ff6666",
+            "comment": "Массовые убийства",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0048",
+            "color": "#ff6666",
+            "comment": "Геноцид",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0048.001",
+            "color": "#ff6666",
+            "comment": "Истребление по признаку идентичности",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0048.002",
+            "color": "#ff6666",
+            "comment": "Истребление по территориальному признаку",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0048.003",
+            "color": "#ff6666",
+            "comment": "Искусственный голод",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0048.004",
+            "color": "#ff6666",
+            "comment": "Медицинская и гуманитарная блокада",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0048.005",
+            "color": "#ff6666",
+            "comment": "Лишение питьевой воды",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0048.006",
+            "color": "#ff6666",
+            "comment": "Лишение электричества и отопления",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0048.007",
+            "color": "#ff6666",
+            "comment": "Насильственное изъятие детей",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0048.008",
+            "color": "#ff6666",
+            "comment": "Предотвращение деторождения",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0048.009",
+            "color": "#ff6666",
+            "comment": "Депортация",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0105",
+            "color": "#ff6666",
+            "comment": "Тотальное уничтожение инфраструктуры",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина, Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0021",
+            "color": "#ff6666",
+            "comment": "Нейтрализация оппозиции",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0022",
+            "color": "#ff6666",
+            "comment": "Террор",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0023",
+            "color": "#ff6666",
+            "comment": "Система фильтрационных лагерей",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0025",
+            "color": "#ff6666",
+            "comment": "Информационная изоляция",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0026",
+            "color": "#ff6666",
+            "comment": "Уничтожение локальных медиа",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0027",
+            "color": "#ff6666",
+            "comment": "Выдворение внешних миссий",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0028",
+            "color": "#ff6666",
+            "comment": "Ложный компромисс/ловушка",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0053",
+            "color": "#ff6666",
+            "comment": "Похищение людей",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0099",
+            "color": "#ff6666",
+            "comment": "Захват заложников",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0049",
+            "color": "#ff6666",
+            "comment": "Принудительная мобилизация",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0057",
+            "color": "#ff6666",
+            "comment": "Эксплуатация труда",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0501",
+            "color": "#ff6666",
+            "comment": "Сбор данных через церковь",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0077",
+            "color": "#ff6666",
+            "comment": "Карательные экспедиции",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0030",
+            "color": "#ff6666",
+            "comment": "Административное дробление территории",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0110",
+            "color": "#ff6666",
+            "comment": "Пытки и истязания",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0111",
+            "color": "#ff6666",
+            "comment": "Использование людей как «живого щита»",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0017",
+            "color": "#ff6666",
+            "comment": "Аннексия территорий",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0041",
+            "color": "#ff6666",
+            "comment": "Подселение чиновников и военных",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0047",
+            "color": "#ff6666",
+            "comment": "Поселенческое замещение",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0040",
+            "color": "#ff6666",
+            "comment": "Оккупационная администрация",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0036",
+            "color": "#ff6666",
+            "comment": "Смена правовой системы",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0038",
+            "color": "#ff6666",
+            "comment": "Экономический контроль",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0043",
+            "color": "#ff6666",
+            "comment": "Стирание и переименование топонимов",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0032",
+            "color": "#ff6666",
+            "comment": "Правовая сегрегация населения",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0033",
+            "color": "#ff6666",
+            "comment": "Запрет языка",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0034",
+            "color": "#ff6666",
+            "comment": "Институционализация иерархий и дискриминации",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0035",
+            "color": "#ff6666",
+            "comment": "Принудительная паспортизация",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0042",
+            "color": "#ff6666",
+            "comment": "Переписывание школьных программ",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0031",
+            "color": "#ff6666",
+            "comment": "Ограничение суверенитета",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0044",
+            "color": "#ff6666",
+            "comment": "Уничтожение локальных систем знаний",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0045",
+            "color": "#ff6666",
+            "comment": "Уничтожение исторической памяти",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина, Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0046",
+            "color": "#ff6666",
+            "comment": "Создание экономической зависимости",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0050",
+            "color": "#ff6666",
+            "comment": "Принудительная ассимиляция",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0058",
+            "color": "#ff6666",
+            "comment": "Культурно-лингвистическая унификация",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0101",
+            "color": "#ff6666",
+            "comment": "Цензура",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина, Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0103",
+            "color": "#ff6666",
+            "comment": "Институциональное замещение",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0109",
+            "color": "#ff6666",
+            "comment": "Имитация народного волеизъявления",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Ичкерия"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0067",
+            "color": "#ff6666",
+            "comment": "Использование в качестве буферной зоны",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0052",
+            "color": "#ff6666",
+            "comment": "Изъятие ресурсов",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0056",
+            "color": "#ff6666",
+            "comment": "Налогообложение",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0102",
+            "color": "#ff6666",
+            "comment": "Ресурсная эксплуатация",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": "Украина"
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0066",
+            "color": "#ff6666",
+            "comment": "Продажа территории",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0051",
+            "color": "#ff6666",
+            "comment": "Создание опасных производств",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "techniqueID": "T0112",
+            "color": "#ff6666",
+            "comment": "Кража культурных ценностей",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Платформы",
+                    "value": ""
+                }
+            ]
+        }
+    ]
+}
