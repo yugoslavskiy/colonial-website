@@ -1,5 +1,5 @@
 {
-    "name": "Colonial Framework base Layer",
+    "name": "COLONIAL FRAMEWORK Base Layer",
     "versions":
     {
         "attack": "14",
@@ -7,8 +7,16 @@
         "layer": "4.5"
     },
     "domain": "russia-colonialism",
-    "customDataURL": "http://localhost/something",
-    "description": "Слой со всеми техниками, субтехниками и фильтрацией",
+    "showTacticRowBackground": true,
+    "tacticRowBackground": "#dddddd",
+    "selectTechniquesAcrossTactics": false,
+    "selectSubtechniquesWithParent": false,
+    "layout":
+    {
+        "layout": "flat",
+        "showName": true,
+        "showID": false
+    },
     "filters":
     {
         "platforms":
@@ -21,822 +29,616 @@
     [
         {
             "techniqueID": "T0001",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0002",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0003",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0004",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0005",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0006",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0007",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0008",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0009",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0010",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0024",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "legitimization"
             ]
         },
         {
             "techniqueID": "T0011",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "preparation"
             ]
         },
         {
             "techniqueID": "T0012",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "preparation"
             ]
         },
         {
             "techniqueID": "T0013",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "preparation"
             ]
         },
         {
             "techniqueID": "T0014",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "preparation"
             ]
         },
         {
             "techniqueID": "T0015",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина, Ичкерия"
-                }
+                "preparation",
+                "seizure",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0016",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "preparation"
             ]
         },
         {
             "techniqueID": "T0088",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "preparation",
+                "seizure"
             ]
         },
         {
             "techniqueID": "T0039",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "preparation",
+                "seizure"
             ]
         },
         {
             "techniqueID": "T0107",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Ичкерия"
-                }
+                "preparation",
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0108",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Ичкерия"
-                }
+                "preparation",
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0018",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Ичкерия"
-                }
+                "seizure"
             ]
         },
         {
             "techniqueID": "T0019",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Ичкерия"
-                }
+                "seizure"
             ]
         },
         {
             "techniqueID": "T0020",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "seizure"
             ]
         },
         {
             "techniqueID": "T0037",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина, Ичкерия"
-                }
+                "seizure",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0100",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0104",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0048",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0048.001",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0048.002",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0048.003",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0048.004",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0048.005",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0048.006",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0048.007",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0048.008",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0048.009",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "seizure",
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0105",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина, Ичкерия"
-                }
+                "seizure",
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0021",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0022",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0023",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Ичкерия"
-                }
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0025",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0026",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0027",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0028",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0053",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0099",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Ичкерия"
-                }
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0049",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "neutralization",
+                "tactic-06"
             ]
         },
         {
             "techniqueID": "T0057",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "neutralization",
+                "tactic-06"
             ]
         },
         {
             "techniqueID": "T0501",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0077",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0030",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "neutralization",
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0110",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Ичкерия"
-                }
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0111",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Ичкерия"
-                }
+                "neutralization"
             ]
         },
         {
             "techniqueID": "T0017",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0041",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0047",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0040",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0036",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0038",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "persistence",
+                "tactic-06"
             ]
         },
         {
             "techniqueID": "T0043",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0032",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0033",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0034",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0035",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0042",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0031",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0044",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0045",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина, Ичкерия"
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0046",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0050",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0058",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0101",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина, Ичкерия"
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0103",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0109",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Ичкерия"
-                }
+                "persistence"
             ]
         },
         {
             "techniqueID": "T0067",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "tactic-06"
             ]
         },
         {
             "techniqueID": "T0052",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "tactic-06"
             ]
         },
         {
             "techniqueID": "T0056",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "tactic-06"
             ]
         },
         {
             "techniqueID": "T0102",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": "Украина"
-                }
+                "tactic-06"
             ]
         },
         {
             "techniqueID": "T0066",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "tactic-06"
             ]
         },
         {
             "techniqueID": "T0051",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "tactic-06"
             ]
         },
         {
             "techniqueID": "T0112",
-            "metadata":
+            "tactics":
             [
-                {
-                    "name": "Платформы",
-                    "value": ""
-                }
+                "tactic-06"
             ]
         }
     ]
