@@ -519,7 +519,7 @@ colorMap = {
     2: "#ff6666",  # techniques used by inherited campaign relationships
     3: "#ff66f4",  # techniques used by the object AND used by inherited campaign relationships (1 & 2)
 }
-domain_name_map = {"russia-colonialism": "russia-colonialism", "enterprise-attack": "Enterprise", "mobile-attack": "Mobile", "ics-attack": "ICS"}
+domain_name_map = {"russia-colonialism": "russia-colonialism", "mobile-attack": "Mobile", "ics-attack": "ICS"}
 
 
 def get_navigator_layers(name, attack_id, obj_type, rel_type, version, techniques_used, inheritance=False):
@@ -537,7 +537,10 @@ def get_navigator_layers(name, attack_id, obj_type, rel_type, version, technique
     # Add technique data to layer
     for technique in techniques_used:
         # Generate the navigator technique layer object
-        description = technique["descr"] if technique.get("descr") else None
+        if technique.get("descr"):
+            description = technique["descr"] 
+        else:
+            description = 'test'
         color = technique["color"] if technique.get("color") else 0
         has_subtechniques = True if technique.get("subtechniques") else False
         score = 1 if technique.get("descr") else 0
@@ -549,8 +552,9 @@ def get_navigator_layers(name, attack_id, obj_type, rel_type, version, technique
         if not technique_layer_object:
             continue
 
+        # print(technique["domain"]) - RUSSIA
         # Add technique layer object to domain layer
-        if "russia-colonialism" in technique["domain"]:
+        if "russia" in technique["domain"]:
             enterprise_layer["techniques"].append(technique_layer_object)
         if "mobile" in technique["domain"]:
             mobile_layer["techniques"].append(technique_layer_object)
@@ -577,11 +581,12 @@ def get_navigator_layers(name, attack_id, obj_type, rel_type, version, technique
 
     # Build list of domains with navigator layers
     layers = []
+
     if enterprise_layer["techniques"]:
         layers.append(
             {
                 "domain": "russia-colonialism",
-                "name": domain_name_map["russia-colonialism"],
+                "name": "russia-colonialism",
                 "filename": f"{attack_id}-russia-colonialism-layer.json",
                 "layer": json.dumps(enterprise_layer),
             }

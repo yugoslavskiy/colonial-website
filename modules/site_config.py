@@ -124,7 +124,7 @@ javascript_path = "attack-theme/static/scripts/"
 static_style_dir = os.path.join("attack-theme", "static", "style/")
 
 # Link to instance of the ATT&CK Navigator; change for to a custom location
-navigator_link = "https://mitre-attack.github.io/attack-navigator/"
+navigator_link = "https://yugoslavskiy.github.io/colonial-navigator/"
 
 # Content directory
 content_dir = "content/"

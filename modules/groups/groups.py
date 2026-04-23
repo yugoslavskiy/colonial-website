@@ -123,8 +123,12 @@ def generate_group_md(group, side_menu_data, notes):
             inheritance=inheritance,  # extend legend to include color coding for inherited techniques, if applicable
         )
 
+        print(layers)
+
         data["layers"] = []
         for layer in layers:
+            print("layers_start")
+            layer["domain"] = "russia-colonialism"
             with open(
                 os.path.join(
                     groups_config.group_markdown_path,
@@ -137,6 +141,9 @@ def generate_group_md(group, side_menu_data, notes):
                     {"attack_id": data["attack_id"], "path": "groups/" + data["attack_id"], "domain": layer["domain"]}
                 )
                 subs = subs + layer["layer"]
+                print(subs)
+                print("---")
+
                 layer_json.write(subs)
             data["layers"].append(
                 {
