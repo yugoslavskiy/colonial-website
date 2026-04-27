@@ -1,0 +1,1490 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1,shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='/theme/favicon.ico' type='image/x-icon'>
+        <title>СССР, Group G0010 | MITRE ATT&CK&reg;</title>
+        <!-- USWDS CSS -->
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='/theme/style/vendors/bootstrap.min.css' />
+        <link rel='stylesheet' href='/theme/style/vendors/bootstrap-tourist.css' />
+        <link rel='stylesheet' href='/theme/style/vendors/bootstrap-select.min.css' />
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="/theme/style/vendors/fontawesome-6.5.1/css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="/theme/style/vendors/fontawesome-6.5.1/css/brands.min.css"/>
+        <link rel="stylesheet" href="/theme/style/vendors/fontawesome-6.5.1/css/solid.min.css"/>
+            <link rel="stylesheet" href="/theme/style-user.css"/>
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid attack-website-wrapper d-flex flex-column h-100">
+        <div class="row sticky-top flex-grow-0 flex-shrink-1">
+            <!-- header elements -->
+            <header class="col px-0">
+                    <nav class='navbar navbar-expand-lg navbar-dark position-static'>
+        <a class='navbar-brand' href='/'><img src="/theme/images/mitre_attack_logo.png" class="attack-logo"></a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarCollapse'>
+            <ul class='nav nav-tabs ml-auto'>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/matrices/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Матрицы</b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/matrices/russia/">Россия</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/tactics/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Тактики</b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/tactics/russia/">Россия</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/techniques/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Техники</b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/techniques/russia/">Россия</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/groups" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>CTI </b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/groups">Groups</a>
+                <a class="dropdown-item" href="/software">Software</a>
+                <a class="dropdown-item" href="/campaigns">Campaigns</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item dropdown">
+                                
+    <a class="nav-link dropdown-toggle" href="/resources/" id="navbarDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Resources </b>
+    </a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/resources/">Get Started</a>
+                <a class="dropdown-item" href="/resources/learn-more-about-attack/">Learn More about ATT&CK</a>
+                <a class="dropdown-item" href="/resources/attackcon/">ATT&CKcon</a>
+                <a class="dropdown-item" href="/resources/attack-data-and-tools/">ATT&CK Data & Tools</a>
+                <a class="dropdown-item" href="/resources/faq/">FAQ</a>
+                <a class="dropdown-item" href="/resources/engage-with-attack/contact/">Engage with ATT&CK</a>
+                <a class="dropdown-item" href="/resources/updates/">Updates</a>
+                <a class="dropdown-item" href="/resources/legal-and-branding/">Legal & Branding</a>
+    </div>
+
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="/resources/engage-with-attack/contribute/"  class="nav-link" ><b>Contribute </b></a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="search-button" class="btn search-button">Search <div id="search-icon" class="icon-button search-icon"></div></button>
+                        </li>
+            </ul>
+        </div>
+    </nav>
+
+            </header>
+        </div>
+        <div class="row flex-grow-0 flex-shrink-1">
+            <!-- banner elements -->
+            <div class="col px-0">
+                <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the versioning feature -->
+                <!-- !versions banner! -->
+            </div>
+        </div>
+        <div class="row flex-grow-1 flex-shrink-0">
+            <!-- main content elements -->
+            <!--start-indexing-for-search-->
+
+ 
+     
+    <div class="sidebar nav sticky-top flex-column pr-0 pt-4 pb-3 pl-3" id="v-tab" role="tablist" aria-orientation="vertical">
+        <div class="resizer" id="resizer"></div>
+<!--stop-indexing-for-search-->
+<div id="sidebars"></div>
+<!--start-indexing-for-search-->
+    </div>
+
+    
+     
+    <div class="tab-content col-xl-9 pt-4" id="v-tabContent">
+        <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/">Home</a></li>
+  <li class="breadcrumb-item"><a href="/groups/">Groups</a></li>
+  <li class="breadcrumb-item">СССР</li>
+</ol>
+<div class="tab-pane fade show active" id="v-" role="tabpanel" aria-labelledby="v--tab">
+</div>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container-fluid">
+        <h1>
+          СССР
+        </h1>
+
+        <div class="row">
+          <div class="col-md-8">
+            <div class="description-body">
+                      <p>Тоталитарное имперское «государство-коммуна», официально провозглашенное 30 декабря 1922 года. Выступал главным актором колониального поглощения, удержания и эксплуатации вплоть до распада в 1991 году. Формально декларируя объединение равноправных независимых республик с правом свободного выхода, на практике СССР реализовал жесткую унификацию и централизацию управления в Москве (сосредоточив абсолютную власть в Политбюро ЦК). Это привело к фактической ликвидации политического, экономического и культурного суверенитета колонизируемых наций. В рамках фреймворка этот актор характеризуется беспрецедентными масштабами социального инжиниринга: полным контролем над обществом, применением институционального террора, ГУЛАГа, физического уничтожения крестьянства через искусственный голод, а также политикой планомерной русификации и зачистки национальных элит.</p>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div id="card-id" class="row card-data">
+                  <div class="col-md-12">
+                    <span class="h5 card-title">ID:&nbsp;</span>G0010
+                  </div>
+                </div>
+                <div class="row card-data">
+                  <div class="col-md-12">
+                    <span class="h5 card-title">Version</span>: 1.0
+                  </div>
+                </div>
+                <div class="row card-data">
+                  <div class="col-md-12">
+                    <span class="h5 card-title">Created:&nbsp;</span>27 April 2026
+                  </div>
+                </div>
+                <div class="row card-data">
+                  <div class="col-md-12">
+                    <span class="h5 card-title">Last Modified:&nbsp;</span>27 April 2026
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="pt-3" id="campaigns">Campaigns</h2>
+        <div class="tables-mobile">
+          <table class="table table-bordered table-alternate mt-2">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">First Seen</th>
+                <th scope="col">Last Seen</th>
+                <th scope="col">References</th>
+                <th scope="col">Techniques</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0089">C0089</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0089">«Генеральный погром» правозащитников и карательная психиатрия (1972–1985)</a>
+                </td>
+                <td style="white-space:nowrap">January 1972        Historical
+</td>
+                <td style="white-space:nowrap">December 1985        Historical
+</td>
+                <td>
+                          <p>Массовые аресты членов Украинской Хельсинкской группы и фабрикация уголовных дел, приведшие к длительной изоляции и гибели видных диссидентов (в том числе Василя Стуса) в лагерях особого режима. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0135">Карательная психиатрия</a>,                   <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0110">Пытки и истязания</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0081">C0081</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0081">Аннексия и советизация Западной Украины (1939–1941)</a>
+                </td>
+                <td style="white-space:nowrap">September 1939        Historical
+</td>
+                <td style="white-space:nowrap">June 1941        Historical
+</td>
+                <td>
+                          <p>Секретные протоколы к Пакту Молотова — Риббентропа с нацистской Германией по разделу сфер влияния в Восточной Европе и легализации вторжения. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0017">Аннексия территорий</a>,                   <a href="/techniques/T0019">Военная интервенция</a>,                   <a href="/techniques/T0127">Депортация</a>,                   <a href="/techniques/T0109">Имитация народного волеизъявления</a>,                   <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0039">Сговор с третьей стороной</a>,                   <a href="/techniques/T0057">Эксплуатация труда</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0083">C0083</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0083">Депортация крымскотатарского народа (Сюргюн) (1944)</a>
+                </td>
+                <td style="white-space:nowrap">May 1944        Historical
+</td>
+                <td style="white-space:nowrap">December 1944        Historical
+</td>
+                <td>
+                          <p>Официальное обвинение всего крымскотатарского народа в коллективном «предательстве» для идеологического оправдания репрессий и выселения. <span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="РАШИЗМ ЗВІР З БЕЗОДНІ 2023"title="Лариса Якубова. (2023). РАШИЗМ ЗВІР З БЕЗОДНІ."><sup>[2]</sup></span></p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0006">Дегуманизация</a>,                   <a href="/techniques/T0127">Депортация</a>,                   <a href="/techniques/T0043">Стирание и переименование топонимов</a>,                   <a href="/techniques/T0045">Уничтожение исторической памяти</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0087">C0087</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0087">Идеологическая кампания «300-летие воссоединения» и передача Крыма (1954)</a>
+                </td>
+                <td style="white-space:nowrap">January 1954        Historical
+</td>
+                <td style="white-space:nowrap">December 1954        Historical
+</td>
+                <td>
+                          <p>Масштабная государственная кампания по конструированию исторического мифа о «воссоединении» (вместо аннексии) для исторического обоснования колониального господства Москвы над Киевом. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0030">Административно-территориальное деление</a>,                   <a href="/techniques/T0010">Отрицание самостоятельной идентичности</a>,                   <a href="/techniques/T0004">Переписывание истории</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0090">C0090</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0090">Информационная блокада вокруг Чернобыльской катастрофы (1986)</a>
+                </td>
+                <td style="white-space:nowrap">April 1986        Historical
+</td>
+                <td style="white-space:nowrap">December 1986        Historical
+</td>
+                <td>
+                          <p>Сознательное сокрытие союзным руководством в Москве масштабов аварии на ЧАЭС от собственного населения и международных организаций, лишение украинцев информации об уровне радиационной угрозы. (Citation: Двойное преступление СССР: как советы скрывали Чернобыльскую катастрофу 2026)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0025">Информационная изоляция</a>,                   <a href="/techniques/T0007">Навязывание своей картины реальности</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0079">C0079</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0079">Культурный террор и «Расстрелянное возрождение» (1933–1938)</a>
+                </td>
+                <td style="white-space:nowrap">January 1933        Historical
+</td>
+                <td style="white-space:nowrap">December 1938        Historical
+</td>
+                <td>
+                          <p>Создание атмосферы тотального парализующего страха в обществе через фабрикацию дел (например, «Союза освобождения Украины») и проведение публичных показательных процессов. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0100">Захват религиозных институтов</a>,                   <a href="/techniques/T0113">Лингвистическая ассимиляция</a>,                   <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0004">Переписывание истории</a>,                   <a href="/techniques/T0022">Террор</a>,                   <a href="/techniques/T0045">Уничтожение исторической памяти</a>,                   <a href="/techniques/T0101">Цензура</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0093">C0093</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0093">Манипулятивный референдум о сохранении СССР (март 1991)</a>
+                </td>
+                <td style="white-space:nowrap">March 1991        Historical
+</td>
+                <td style="white-space:nowrap">March 1991        Historical
+</td>
+                <td>
+                          <p>Проведение Всесоюзного референдума с искусственно запутанной формулировкой о сохранении обновленного СССР, чтобы легитимизировать имперский контроль и принудить республики к подписанию нового союзного договора. (Citation: Всесоюзний референдум про збереження СРСР — Вікіпедія 2026)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0109">Имитация народного волеизъявления</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0077">C0077</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0077">Насильственная коллективизация и раскулачивание (1928–1932)</a>
+                </td>
+                <td style="white-space:nowrap">January 1928        Historical
+</td>
+                <td style="white-space:nowrap">December 1932        Historical
+</td>
+                <td>
+                          <p>Насильственное изъятие у крестьян земли, скота и сельскохозяйственного инвентаря в рамках форсированной коллективизации под лозунгами социалистической модернизации. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0127">Депортация</a>,                   <a href="/techniques/T0052">Изъятие ресурсов</a>,                   <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0038">Экономический контроль</a>,                   <a href="/techniques/T0057">Эксплуатация труда</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0080">C0080</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0080">Национальные операции НКВД и институциональная русификация (1937–1939)</a>
+                </td>
+                <td style="white-space:nowrap">August 1937        Historical
+</td>
+                <td style="white-space:nowrap">December 1939        Historical
+</td>
+                <td>
+                          <p>Проведение секретных массовых «национальных операций» НКВД (польской, немецкой, греческой, болгарской и др.) для физического уничтожения представителей этнических меньшинств. (Citation: В ТЕНИ «БОЛЬШОГО БРАТА» ЗАПАДНЫЕ НАЦИОНАЛЬНЫЕ МЕНЬШИНСТВА В СССР 1917-1938 ГГ . 2011)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0120">Истребление по признаку идентичности</a>,                   <a href="/techniques/T0128">Ликвидация национальных общественных организаций</a>,                   <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a
+                    href="/techniques/T0114/003">Перевод школ на язык метрополии</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0088">C0088</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0088">Первая волна репрессий против «шестидесятников» (1965–1968)</a>
+                </td>
+                <td style="white-space:nowrap">August 1965        Historical
+</td>
+                <td style="white-space:nowrap">December 1968        Historical
+</td>
+                <td>
+                          <p>Целенаправленные аресты новой украинской интеллигенции, диссидентов и участников протестов (в т.ч. после премьеры «Теней забытых предков») для подавления зарождающегося сопротивления. (Citation: ДИССИДЕНТСКОЕ ДВИЖЕНИЕ В УКРАИНЕ (1954 – 1987) - ХПГ 2026)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0022">Террор</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0086">C0086</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0086">Подавление восстаний в ГУЛАГе (1953–1954)</a>
+                </td>
+                <td style="white-space:nowrap">May 1953        Historical
+</td>
+                <td style="white-space:nowrap">December 1954        Historical
+</td>
+                <td>
+                          <p>Применение регулярных войск и танков для подавления масштабных бунтов украинских политзаключенных в системе концлагерей (в частности, в Кенгире). (Citation: Кенгирское восстание заключённых - Википедия 2026)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0077">Карательные экспедиции</a>,                   <a href="/techniques/T0104">Массовые убийства гражданских</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0084">C0084</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0084">Подавление сопротивления УПА и операция «Висла» (1944–1951)</a>
+                </td>
+                <td style="white-space:nowrap">January 1944        Historical
+</td>
+                <td style="white-space:nowrap">December 1951        Historical
+</td>
+                <td>
+                          <p>Регулярные войсковые операции НКВД и МГБ по зачистке западноукраинских сел с целью подавления сопротивления УПА. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0127">Депортация</a>,                   <a href="/techniques/T0077">Карательные экспедиции</a>,                   <a href="/techniques/T0104">Массовые убийства гражданских</a>,                   <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0039">Сговор с третьей стороной</a>,                   <a href="/techniques/T0022">Террор</a>,                   <a href="/techniques/T0057">Эксплуатация труда</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0095">C0095</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0095">Попытка государственного переворота ГКЧП (август 1991)</a>
+                </td>
+                <td style="white-space:nowrap">August 1991        Historical
+</td>
+                <td style="white-space:nowrap">August 1991        Historical
+</td>
+                <td>
+                          <p>Вооруженный захват власти Государственным комитетом по чрезвычайному положению (ГКЧП) для срыва подписания договора о Союзе Суверенных Государств и сохранения централизованного контроля над республиками. (Citation: Серпневий путч — Вікіпедія 2026)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0020">Организация переворота</a>,                   <a href="/techniques/T0101">Цензура</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0085">C0085</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0085">Послевоенный идеологический террор («Ждановщина») (1946–1953)</a>
+                </td>
+                <td style="white-space:nowrap">August 1946        Historical
+</td>
+                <td style="white-space:nowrap">March 1953        Historical
+</td>
+                <td>
+                          <p>Тотальный идеологический контроль над искусством и прессой, запрет литературных произведений и шельмование писателей за мнимый «буржуазный национализм». <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0022">Террор</a>,                   <a href="/techniques/T0101">Цензура</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0053">C0053</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0053">Создание единого «советского народа» (1958–1970)</a>
+                </td>
+                <td style="white-space:nowrap">January 1958        Historical
+</td>
+                <td style="white-space:nowrap">December 1970        Historical
+</td>
+                <td>
+                          <p>Законодательный перевод образовательных учреждений: «Постанова Пленуму ЦК КПРС про перехід українських шкіл на російську мову викладання» (Citation: Русифікація України — Вікіпедія 2026).</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0113">Лингвистическая ассимиляция</a>: <a
+                    href="/techniques/T0113/002">Исключение родного языка из делопроизводства</a>,                   <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a
+                    href="/techniques/T0114/003">Перевод школ на язык метрополии</a>,                   <a href="/techniques/T0010">Отрицание самостоятельной идентичности</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0052">C0052</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0052">Сталинский террор и конец украинизации (1922–1939)</a>
+                </td>
+                <td style="white-space:nowrap">January 1922        Historical
+</td>
+                <td style="white-space:nowrap">December 1939        Historical
+</td>
+                <td>
+                          <p>Уничтожение гражданских и просветительских структур в местах компактного проживания диаспоры: «Ліквідація 'Просвіт' на Кубані, в Зеленому Клину» (Citation: Русифікація України — Вікіпедія 2026).</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0120">Истребление по признаку идентичности</a>,                   <a href="/techniques/T0128">Ликвидация национальных общественных организаций</a>,                   <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a
+                    href="/techniques/T0114/001">Навязывание асимметричного двуязычия и факультативности</a>,                   <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a
+                    href="/techniques/T0114/003">Перевод школ на язык метрополии</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0082">C0082</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0082">Тактика «выжженной земли» и преступная мобилизация (1941–1945)</a>
+                </td>
+                <td style="white-space:nowrap">June 1941        Historical
+</td>
+                <td style="white-space:nowrap">May 1945        Historical
+</td>
+                <td>
+                          <p>Применение тактики «выжженной земли» при отступлении в 1941 году: целенаправленный подрыв Днепрогэса, уничтожение заводов, складов и коммуникаций. (Citation: Історія України — Вікіпедія 2026)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0052">Изъятие ресурсов</a>,                   <a href="/techniques/T0134">Использование в качестве пушечного мяса</a>,                   <a href="/techniques/T0049">Принудительная мобилизация</a>,                   <a href="/techniques/T0105">Тотальное уничтожение инфраструктуры</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0078">C0078</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0078">Террор голодом: Голодомор (1932–1933)</a>
+                </td>
+                <td style="white-space:nowrap">August 1932        Historical
+</td>
+                <td style="white-space:nowrap">December 1933        Historical
+</td>
+                <td>
+                          <p>Конфискация абсолютно всего продовольствия, включая выкачку семенных фондов, через механизм непосильных хлебозаготовок, что привело к массовому смертоносному голоду. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0121">Искусственный голод</a>,                   <a href="/techniques/T0104">Массовые убийства гражданских</a>,                   <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0022">Террор</a>,                   <a href="/techniques/T0108">Экономическая блокада</a>,                   <a href="/techniques/T0057">Эксплуатация труда</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0091">C0091</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0091">Торможение демократических реформ и противодействие Народному Руху (1989–1990)</a>
+                </td>
+                <td style="white-space:nowrap">September 1989        Historical
+</td>
+                <td style="white-space:nowrap">December 1990        Historical
+</td>
+                <td>
+                          <p>Применение грубой физической силы представителями партийной номенклатуры: секретари райкомов КПУ и председатели колхозов лично участвовали в жестоких избиениях активистов Руха и диссидентов (в частности, В. Овсиенко и А. Гудымы) для запугивания населения. (Citation: Народний рух України — Вікіпедія 2026)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0053">Похищение людей</a>,                   <a href="/techniques/T0022">Террор</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0054">C0054</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0054">Финансовая русификация школ (1978–1983)</a>
+                </td>
+                <td style="white-space:nowrap">January 1978        Historical
+</td>
+                <td style="white-space:nowrap">December 1983        Historical
+</td>
+                <td>
+                          <p>Продолжение административного давления на школы: Директива «Про вдосконалення вивчення російської мови в українських школах» (Citation: Русифікація України — Вікіпедія 2026).</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0115">Культурная ассимиляция</a>: <a
+                    href="/techniques/T0115/003">Культурный шовинизм</a>,                   <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a
+                    href="/techniques/T0114/002">Финансовая дискриминация педагогов</a>,                   <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a
+                    href="/techniques/T0114/001">Навязывание асимметричного двуязычия и факультативности</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/campaigns/C0076">C0076</a>
+                </td>
+                <td>
+                  <a href="/campaigns/C0076">Юридическое поглощение через создание СССР (1922–1924)</a>
+                </td>
+                <td style="white-space:nowrap">December 1922        Historical
+</td>
+                <td style="white-space:nowrap">January 1924        Historical
+</td>
+                <td>
+                          <p>Использование Договора об образовании СССР (декабрь 1922 г.) для формального декларирования союза равноправных республик, маскирующего окончательную централизацию власти в Москве. (Citation: Україна й українці в постімперську добу (1917–1939) 2021)</p>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0031">Ограничение суверенитета</a>,                   <a href="/techniques/T0088">Фиктивный договор</a>                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+            <!--stop-indexing-for-search-->
+        <div class="dropdown h3 mt-3 float-right">
+            <button class="btn btn-navy dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>COLONIAL Navigator Layers</b>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <h6 class="dropdown-header">russia-colonialism Layer</h6>
+                    <a class="dropdown-item" href="/groups/G0010/G0010-russia-colonialism-layer.json" download target="_blank">download</a>
+                    <!-- only show view on navigator link if layer link is defined -->
+                        <a class="dropdown-item" href="#" id="view-layer-on-navigator-russia-colonialism" target="_blank">view <img width="10" src="/theme/images/external-site-dark.jpeg"></a>
+                        <script src="/theme/scripts/settings.js"></script>
+                        <script>
+                            if (window.location.protocol == "https:") { //view on navigator only works when this site is hosted on HTTPS
+                                var layerURL = window.location.protocol + "//" + window.location.host + base_url + "groups/G0010/G0010-russia-colonialism-layer.json";
+                                document.getElementById("view-layer-on-navigator-russia-colonialism").href = "https://yugoslavskiy.github.io/colonial-navigator//#layerURL=" + encodeURIComponent(layerURL);
+                            } else { //hide button
+                                document.getElementById("view-layer-on-navigator-russia-colonialism").classList.add("d-none");
+                            }
+                        </script>
+            </div>
+        </div>
+    <!--start-indexing-for-search-->
+
+        <h2 class="pt-3 mb-2" id="techniques">Techniques Used</h2>
+<div class="tables-mobile">
+<table class="table techniques-used background table-bordered">
+    <thead>
+        <tr>
+            <th class="p-2" scope="col">Domain</th>
+            <th class="p-2" colspan="2">ID</th>
+            <th class="p-2" scope="col">Name</th>
+            <th class="p-2" scope="col">Use</th>
+        </tr>
+    </thead>
+    <tbody>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0030">T0030</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0030">Административно-территориальное деление</a>
+                    </td>
+                    <td>
+                                <p>Административная передача Крыма от РСФСР к УССР под ширмой братской дружбы, а де-факто — для перекладывания на УССР экономического бремени послевоенного восстановления полуострова. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Административная передача Крыма от РСФСР к УССР под ширмой братской дружбы, а де-факто — для перекладывания на УССР экономического бремени послевоенного восстановления полуострова. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0017">T0017</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0017">Аннексия территорий</a>
+                    </td>
+                    <td>
+                                <p>Официальное насильственное присоединение оккупированных земель Западной Украины (1939), а затем Северной Буковины и Бессарабии (1940) с их интеграцией в административную структуру УССР. (Citation: Історія України — Вікіпедія 2026)</p><p>Официальное насильственное присоединение оккупированных земель Западной Украины (1939), а затем Северной Буковины и Бессарабии (1940) с их интеграцией в административную структуру УССР. (Citation: Історія України — Вікіпедія 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0019">T0019</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0019">Военная интервенция</a>
+                    </td>
+                    <td>
+                                <p>Прямое вооруженное вторжение Красной армии 17 сентября 1939 года на территорию Польши для военной оккупации западноукраинских земель. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Прямое вооруженное вторжение Красной армии 17 сентября 1939 года на территорию Польши для военной оккупации западноукраинских земель. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0006">T0006</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0006">Дегуманизация</a>
+                    </td>
+                    <td>
+                                <p>Официальное обвинение всего крымскотатарского народа в коллективном «предательстве» для идеологического оправдания репрессий и выселения. <span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="РАШИЗМ ЗВІР З БЕЗОДНІ 2023"title="Лариса Якубова. (2023). РАШИЗМ ЗВІР З БЕЗОДНІ."><sup>[2]</sup></span></p><p>Официальное обвинение всего крымскотатарского народа в коллективном «предательстве» для идеологического оправдания репрессий и выселения. <span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="РАШИЗМ ЗВІР З БЕЗОДНІ 2023"title="Лариса Якубова. (2023). РАШИЗМ ЗВІР З БЕЗОДНІ."><sup>[2]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0127">T0127</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0127">Депортация</a>
+                    </td>
+                    <td>
+                                <p>Массовое выселение сотен тысяч украинских крестьян («кулаков») и членов их семей в Сибирь и отдаленные северные регионы СССР. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Насильственное выселение семей повстанцев в Сибирь, а также более 140 тысяч украинцев Закерзонья с их исторических земель для лишения УПА социальной базы. (Citation: Історія України — Вікіпедія 2026)</p><p>Массовое принудительное выселение неблагонадежного населения и семей репрессированных (сотен тысяч украинцев и поляков) в отдаленные районы (спецпоселения Сибири и Казахстана). <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Насильственное изгнание коренного народа Крыма со своей родины в спецпоселения Средней Азии и Урала в непригодные для жизни условия. <span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="РАШИЗМ ЗВІР З БЕЗОДНІ 2023"title="Лариса Якубова. (2023). РАШИЗМ ЗВІР З БЕЗОДНІ."><sup>[2]</sup></span></p><p>Массовое выселение сотен тысяч украинских крестьян («кулаков») и членов их семей в Сибирь и отдаленные северные регионы СССР. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0100">T0100</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0100">Захват религиозных институтов</a>
+                    </td>
+                    <td>
+                                <p>Массовое закрытие и разрушение церквей, а также репрессии против священнослужителей с целью полного разгрома Украинской автокефальной православной церкви (УАПЦ). (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Массовое закрытие и разрушение церквей, а также репрессии против священнослужителей с целью полного разгрома Украинской автокефальной православной церкви (УАПЦ). (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0052">T0052</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0052">Изъятие ресурсов</a>
+                    </td>
+                    <td>
+                                <p>Массовое лишение имущества и принудительное выселение сотен тысяч крестьян, оказывавших сопротивление (так называемых «куркулів»), в отдаленные спецпоселения Сибири и Севера. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Тотальный вывоз промышленного оборудования, продовольствия и сельскохозяйственной техники вглубь СССР при отступлении. (Citation: Історія України — Вікіпедія 2026)</p><p>Массовое лишение имущества и принудительное выселение сотен тысяч крестьян, оказывавших сопротивление (так называемых «куркулів»), в отдаленные спецпоселения Сибири и Севера. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0109">T0109</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0109">Имитация народного волеизъявления</a>
+                    </td>
+                    <td>
+                                <p>Организация фейковых безальтернативных «Народных сборов» под контролем оккупационных войск для юридического оформления захвата. (Citation: Історія України — Вікіпедія 2026)</p><p>Организация фейковых безальтернативных «Народных сборов» под контролем оккупационных войск для юридического оформления захвата. (Citation: Історія України — Вікіпедія 2026)</p><p>Проведение Всесоюзного референдума с искусственно запутанной формулировкой о сохранении обновленного СССР, чтобы легитимизировать имперский контроль и принудить республики к подписанию нового союзного договора. (Citation: Всесоюзний референдум про збереження СРСР — Вікіпедія 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0025">T0025</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0025">Информационная изоляция</a>
+                    </td>
+                    <td>
+                                <p>Сознательное сокрытие союзным руководством в Москве масштабов аварии на ЧАЭС от собственного населения и международных организаций, лишение украинцев информации об уровне радиационной угрозы. (Citation: Двойное преступление СССР: как советы скрывали Чернобыльскую катастрофу 2026)</p><p>Сознательное сокрытие союзным руководством в Москве масштабов аварии на ЧАЭС от собственного населения и международных организаций, лишение украинцев информации об уровне радиационной угрозы. (Citation: Двойное преступление СССР: как советы скрывали Чернобыльскую катастрофу 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0121">T0121</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0121">Искусственный голод</a>
+                    </td>
+                    <td>
+                                <p>Конфискация абсолютно всего продовольствия, включая выкачку семенных фондов, через механизм непосильных хлебозаготовок, что привело к массовому смертоносному голоду. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Конфискация абсолютно всего продовольствия, включая выкачку семенных фондов, через механизм непосильных хлебозаготовок, что привело к массовому смертоносному голоду. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0134">T0134</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0134">Использование в качестве пушечного мяса</a>
+                    </td>
+                    <td>
+                                <p>Бросание тысяч неподготовленных и невооруженных украинских крестьян («черносвиточников») в лобовые атаки при форсировании Днепра для истощения боезапаса немецких войск. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Бросание тысяч неподготовленных и невооруженных украинских крестьян («черносвиточников») в лобовые атаки при форсировании Днепра для истощения боезапаса немецких войск. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0120">T0120</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0120">Истребление по признаку идентичности</a>
+                    </td>
+                    <td>
+                                <p>Целенаправленное физическое уничтожение (массовые казни) национальной культурной элиты — трагедия, вошедшая в историю как <a href="https://ru.wikipedia.org/wiki/Расстрелянное_возрождение">«Расстрелянное возрождение»</a>. «Телеграма Сталіна про припинення українізації і знищення більшості українських письменників» (Citation: Русифікація України — Вікіпедія 2026). Эти репрессии уничтожили целое поколение выдающихся украинских писателей, поэтов и интеллигенции <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span>.</p><p>Целенаправленное физическое уничтожение (массовые казни) национальной культурной элиты — трагедия, вошедшая в историю как <a href="https://ru.wikipedia.org/wiki/Расстрелянное_возрождение">«Расстрелянное возрождение»</a>. «Телеграма Сталіна про припинення українізації і знищення більшості українських письменників» (Citation: Русифікація України — Вікіпедія 2026). Эти репрессии уничтожили целое поколение выдающихся украинских писателей, поэтов и интеллигенции <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span>.</p><p>Проведение секретных массовых «национальных операций» НКВД (польской, немецкой, греческой, болгарской и др.) для физического уничтожения представителей этнических меньшинств. (Citation: В ТЕНИ «БОЛЬШОГО БРАТА» ЗАПАДНЫЕ НАЦИОНАЛЬНЫЕ МЕНЬШИНСТВА В СССР 1917-1938 ГГ . 2011)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0135">T0135</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0135">Карательная психиатрия</a>
+                    </td>
+                    <td>
+                                <p>Использование институтов государственного здравоохранения для политически мотивированного диагностирования инакомыслящих (диагноз «вялотекущая шизофрения») и их бессрочной изоляции в психиатрических больницах. (Citation: Карательная психиатрия в России: назад в СССР? - Riddle Russia 2026)</p><p>Использование институтов государственного здравоохранения для политически мотивированного диагностирования инакомыслящих (диагноз «вялотекущая шизофрения») и их бессрочной изоляции в психиатрических больницах. (Citation: Карательная психиатрия в России: назад в СССР? - Riddle Russia 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0077">T0077</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0077">Карательные экспедиции</a>
+                    </td>
+                    <td>
+                                <p>Регулярные войсковые операции НКВД и МГБ по зачистке западноукраинских сел с целью подавления сопротивления УПА. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Регулярные войсковые операции НКВД и МГБ по зачистке западноукраинских сел с целью подавления сопротивления УПА. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Применение регулярных войск и танков для подавления масштабных бунтов украинских политзаключенных в системе концлагерей (в частности, в Кенгире). (Citation: Кенгирское восстание заключённых - Википедия 2026)</p>
+
+                    </td>
+                </tr>
+                        <tr class="sub technique noparent russia" id="russia">
+                            <td>
+ 
+                            </td>
+                            <td>
+                                <a href="/techniques/T0115">T0115</a>
+                            </td>
+                            <td>
+                                <a href="/techniques/T0115/003">.003</a>
+                            </td>
+                            <td>
+                                <a href="/techniques/T0115">Культурная ассимиляция</a>: <a href="/techniques/T0115/003">Культурный шовинизм</a>
+                            </td>
+                            <td>
+                                        <p>Идеологическое возвышение языка метрополии над остальными: «Ташкентська конференція — 'Російська мова — мова дружби народів'» (Citation: Русифікація України — Вікіпедія 2026).</p><p>Идеологическое возвышение языка метрополии над остальными: «Ташкентська конференція — 'Російська мова — мова дружби народів'» (Citation: Русифікація України — Вікіпедія 2026).</p>
+
+                            </td>
+                        </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0128">T0128</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0128">Ликвидация национальных общественных организаций</a>
+                    </td>
+                    <td>
+                                <p>Уничтожение гражданских и просветительских структур в местах компактного проживания диаспоры: «Ліквідація 'Просвіт' на Кубані, в Зеленому Клину» (Citation: Русифікація України — Вікіпедія 2026).</p><p>Уничтожение гражданских и просветительских структур в местах компактного проживания диаспоры: «Ліквідація 'Просвіт' на Кубані, в Зеленому Клину» (Citation: Русифікація України — Вікіпедія 2026).</p><p>Принудительное закрытие всех национальных советов, педагогических институтов, театров и культурных учреждений этнических меньшинств в УССР. (Citation: Національно-культурне життя етнічних меншостей України ( 20-30-ті роки ): коренізація і денаціоналізація (1) 1998)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0113">T0113</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0113">Лингвистическая ассимиляция</a>
+                    </td>
+                    <td>
+                                <p>Принудительная реформа правописания 1933 года, направленная на искусственное сближение украинской грамматики и терминологии с русским языком. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Принудительная реформа правописания 1933 года, направленная на искусственное сближение украинской грамматики и терминологии с русским языком. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                    </td>
+                </tr>
+                    <tr class="sub technique russia" id="russia">
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="/techniques/T0113/002">.002</a>
+                        </td>
+                        <td>
+                            <a href="/techniques/T0113/002">Исключение родного языка из делопроизводства</a>
+                        </td>
+                        <td>
+                                    <p>Вытеснение национального языка из научной сферы: «Наказ Міністерства освіти СРСР про написання і захист усіх дисертацій лише російською мовою» (Citation: Русифікація України — Вікіпедія 2026).</p><p>Вытеснение национального языка из научной сферы: «Наказ Міністерства освіти СРСР про написання і захист усіх дисертацій лише російською мовою» (Citation: Русифікація України — Вікіпедія 2026).</p>
+
+                        </td>
+                    </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0008">T0008</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0008">Лишение субъектности</a>
+                    </td>
+                    <td>
+                                <p>Союзный центр задействовал президента США Дж. Буша, который во время визита в Киев публично призывал поддержать М. Горбачева и отговаривал украинцев от суверенитета, называя стремление к независимости «суицидальным национализмом». (Citation: Котлета по-київськи (промова) — Вікіпедія 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0104">T0104</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0104">Массовые убийства гражданских</a>
+                    </td>
+                    <td>
+                                <p>Осознанное доведение миллионов украинских крестьян до голодной смерти как прямой результат государственной политики Москвы. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Расправы НКВД над жителями сел, заподозренных в поддержке УПА, повлекшие гибель десятков тысяч гражданских лиц. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Вооруженный расстрел безоружных узников и массовые убийства при силовом подавлении Кенгирского, Норильского и Воркутинского восстаний. (Citation: Норильское восстание - Википедия 2026)</p><p>Осознанное доведение миллионов украинских крестьян до голодной смерти как прямой результат государственной политики Москвы. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0007">T0007</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0007">Навязывание своей картины реальности</a>
+                    </td>
+                    <td>
+                                <p>Создание искусственной картины радиационного благополучия и преступный, принудительный вывод людей на первомайские демонстрации в Киеве под радиоактивные осадки для маскировки катастрофы. (Citation: Двойное преступление СССР: как советы скрывали Чернобыльскую катастрофу 2026)</p><p>Создание искусственной картины радиационного благополучия и преступный, принудительный вывод людей на первомайские демонстрации в Киеве под радиоактивные осадки для маскировки катастрофы. (Citation: Двойное преступление СССР: как советы скрывали Чернобыльскую катастрофу 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0021">T0021</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0021">Нейтрализация оппозиции</a>
+                    </td>
+                    <td>
+                                <p>Массовые аресты крестьян в ходе кампании раскулачивания: согласно директивам 1930 года, помимо депортаций, десятки тысяч человек отправлялись непосредственно в концентрационные лагеря для изоляции. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Массовые аресты бойцов УПА, членов ОУН и заподозренных в помощи им с последующей отправкой в исправительно-трудовые лагеря ГУЛАГа для изоляции (к 1951 году украинцы составили более 20% всех узников ГУЛАГа). <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Индивидуальные аресты и отправка в тюрьмы и исправительно-трудовые лагеря (ГУЛАГ) более 120 тысяч представителей местной элиты и политически активного населения для их изоляции и физического уничтожения. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Физическое уничтожение и изоляция украинской интеллигенции, писателей, ученых, а также партийной оппозиции (национал-коммунистов) в ходе целенаправленных репрессий. Фабрикация дел (в т.ч. дела «УНЦ») и доведение до смерти представителей национальной элиты, включая историка М. Грушевского, писателя М. Хвылевого и наркома Н. Скрыпника. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Сфабрикованные репрессии против деятелей украинской и еврейской интеллигенции, завершившиеся расстрелом Еврейского антифашистского комитета и «Делом врачей». <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Аресты голодающих крестьян, пытавшихся спастись бегством из заблокированных сел: в начале 1933 года из 219 тысяч задержанных десятки тысяч были осуждены и отправлены в лагеря. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Физическое устранение лидеров сопротивления руками милиции и правоохранительных органов: убийство председателя Волынской организации Руха, гибель активиста Меленковского после «беседы» в МВД и внесудебные расправы. (Citation: Народний рух України — Вікіпедія 2026)</p><p>Целенаправленные аресты новой украинской интеллигенции, диссидентов и участников протестов (в т.ч. после премьеры «Теней забытых предков») для подавления зарождающегося сопротивления. (Citation: ДИССИДЕНТСКОЕ ДВИЖЕНИЕ В УКРАИНЕ (1954 – 1987) - ХПГ 2026)</p><p>Массовые аресты членов Украинской Хельсинкской группы и фабрикация уголовных дел, приведшие к длительной изоляции и гибели видных диссидентов (в том числе Василя Стуса) в лагерях особого режима. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Массовые аресты крестьян в ходе кампании раскулачивания: согласно директивам 1930 года, помимо депортаций, десятки тысяч человек отправлялись непосредственно в концентрационные лагеря для изоляции. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                    </td>
+                </tr>
+                        <tr class="sub technique noparent russia" id="russia">
+                            <td>
+ 
+                            </td>
+                            <td>
+                                <a href="/techniques/T0114">T0114</a>
+                            </td>
+                            <td>
+                                <a href="/techniques/T0114/001">.001</a>
+                            </td>
+                            <td>
+                                <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a href="/techniques/T0114/001">Навязывание асимметричного двуязычия и факультативности</a>
+                            </td>
+                            <td>
+                                        <p>Принудительное введение языка метрополии в образовательный процесс: «Постанова ЦК КП(б) про обов'язкове вивчення в школах республіки російської мови» (Citation: Русифікація України — Вікіпедія 2026).</p><p>Принудительное введение языка метрополии в образовательный процесс: «Постанова ЦК КП(б) про обов'язкове вивчення в школах республіки російської мови» (Citation: Русифікація України — Вікіпедія 2026).</p><p>Продолжение административного давления на школы: Директива «Про вдосконалення вивчення російської мови в українських школах» (Citation: Русифікація України — Вікіпедія 2026).</p>
+
+                            </td>
+                        </tr>
+                        <tr class="sub technique russia" id="russia">
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="/techniques/T0114/002">.002</a>
+                            </td>
+                            <td>
+                                <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a href="/techniques/T0114/002">Финансовая дискриминация педагогов</a>
+                            </td>
+                            <td>
+                                        <p>Создание искусственных финансовых стимулов для вытеснения родного языка: «Доплата за російську мову викладання 15 % та поділ класів» (Citation: Русифікація України — Вікіпедія 2026).</p><p>Создание искусственных финансовых стимулов для вытеснения родного языка: «Доплата за російську мову викладання 15 % та поділ класів» (Citation: Русифікація України — Вікіпедія 2026).</p>
+
+                            </td>
+                        </tr>                        
+                        <tr class="sub technique russia" id="russia">
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="/techniques/T0114/003">.003</a>
+                            </td>
+                            <td>
+                                <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a href="/techniques/T0114/003">Перевод школ на язык метрополии</a>
+                            </td>
+                            <td>
+                                        <p>Вытеснение национальных школ после оккупации новых территорий: «Після 'визволення' Західної України — закриття частини українських і відкриття російських шкіл» (Citation: Русифікація України — Вікіпедія 2026).</p><p>Вытеснение национальных школ после оккупации новых территорий: «Після 'визволення' Західної України — закриття частини українських і відкриття російських шкіл» (Citation: Русифікація України — Вікіпедія 2026).</p><p>Постановления СНК и ЦК 1938 года о ликвидации всех национальных школ для меньшинств и обязательном введении масштабного изучения русского языка во всех нерусских школах. (Citation: Національно-культурне життя етнічних меншостей України ( 20-30-ті роки ): коренізація і денаціоналізація (1) 1998)</p><p>Законодательный перевод образовательных учреждений: «Постанова Пленуму ЦК КПРС про перехід українських шкіл на російську мову викладання» (Citation: Русифікація України — Вікіпедія 2026).</p>
+
+                            </td>
+                        </tr>                        
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0031">T0031</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0031">Ограничение суверенитета</a>
+                    </td>
+                    <td>
+                                <p>Изъятие у УССР контроля над внешней политикой, армией, внешней торговлей, транспортом и связью через Конституцию СССР 1924 года с передачей их в ведение союзных наркоматов. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Изъятие у УССР контроля над внешней политикой, армией, внешней торговлей, транспортом и связью через Конституцию СССР 1924 года с передачей их в ведение союзных наркоматов. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0020">T0020</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0020">Организация переворота</a>
+                    </td>
+                    <td>
+                                <p>Вооруженный захват власти Государственным комитетом по чрезвычайному положению (ГКЧП) для срыва подписания договора о Союзе Суверенных Государств и сохранения централизованного контроля над республиками. (Citation: Серпневий путч — Вікіпедія 2026)</p><p>Вооруженный захват власти Государственным комитетом по чрезвычайному положению (ГКЧП) для срыва подписания договора о Союзе Суверенных Государств и сохранения централизованного контроля над республиками. (Citation: Серпневий путч — Вікіпедія 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0010">T0010</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0010">Отрицание самостоятельной идентичности</a>
+                    </td>
+                    <td>
+                                <p>Идеологическая установка на стирание наций: «нова програма партії про 'злиття націй' в єдиний радянський народ» (Citation: Русифікація України — Вікіпедія 2026).</p><p>Использование монументальной пропаганды и празднований Переяславской рады для навязывания концепта «единого народа» и отрицания независимой украинской идентичности. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Идеологическая установка на стирание наций: «нова програма партії про 'злиття націй' в єдиний радянський народ» (Citation: Русифікація України — Вікіпедія 2026).</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0004">T0004</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0004">Переписывание истории</a>
+                    </td>
+                    <td>
+                                <p>Конструирование нового советско-имперского исторического канона для подмены украинского прошлого и отрицания самостоятельности истории Украины. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Масштабная государственная кампания по конструированию исторического мифа о «воссоединении» (вместо аннексии) для исторического обоснования колониального господства Москвы над Киевом. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Конструирование нового советско-имперского исторического канона для подмены украинского прошлого и отрицания самостоятельности истории Украины. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0053">T0053</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0053">Похищение людей</a>
+                    </td>
+                    <td>
+                                <p>Организация насильственных исчезновений ключевых функционеров движения (похищение М. Бойчишина) с последующим циничным саботажем расследования со стороны подконтрольных властям структур. (Citation: Народний рух України — Вікіпедія 2026)</p><p>Организация насильственных исчезновений ключевых функционеров движения (похищение М. Бойчишина) с последующим циничным саботажем расследования со стороны подконтрольных властям структур. (Citation: Народний рух України — Вікіпедія 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0049">T0049</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0049">Принудительная мобилизация</a>
+                    </td>
+                    <td>
+                                <p>Массовый насильственный призыв полевыми военкоматами населения только что освобожденных территорий в ряды Красной армии. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Массовый насильственный призыв полевыми военкоматами населения только что освобожденных территорий в ряды Красной армии. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0110">T0110</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0110">Пытки и истязания</a>
+                    </td>
+                    <td>
+                                <p>Применение разрушительных медикаментозных препаратов (нейролептиков) в качестве средства физического и психологического давления на здоровых правозащитников в закрытых стационарах. (Citation: Карательная психиатрия в России: назад в СССР? - Riddle Russia 2026)</p><p>Применение разрушительных медикаментозных препаратов (нейролептиков) в качестве средства физического и психологического давления на здоровых правозащитников в закрытых стационарах. (Citation: Карательная психиатрия в России: назад в СССР? - Riddle Russia 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0039">T0039</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0039">Сговор с третьей стороной</a>
+                    </td>
+                    <td>
+                                <p>Секретные протоколы к Пакту Молотова — Риббентропа с нацистской Германией по разделу сфер влияния в Восточной Европе и легализации вторжения. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Координация действий с просоветским правительством Польши по уничтожению украинского подполья (Операция «Висла» в 1947 году). (Citation: Історія України — Вікіпедія 2026)</p><p>Секретные протоколы к Пакту Молотова — Риббентропа с нацистской Германией по разделу сфер влияния в Восточной Европе и легализации вторжения. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0043">T0043</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0043">Стирание и переименование топонимов</a>
+                    </td>
+                    <td>
+                                <p>Массовое переименование крымских населенных пунктов с целью замещения исторической тюркской топонимики русскими названиями. <span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="РАШИЗМ ЗВІР З БЕЗОДНІ 2023"title="Лариса Якубова. (2023). РАШИЗМ ЗВІР З БЕЗОДНІ."><sup>[2]</sup></span></p><p>Массовое переименование крымских населенных пунктов с целью замещения исторической тюркской топонимики русскими названиями. <span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="РАШИЗМ ЗВІР З БЕЗОДНІ 2023"title="Лариса Якубова. (2023). РАШИЗМ ЗВІР З БЕЗОДНІ."><sup>[2]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0022">T0022</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0022">Террор</a>
+                    </td>
+                    <td>
+                                <p>Системное психологическое подавление через публичные показательные суды над «саботажниками» и введение карательного закона об охране социалистической собственности («закон о пяти колосках»). (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Создание атмосферы тотального страха через публичные показательные казни повстанцев и кровавые провокации спецгрупп НКВД, переодетых под УПА. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Создание атмосферы тотального парализующего страха в обществе через фабрикацию дел (например, «Союза освобождения Украины») и проведение публичных показательных процессов. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Организация публичной политической травли (нападки на М. Рыльского, В. Сосюру, Ю. Яновского, кампания по «борьбе с космополитами»), насаждающая атмосферу парализующего страха и подозрительности в обществе. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Системное психологическое подавление через публичные показательные суды над «саботажниками» и введение карательного закона об охране социалистической собственности («закон о пяти колосках»). (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Применение грубой физической силы представителями партийной номенклатуры: секретари райкомов КПУ и председатели колхозов лично участвовали в жестоких избиениях активистов Руха и диссидентов (в частности, В. Овсиенко и А. Гудымы) для запугивания населения. (Citation: Народний рух України — Вікіпедія 2026)</p><p>Использование политических судебных процессов, допросов и административного давления КГБ на подписантов «Письма 139» для создания атмосферы страха в культурной среде. (Citation: Письмо-протест 139 - Википедия 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0105">T0105</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0105">Тотальное уничтожение инфраструктуры</a>
+                    </td>
+                    <td>
+                                <p>Применение тактики «выжженной земли» при отступлении в 1941 году: целенаправленный подрыв Днепрогэса, уничтожение заводов, складов и коммуникаций. (Citation: Історія України — Вікіпедія 2026)</p><p>Применение тактики «выжженной земли» при отступлении в 1941 году: целенаправленный подрыв Днепрогэса, уничтожение заводов, складов и коммуникаций. (Citation: Історія України — Вікіпедія 2026)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0045">T0045</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0045">Уничтожение исторической памяти</a>
+                    </td>
+                    <td>
+                                <p>Институциональный разгром национальной исторической науки, закрытие исследовательских школ и изъятие трудов украинских историков из научного оборота. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Институциональный разгром национальной исторической науки, закрытие исследовательских школ и изъятие трудов украинских историков из научного оборота. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Физическое уничтожение мусульманских кладбищ, мечетей и памятников материальной культуры для полного стирания памяти о коренном народе Крыма. <span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="РАШИЗМ ЗВІР З БЕЗОДНІ 2023"title="Лариса Якубова. (2023). РАШИЗМ ЗВІР З БЕЗОДНІ."><sup>[2]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0088">T0088</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0088">Фиктивный договор</a>
+                    </td>
+                    <td>
+                                <p>Использование Договора об образовании СССР (декабрь 1922 г.) для формального декларирования союза равноправных республик, маскирующего окончательную централизацию власти в Москве. (Citation: Україна й українці в постімперську добу (1917–1939) 2021)</p><p>Использование Договора об образовании СССР (декабрь 1922 г.) для формального декларирования союза равноправных республик, маскирующего окончательную централизацию власти в Москве. (Citation: Україна й українці в постімперську добу (1917–1939) 2021)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0101">T0101</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0101">Цензура</a>
+                    </td>
+                    <td>
+                                <p>Массовое изъятие и уничтожение литературы, объявленной «националистической», жесткий контроль над печатным словом и искусством. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Массовое изъятие и уничтожение литературы, объявленной «националистической», жесткий контроль над печатным словом и искусством. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Сразу после начала путча представители ГКЧП объявили о введении чрезвычайного положения и принудительном прекращении выхода большинства независимых средств массовой информации. (Citation: Серпневий путч — Вікіпедія 2026)</p><p>Тотальный идеологический контроль над искусством и прессой, запрет литературных произведений и шельмование писателей за мнимый «буржуазный национализм». <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0108">T0108</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0108">Экономическая блокада</a>
+                    </td>
+                    <td>
+                                <p>Введение режима «черных досок» — полной экономической блокады населенных пунктов с запретом кооперативной и колхозной торговли и изъятием всех товаров из магазинов. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Введение режима «черных досок» — полной экономической блокады населенных пунктов с запретом кооперативной и колхозной торговли и изъятием всех товаров из магазинов. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0038">T0038</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0038">Экономический контроль</a>
+                    </td>
+                    <td>
+                                <p>Насильственное изъятие у крестьян земли, скота и сельскохозяйственного инвентаря в рамках форсированной коллективизации под лозунгами социалистической модернизации. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Насильственное изъятие у крестьян земли, скота и сельскохозяйственного инвентаря в рамках форсированной коллективизации под лозунгами социалистической модернизации. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                    </td>
+                </tr>
+                <tr class="technique russia" id="russia">
+                    <td>
+                    </td>
+                    <td colspan="2">
+                        <a href="/techniques/T0057">T0057</a>
+                    </td>
+                    <td>
+                        <a href="/techniques/T0057">Эксплуатация труда</a>
+                    </td>
+                    <td>
+                                <p>Использование раскулаченных крестьян, отправленных в систему зарождающегося ГУЛАГа, в качестве принудительной бесплатной рабочей силы на тяжелых государственных работах. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Использование плененных участников сопротивления в качестве бесплатной рабочей силы в системе концлагерей (например, отправка в Чорногорский спецлагерь Красноярского края на тяжелые работы). <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Использование системы лагерей ГУЛАГа как института государственного рабства для принудительной и смертельно опасной эксплуатации труда репрессированных украинцев. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span></p><p>Смертельно опасная эксплуатация труда украинских крестьян, массово осужденных по «закону о пяти колосках» и сосланных в исправительно-трудовые лагеря в период Голодомора. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p><p>Использование раскулаченных крестьян, отправленных в систему зарождающегося ГУЛАГа, в качестве принудительной бесплатной рабочей силы на тяжелых государственных работах. (Citation: Відносини держави, суспільства і особи під час створення радянського ладу в Україні (1917 – 1938 рр.) 2013)</p>
+
+                    </td>
+                </tr>
+    </tbody>
+</table>
+</div>
+
+
+        <h2 class="pt-3" id="software">Software</h2>
+        <div class="tables-mobile">
+          <table class="table table-bordered table-alternate mt-2">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">References</th>
+                <th scope="col">Techniques</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="/software/S0009">S0009</a>
+                </td>
+                <td>
+                  <a href="/software/S0009">Дипломатия и Правительство</a>
+                </td>
+                <td>
+                          Уничтожение гражданских и просветительских структур в местах компактного проживания диаспоры: «Ліквідація 'Просвіт' на Кубані, в Зеленому Клину» (Citation: Русифікація України — Вікіпедія 2026).
+
+                </td>
+                <td>
+                  <a href="/techniques/T0030">Административно-территориальное деление</a>,                   <a href="/techniques/T0017">Аннексия территорий</a>,                   <a href="/techniques/T0003">Воспитание логики превосходства</a>,                   <a href="/techniques/T0006">Дегуманизация</a>,                   <a href="/techniques/T0117">Демографическая ассимиляция</a>: <a
+                    href="/techniques/T0117/001">Миграционное замещение</a>,                   <a href="/techniques/T0127">Депортация</a>,                   <a href="/techniques/T0052">Изъятие ресурсов</a>,                   <a href="/techniques/T0109">Имитация народного волеизъявления</a>,                   <a href="/techniques/T0025">Информационная изоляция</a>,                   <a href="/techniques/T0121">Искусственный голод</a>,                   <a href="/techniques/T0115">Культурная ассимиляция</a>,                   <a href="/techniques/T0115">Культурная ассимиляция</a>: <a
+                    href="/techniques/T0115/001">Смена алфавита родного языка</a>,                   <a href="/techniques/T0115">Культурная ассимиляция</a>: <a
+                    href="/techniques/T0115/003">Культурный шовинизм</a>,                   <a href="/techniques/T0128">Ликвидация национальных общественных организаций</a>,                   <a href="/techniques/T0113">Лингвистическая ассимиляция</a>: <a
+                    href="/techniques/T0113/002">Исключение родного языка из делопроизводства</a>,                   <a href="/techniques/T0113">Лингвистическая ассимиляция</a>,                   <a href="/techniques/T0113">Лингвистическая ассимиляция</a>: <a
+                    href="/techniques/T0113/001">Законодательный запрет родного языка</a>,                   <a href="/techniques/T0008">Лишение субъектности</a>,                   <a href="/techniques/T0125">Насильственное изъятие детей</a>,                   <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a
+                    href="/techniques/T0114/003">Перевод школ на язык метрополии</a>,                   <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a
+                    href="/techniques/T0114/002">Финансовая дискриминация педагогов</a>,                   <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a
+                    href="/techniques/T0114/001">Навязывание асимметричного двуязычия и факультативности</a>,                   <a href="/techniques/T0031">Ограничение суверенитета</a>,                   <a href="/techniques/T0024">Оправдание через религию</a>,                   <a href="/techniques/T0020">Организация переворота</a>,                   <a href="/techniques/T0010">Отрицание самостоятельной идентичности</a>,                   <a href="/techniques/T0004">Переписывание истории</a>,                   <a href="/techniques/T0131">Поддержка подконтрольной оппозиции</a>,                   <a href="/techniques/T0012">Поддержка сепаратизма</a>,                   <a href="/techniques/T0102">Ресурсная эксплуатация</a>,                   <a href="/techniques/T0039">Сговор с третьей стороной</a>,                   <a href="/techniques/T0046">Создание экономической зависимости</a>,                   <a href="/techniques/T0043">Стирание и переименование топонимов</a>,                   <a href="/techniques/T0107">Транспортная блокада</a>,                   <a href="/techniques/T0045">Уничтожение исторической памяти</a>,                   <a href="/techniques/T0088">Фиктивный договор</a>,                   <a href="/techniques/T0130">Финансовое стимулирование ассимиляторов</a>,                   <a href="/techniques/T0101">Цензура</a>,                   <a href="/techniques/T0108">Экономическая блокада</a>,                   <a href="/techniques/T0038">Экономический контроль</a>,                   <a href="/techniques/T0057">Эксплуатация труда</a>,                   <a href="/techniques/T0138">Ядерный шантаж</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/software/S0022">S0022</a>
+                </td>
+                <td>
+                  <a href="/software/S0022">Карательная медицина и психиатрия</a>
+                </td>
+                <td>
+                          Использование институтов государственного здравоохранения для политически мотивированного диагностирования инакомыслящих (диагноз «вялотекущая шизофрения») и их бессрочной изоляции в психиатрических больницах. (Citation: Карательная психиатрия в России: назад в СССР? - Riddle Russia 2026)
+
+                </td>
+                <td>
+                  <a href="/techniques/T0135">Карательная психиатрия</a>,                   <a href="/techniques/T0110">Пытки и истязания</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/software/S0012">S0012</a>
+                </td>
+                <td>
+                  <a href="/software/S0012">Оккупационные и подконтрольные администрации</a>
+                </td>
+                <td>
+                          Организация фейковых безальтернативных «Народных сборов» под контролем оккупационных войск для юридического оформления захвата. (Citation: Історія України — Вікіпедія 2026)
+
+                </td>
+                <td>
+                  <a href="/techniques/T0117">Демографическая ассимиляция</a>: <a
+                    href="/techniques/T0117/001">Миграционное замещение</a>,                   <a href="/techniques/T0052">Изъятие ресурсов</a>,                   <a href="/techniques/T0109">Имитация народного волеизъявления</a>,                   <a href="/techniques/T0112">Кража культурных ценностей</a>,                   <a href="/techniques/T0128">Ликвидация национальных общественных организаций</a>,                   <a href="/techniques/T0113">Лингвистическая ассимиляция</a>: <a
+                    href="/techniques/T0113/002">Исключение родного языка из делопроизводства</a>,                   <a href="/techniques/T0113">Лингвистическая ассимиляция</a>: <a
+                    href="/techniques/T0113/001">Законодательный запрет родного языка</a>,                   <a href="/techniques/T0037">Марионеточное правительство</a>,                   <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0114">Образовательная ассимиляция</a>: <a
+                    href="/techniques/T0114/003">Перевод школ на язык метрополии</a>,                   <a href="/techniques/T0053">Похищение людей</a>,                   <a href="/techniques/T0035">Принудительная паспортизация</a>,                   <a href="/techniques/T0018">Прокси-война</a>,                   <a href="/techniques/T0110">Пытки и истязания</a>,                   <a href="/techniques/T0043">Стирание и переименование топонимов</a>,                   <a href="/techniques/T0022">Террор</a>,                   <a href="/techniques/T0038">Экономический контроль</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/software/S0021">S0021</a>
+                </td>
+                <td>
+                  <a href="/software/S0021">Пропаганда</a>
+                </td>
+                <td>
+                          Конструирование нового советско-имперского исторического канона для подмены украинского прошлого и отрицания самостоятельности истории Украины. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0003">Воспитание логики превосходства</a>,                   <a href="/techniques/T0006">Дегуманизация</a>,                   <a href="/techniques/T0137">Дезинформация</a>,                   <a href="/techniques/T0007">Навязывание своей картины реальности</a>,                   <a href="/techniques/T0010">Отрицание самостоятельной идентичности</a>,                   <a href="/techniques/T0004">Переписывание истории</a>,                   <a href="/techniques/T0005">Присвоение статуса жертвы агрессором</a>,                   <a href="/techniques/T0022">Террор</a>,                   <a href="/techniques/T0101">Цензура</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/software/S0010">S0010</a>
+                </td>
+                <td>
+                  <a href="/software/S0010">Регулярная армия</a>
+                </td>
+                <td>
+                          Введение режима «черных досок» — полной экономической блокады населенных пунктов с запретом кооперативной и колхозной торговли и изъятием всех товаров из магазинов. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span>
+
+                </td>
+                <td>
+                  <a href="/techniques/T0017">Аннексия территорий</a>,                   <a href="/techniques/T0019">Военная интервенция</a>,                   <a href="/techniques/T0099">Захват заложников</a>,                   <a href="/techniques/T0052">Изъятие ресурсов</a>,                   <a href="/techniques/T0109">Имитация народного волеизъявления</a>,                   <a href="/techniques/T0134">Использование в качестве пушечного мяса</a>,                   <a href="/techniques/T0111">Использование людей как «живого щита»</a>,                   <a href="/techniques/T0120">Истребление по признаку идентичности</a>,                   <a href="/techniques/T0118">Истребление по территориальному признаку</a>,                   <a href="/techniques/T0077">Карательные экспедиции</a>,                   <a href="/techniques/T0112">Кража культурных ценностей</a>,                   <a href="/techniques/T0123">Лишение питьевой воды</a>,                   <a href="/techniques/T0008">Лишение субъектности</a>,                   <a href="/techniques/T0124">Лишение электричества и отопления</a>,                   <a href="/techniques/T0037">Марионеточное правительство</a>,                   <a href="/techniques/T0104">Массовые убийства гражданских</a>,                   <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0041">Подселение чиновников и военных</a>,                   <a href="/techniques/T0049">Принудительная мобилизация</a>,                   <a href="/techniques/T0022">Террор</a>,                   <a href="/techniques/T0105">Тотальное уничтожение инфраструктуры</a>,                   <a href="/techniques/T0045">Уничтожение исторической памяти</a>,                   <a href="/techniques/T0108">Экономическая блокада</a>,                   <a href="/techniques/T0057">Эксплуатация труда</a>                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/software/S0017">S0017</a>
+                </td>
+                <td>
+                  <a href="/software/S0017">Тайная полиция и Спецслужбы</a>
+                </td>
+                <td>
+                          Целенаправленное физическое уничтожение (массовые казни) национальной культурной элиты — трагедия, вошедшая в историю как <a href="https://ru.wikipedia.org/wiki/Расстрелянное_возрождение">«Расстрелянное возрождение»</a>. «Телеграма Сталіна про припинення українізації і знищення більшості українських письменників» (Citation: Русифікація України — Вікіпедія 2026). Эти репрессии уничтожили целое поколение выдающихся украинских писателей, поэтов и интеллигенции <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Война и наказание: Как Россия уничтожала Украину 2023"title="Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину."><sup>[1]</sup></span>.
+
+                </td>
+                <td>
+                  <a href="/techniques/T0127">Депортация</a>,                   <a href="/techniques/T0100">Захват религиозных институтов</a>,                   <a href="/techniques/T0052">Изъятие ресурсов</a>,                   <a href="/techniques/T0120">Истребление по признаку идентичности</a>,                   <a href="/techniques/T0077">Карательные экспедиции</a>,                   <a href="/techniques/T0136">Кибероперации</a>,                   <a href="/techniques/T0128">Ликвидация национальных общественных организаций</a>,                   <a href="/techniques/T0124">Лишение электричества и отопления</a>,                   <a href="/techniques/T0037">Марионеточное правительство</a>,                   <a href="/techniques/T0104">Массовые убийства гражданских</a>,                   <a href="/techniques/T0021">Нейтрализация оппозиции</a>,                   <a href="/techniques/T0020">Организация переворота</a>,                   <a href="/techniques/T0015">Подкуп элит</a>,                   <a href="/techniques/T0053">Похищение людей</a>,                   <a href="/techniques/T0018">Прокси-война</a>,                   <a href="/techniques/T0110">Пытки и истязания</a>,                   <a href="/techniques/T0023">Система фильтрационных лагерей</a>,                   <a href="/techniques/T0016">Создание фиктивных угнетенных групп</a>,                   <a href="/techniques/T0014">Спонсирование внутреннего экстремизма и радикалов</a>,                   <a href="/techniques/T0022">Террор</a>,                   <a href="/techniques/T0045">Уничтожение исторической памяти</a>,                   <a href="/techniques/T0036">Установка новой системы управления</a>,                   <a href="/techniques/T0101">Цензура</a>,                   <a href="/techniques/T0057">Эксплуатация труда</a>                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+                <h2 class="pt-3" id="references">References</h2>
+
+        <div class="row">
+            <div class="col">
+                <ol>
+                            
+        <li>
+            <span  id="scite-1" class="scite-citation">
+                <span class="scite-citation-text">Михаил Зыгарь. (2023). Война и наказание: Как Россия уничтожала Украину.</span>
+            </span>
+        </li>
+
+
+                </ol>
+            </div>
+            <div class="col">
+                    <ol start="2.0">
+                                
+        <li>
+            <span  id="scite-2" class="scite-citation">
+                <span class="scite-citation-text">Лариса Якубова. (2023). РАШИЗМ ЗВІР З БЕЗОДНІ.</span>
+            </span>
+        </li>
+
+
+  
+                    </ol>
+            </div>             
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
+
+            <!--stop-indexing-for-search-->
+            <!-- search overlay for entire page -- not displayed inline -->
+            <div class="overlay search" id="search-overlay" style="display: none;">
+    <div class="overlay-inner">
+        <!-- text input for searching -->
+        <div class="search-header">
+            <div class="search-input">
+                <input type="text" id="search-input" placeholder="search">
+            </div>
+            <div class="search-icons">
+                <div class="search-parsing-icon spinner-border" style="display: none" id="search-parsing-icon"></div>
+                <div class="close-search-icon" id="close-search-icon">&times;</div>
+            </div>
+        </div>
+        <!-- results and controls for loading more results -->
+        <div id="search-body" class="search-body">
+            <div class="results" id="search-results">
+                <!-- content will be appended here on search -->
+            </div>
+            <div id="load-more-results" class="load-more-results">
+                <button class="btn btn-default" id="load-more-results-button">load more results</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="row flex-grow-0 flex-shrink-1">
+            <!-- footer elements -->
+            <footer class="col footer">
+                <div class="container-fluid">
+                    <div class="row row-footer">
+                        <div class="col-2 col-sm-2 col-md-2">
+                            <div class="footer-center-responsive my-auto">
+                                <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                                    <img src="/theme/images/mitrelogowhiteontrans.gif" class="mitre-logo-wtrans">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-2 col-sm-2 footer-responsive-break"></div>
+                        <div class="footer-link-group">
+                            <div class="row row-footer">
+                                <div class="px-3 col-footer">
+                                    <u class="footer-link"><a href="/resources/engage-with-attack/contact" class="footer-link">Contact Us</a></u>
+                                </div>
+                                <div class="px-3 col-footer">
+                                    <u class="footer-link"><a href="/resources/legal-and-branding/terms-of-use" class="footer-link">Terms of Use</a></u>
+                                </div>
+                                    <div class="px-3 col-footer">
+                                        <u class="footer-link"><a href="/resources/legal-and-branding/privacy" class="footer-link">Privacy Policy</a></u>
+                                    </div>
+                                <div class="px-3 col-footer">
+                                    <u class="footer-link"><a href="/resources/changelog.html" class="footer-link" data-toggle="tooltip" data-placement="top" data-html="true" title="ATT&amp;CK content v18.1&#013;Website  v4.4.1">Website Changelog</a></u>
+                                </div>
+                                <div class="px-3">
+                                    <u class="footer-link"><a href="/resources/legal-and-branding/privacy/#" class="footer-link" onclick="Osano.cm.showDrawer('osano-cm-dom-info-dialog-open')">Cookie Preferences</a></u>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <small class="px-3">
+                                    &copy;&nbsp;2015&nbsp;-&nbsp;2025, The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="w-100 p-2 footer-responsive-break"></div>
+                                <div class="col footer-float-right-responsive-centered">
+                                    <div>
+                                        <div>
+                                            <a href="https://attack.mitre.org" class="btn btn-primary w-100">
+                                                attack.mitre.org
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+<!--stopindex-->
+
+</div>
+    <!--SCRIPTS-->
+    <script src="/theme/scripts/jquery-3.5.1.min.js"></script>
+    <script src="/theme/scripts/popper.min.js"></script>
+    <script src="/theme/scripts/bootstrap-select.min.js"></script>
+    <script src="/theme/scripts/bootstrap.bundle.min.js"></script>
+    <script src="/theme/scripts/site.js"></script>
+    <script src="/theme/scripts/settings.js"></script>
+    <script src="/theme/scripts/search_bundle.js"></script>
+
+<!--SCRIPTS-->
+<script src="/theme/scripts/resizer.js"></script>
+
+<!--SCRIPTS-->
+<script src="/theme/scripts/sidebar-load-all.js"></script>
+<script src="/theme/scripts/bootstrap-tourist.js"></script>
+<script src="/theme/scripts/settings.js"></script>
+<script src="/theme/scripts/tour/tour-relationships.js"></script>
+</body>
+</html>
