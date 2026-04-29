@@ -71,7 +71,7 @@ def clean_stix_data(data):
 
 def get_citations(data):
     """Given a description, find all of the citations."""
-    p = re.compile(r"\(Citation: (.*?)\)")
+    p = re.compile(r"\(Citation:\s*((?:[^()]+|\([^()]*\))+)\)", flags=re.IGNORECASE)
     return p.findall(data)
 
 
